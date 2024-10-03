@@ -19,6 +19,7 @@
   <ItemGroup>
     <PackageReference Include="aliyun-net-sdk-sts" />
     <PackageReference Include="Aliyun.OSS.SDK.NetCore" />
+    <PackageReference Include="Newtonsoft.Json" />
   </ItemGroup>
 
   <ItemGroup>

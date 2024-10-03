@@ -23,6 +23,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
         <PackageReference Include="Oracle.EntityFrameworkCore" />
+        <PackageReference Include="System.Formats.Asn1" />
     </ItemGroup>
 
 </Project>

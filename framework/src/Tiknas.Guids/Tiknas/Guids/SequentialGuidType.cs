@@ -6,13 +6,13 @@
 public enum SequentialGuidType
 {
     /// <summary>
-    /// The GUID should be sequential when formatted using the <see cref="Guid.ToString()" /> method.
+    /// The GUID should be sequential when formatted using the <c>Guid.ToString</c> method.
     /// Used by MySql and PostgreSql.
     /// </summary>
     SequentialAsString,
 
     /// <summary>
-    /// The GUID should be sequential when formatted using the <see cref="Guid.ToByteArray" /> method.
+    /// The GUID should be sequential when formatted using the <c>Guid.ToByteArray</c> method.
     /// Used by Oracle.
     /// </summary>
     SequentialAsBinary,

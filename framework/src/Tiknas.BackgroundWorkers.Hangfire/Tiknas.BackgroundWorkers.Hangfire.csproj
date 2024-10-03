@@ -17,6 +17,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
+
+    <ItemGroup>
         <ProjectReference Include="..\Tiknas.BackgroundWorkers\Tiknas.BackgroundWorkers.csproj" />
         <ProjectReference Include="..\Tiknas.HangFire\Tiknas.HangFire.csproj" />
     </ItemGroup>

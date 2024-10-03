@@ -16,6 +16,7 @@ internal class EmptyProjectFileSystem : RazorProjectFileSystem
     }
 
     [Obsolete("Use GetItem(string path, string fileKind) instead.")]
+    #pragma warning disable CS0809
     public override RazorProjectItem GetItem(string path)
     {
         return GetItem(path, fileKind: null);
