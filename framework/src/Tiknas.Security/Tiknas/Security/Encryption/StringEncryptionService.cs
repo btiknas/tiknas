@@ -37,7 +37,7 @@ public class StringEncryptionService : IStringEncryptionService, ITransientDepen
         }
 
         var plainTextBytes = Encoding.UTF8.GetBytes(plainText);
-        using (var password = new Rfc2898DeriveBytes(passPhrase, salt))
+        using (var password = new Rfc2898DeriveBytes(passPhrase, salt, 10000, HashAlgorithmName.SHA256))
         {
             var keyBytes = password.GetBytes(Options.Keysize / 8);
             using (var symmetricKey = Aes.Create())
@@ -78,7 +78,7 @@ public class StringEncryptionService : IStringEncryptionService, ITransientDepen
         }
 
         var cipherTextBytes = Convert.FromBase64String(cipherText);
-        using (var password = new Rfc2898DeriveBytes(passPhrase, salt))
+        using (var password = new Rfc2898DeriveBytes(passPhrase, salt, 10000, HashAlgorithmName.SHA256))
         {
             var keyBytes = password.GetBytes(Options.Keysize / 8);
             using (var symmetricKey = Aes.Create())
