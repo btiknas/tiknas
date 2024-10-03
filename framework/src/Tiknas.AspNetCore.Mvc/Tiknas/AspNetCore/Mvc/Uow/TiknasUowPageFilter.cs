@@ -109,7 +109,7 @@ public class TiknasUowPageFilter : IAsyncPageFilter, ITiknasFilter, ITransientDe
             {
                 await currentUow.SaveChangesAsync(context.HttpContext.RequestAborted);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 await currentUow.RollbackAsync(context.HttpContext.RequestAborted);
                 throw;

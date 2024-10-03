@@ -37,7 +37,7 @@ public class TiknasGlobalFeaturesModule : TiknasModule
 
         Configure<TiknasExceptionLocalizationOptions>(options =>
         {
-            options.MapCodeNamespace("Volo.GlobalFeature", typeof(TiknasGlobalFeatureResource));
+            options.MapCodeNamespace("Tiknas.GlobalFeature", typeof(TiknasGlobalFeatureResource));
         });
     }
 }

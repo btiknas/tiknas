@@ -87,7 +87,7 @@ public class TiknasEntityFrameworkCoreTestModule : TiknasModule
             {
                 await categoryRepository.InsertManyAsync(new List<Category>
                 {
-                    new Category { Name = "volo.tiknas" },
+                    new Category { Name = "tiknas.tiknas" },
                     new Category { Name = "tiknas.cli" },
                     new Category { Name = "tiknas.core", IsDeleted = true }
                 });

@@ -11,7 +11,7 @@ public class ScribanLocalizedTemplateContentReaderFactory_Tests : LocalizedTempl
         LocalizedTemplateContentReaderFactory = new LocalizedTemplateContentReaderFactory(
             new PhysicalFileVirtualFileProvider(
                 new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),
-                    "Volo", "Tiknas", "TextTemplating", "Scriban"))),
+                    "Tiknas", "Tiknas", "TextTemplating", "Scriban"))),
             GetRequiredService<ITiknasHostEnvironment>());
 
         WelcomeEmailEnglishContent = "Welcome {{model.name}} to the tiknas.io!";

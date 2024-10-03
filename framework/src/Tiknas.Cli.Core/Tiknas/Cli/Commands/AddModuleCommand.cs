@@ -132,10 +132,10 @@ public class AddModuleCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("");
         sb.AppendLine("Examples:");
         sb.AppendLine("");
-        sb.AppendLine("  tiknas add-module Volo.Blogging                      Adds the module to the current solution.");
-        sb.AppendLine("  tiknas add-module Volo.Blogging -s Acme.BookStore    Adds the module to the given solution.");
-        sb.AppendLine("  tiknas add-module Volo.Blogging -s Acme.BookStore --skip-db-migrations false    Adds the module to the given solution but doesn't create a database migration.");
-        sb.AppendLine(@"  tiknas add-module Volo.Blogging -s Acme.BookStore -sp ..\Acme.BookStore.Web\Acme.BookStore.Web.csproj   Adds the module to the given solution and specify migration startup project.");
+        sb.AppendLine("  tiknas add-module Tiknas.Blogging                      Adds the module to the current solution.");
+        sb.AppendLine("  tiknas add-module Tiknas.Blogging -s Acme.BookStore    Adds the module to the given solution.");
+        sb.AppendLine("  tiknas add-module Tiknas.Blogging -s Acme.BookStore --skip-db-migrations false    Adds the module to the given solution but doesn't create a database migration.");
+        sb.AppendLine(@"  tiknas add-module Tiknas.Blogging -s Acme.BookStore -sp ..\Acme.BookStore.Web\Acme.BookStore.Web.csproj   Adds the module to the given solution and specify migration startup project.");
         sb.AppendLine(@"  tiknas add-module ProductManagement --new -sp ..\Acme.BookStore.Web\Acme.BookStore.Web.csproj   Crates a new module named `ProductManagement` and adds it to your solution.");
         sb.AppendLine(@"  tiknas add-module ProductManagement --new --add-to-solution-file -sp ..\Acme.BookStore.Web\Acme.BookStore.Web.csproj   Crates a new module named `ProductManagement`, adds it to your solution & solution file.");
         sb.AppendLine("");

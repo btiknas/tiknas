@@ -20,7 +20,7 @@ public class GitRepositoryBuildStatus_Tests : TiknasCliTestBase
     [Fact]
     public void Add_New_Build_Status_Test()
     {
-        var existingBuildStatus = new GitRepositoryBuildStatus("volo", "dev")
+        var existingBuildStatus = new GitRepositoryBuildStatus("tiknas", "dev")
         {
             SucceedProjects = new List<DotNetProjectBuildStatus>
                 {
@@ -55,7 +55,7 @@ public class GitRepositoryBuildStatus_Tests : TiknasCliTestBase
     [Fact]
     public void Update_Existing_Build_Status_Test()
     {
-        var existingBuildStatus = new GitRepositoryBuildStatus("volo", "dev")
+        var existingBuildStatus = new GitRepositoryBuildStatus("tiknas", "dev")
         {
             SucceedProjects = new List<DotNetProjectBuildStatus>
                 {
@@ -89,16 +89,16 @@ public class GitRepositoryBuildStatus_Tests : TiknasCliTestBase
 
         existingBuildStatus.MergeWith(newBuildStatus);
         existingBuildStatus.SucceedProjects.Count.ShouldBe(2);
-        existingBuildStatus.GetSelfOrChild("volo").SucceedProjects.First(p => p.CsProjPath == "project1.csproj")
+        existingBuildStatus.GetSelfOrChild("tiknas").SucceedProjects.First(p => p.CsProjPath == "project1.csproj")
             .CommitId.ShouldBe("2");
-        existingBuildStatus.GetSelfOrChild("volo").SucceedProjects.First(p => p.CsProjPath == "project2.csproj")
+        existingBuildStatus.GetSelfOrChild("tiknas").SucceedProjects.First(p => p.CsProjPath == "project2.csproj")
             .CommitId.ShouldBe("2");
     }
 
     [Fact]
     public void Add_New_Build_Status_For_Child_Repository_Test()
     {
-        var existingBuildStatus = new GitRepositoryBuildStatus("volo", "dev")
+        var existingBuildStatus = new GitRepositoryBuildStatus("tiknas", "dev")
         {
             DependingRepositories = new List<GitRepositoryBuildStatus>()
                 {
@@ -144,7 +144,7 @@ public class GitRepositoryBuildStatus_Tests : TiknasCliTestBase
     [Fact]
     public void Should_Update_Repository_CommitId_When_New_CommitId_Is_Not_Empty()
     {
-        var existingBuildStatus = new GitRepositoryBuildStatus("volo", "dev");
+        var existingBuildStatus = new GitRepositoryBuildStatus("tiknas", "dev");
 
         var newBuildStatus = new GitRepositoryBuildStatus(
             existingBuildStatus.RepositoryName,
@@ -162,7 +162,7 @@ public class GitRepositoryBuildStatus_Tests : TiknasCliTestBase
     [Fact]
     public void Should_Not_Update_Repository_CommitId_When_New_CommitId_Is_Empty()
     {
-        var existingBuildStatus = new GitRepositoryBuildStatus("volo", "dev")
+        var existingBuildStatus = new GitRepositoryBuildStatus("tiknas", "dev")
         {
             CommitId = "21"
         };

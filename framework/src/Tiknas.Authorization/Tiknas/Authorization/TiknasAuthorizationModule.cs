@@ -58,7 +58,7 @@ public class TiknasAuthorizationModule : TiknasModule
 
         Configure<TiknasExceptionLocalizationOptions>(options =>
         {
-            options.MapCodeNamespace("Volo.Authorization", typeof(TiknasAuthorizationResource));
+            options.MapCodeNamespace("Tiknas.Authorization", typeof(TiknasAuthorizationResource));
         });
     }
 

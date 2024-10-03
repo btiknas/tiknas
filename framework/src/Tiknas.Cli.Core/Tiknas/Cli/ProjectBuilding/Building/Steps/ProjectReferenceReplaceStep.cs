@@ -23,13 +23,13 @@ public class ProjectReferenceReplaceStep : ProjectBuildPipelineStep
                 return;
             }
 
-            var localVoloRepoPath = context.BuildArgs.VoloGitHubLocalRepositoryPath;
+            var localTiknasRepoPath = context.BuildArgs.TiknasGitHubLocalRepositoryPath;
 
             new ProjectReferenceReplacer.LocalProjectPathReferenceReplacer(
                 context,
                 context.Module?.Namespace ?? "MyCompanyName.MyProjectName",
                 localTiknasRepoPath,
-                localVoloRepoPath
+                localTiknasRepoPath
             ).Run();
         }
         else
@@ -189,13 +189,13 @@ public class ProjectReferenceReplaceStep : ProjectBuildPipelineStep
         public class LocalProjectPathReferenceReplacer : ProjectReferenceReplacer
         {
             private readonly string _gitHubTiknasLocalRepositoryPath;
-            private readonly string _gitHubVoloLocalRepositoryPath;
+            private readonly string _gitHubTiknasLocalRepositoryPath;
 
-            public LocalProjectPathReferenceReplacer(ProjectBuildContext context, string projectName, string gitHubTiknasLocalRepositoryPath, string gitHubVoloLocalRepositoryPath)
+            public LocalProjectPathReferenceReplacer(ProjectBuildContext context, string projectName, string gitHubTiknasLocalRepositoryPath, string gitHubTiknasLocalRepositoryPath)
                 : base(context, projectName)
             {
                 _gitHubTiknasLocalRepositoryPath = gitHubTiknasLocalRepositoryPath;
-                _gitHubVoloLocalRepositoryPath = gitHubVoloLocalRepositoryPath;
+                _gitHubTiknasLocalRepositoryPath = gitHubTiknasLocalRepositoryPath;
             }
 
             protected override XmlElement GetNewReferenceNode(XmlDocument doc, string oldNodeIncludeValue)
@@ -217,14 +217,14 @@ public class ProjectReferenceReplaceStep : ProjectBuildPipelineStep
                     includeValue = includeValue.TrimStart('\\');
                 }
 
-                if (!string.IsNullOrWhiteSpace(_gitHubVoloLocalRepositoryPath))
+                if (!string.IsNullOrWhiteSpace(_gitHubTiknasLocalRepositoryPath))
                 {
                     if (includeValue.StartsWith("tiknas\\", StringComparison.InvariantCultureIgnoreCase))
                     {
                         return _gitHubTiknasLocalRepositoryPath.EnsureEndsWith('\\') + includeValue.Substring("tiknas\\".Length);
                     }
 
-                    return _gitHubVoloLocalRepositoryPath.EnsureEndsWith('\\') + "tiknas\\" + includeValue;
+                    return _gitHubTiknasLocalRepositoryPath.EnsureEndsWith('\\') + "tiknas\\" + includeValue;
                 }
 
                 return _gitHubTiknasLocalRepositoryPath.EnsureEndsWith('\\') + includeValue;

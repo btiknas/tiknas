@@ -202,7 +202,7 @@ public class SolutionFileModifier : ITransientDependency
         }
     }
 
-    private async Task<string> AddNewFolderAndGetIdOrGetExistingIdAsync(string solutionFile, string folderName,
+    private Task<string> AddNewFolderAndGetIdOrGetExistingIdAsync(string solutionFile, string folderName,
         string parentFolderId = null)
     {
         var file = File.ReadAllText(solutionFile);
@@ -238,6 +238,6 @@ public class SolutionFileModifier : ITransientDependency
 
         File.WriteAllText(solutionFile, string.Join(Environment.NewLine, lines), Encoding.UTF8);
 
-        return folderId;
+        return Task.FromResult(Task.FromResult(folderId).Result);
     }
 }

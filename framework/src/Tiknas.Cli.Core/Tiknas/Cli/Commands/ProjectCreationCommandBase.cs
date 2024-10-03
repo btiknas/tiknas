@@ -75,7 +75,7 @@ public abstract class ProjectCreationCommandBase
         Logger = NullLogger<NewCommand>.Instance;
     }
 
-    protected async Task<ProjectBuildArgs> GetProjectBuildArgsAsync(CommandLineArgs commandLineArgs, string template, string projectName)
+    protected Task<ProjectBuildArgs> GetProjectBuildArgsAsync(CommandLineArgs commandLineArgs, string template, string projectName)
     {
         var version = commandLineArgs.Options.GetOrNull(Options.Version.Short, Options.Version.Long);
 
@@ -149,10 +149,10 @@ public abstract class ProjectCreationCommandBase
             Logger.LogInformation("GitHub Tiknas Local Repository Path: " + gitHubTiknasLocalRepositoryPath);
         }
 
-        var gitHubVoloLocalRepositoryPath = commandLineArgs.Options.GetOrNull(Options.GitHubVoloLocalRepositoryPath.Long);
-        if (gitHubVoloLocalRepositoryPath != null)
+        var gitHubTiknasLocalRepositoryPath = commandLineArgs.Options.GetOrNull(Options.GitHubTiknasLocalRepositoryPath.Long);
+        if (gitHubTiknasLocalRepositoryPath != null)
         {
-            Logger.LogInformation("GitHub Volo Local Repository Path: " + gitHubVoloLocalRepositoryPath);
+            Logger.LogInformation("GitHub Tiknas Local Repository Path: " + gitHubTiknasLocalRepositoryPath);
         }
 
         var templateSource = commandLineArgs.Options.GetOrNull(Options.TemplateSource.Short, Options.TemplateSource.Long);
@@ -234,7 +234,7 @@ public abstract class ProjectCreationCommandBase
 
         var trustUserVersion = !version.IsNullOrEmpty() && commandLineArgs.Options.ContainsKey(Options.TrustUserVersion.Long) || commandLineArgs.Options.ContainsKey(Options.TrustUserVersion.Short);
 
-        return new ProjectBuildArgs(
+        return Task.FromResult(new ProjectBuildArgs(
             solutionName,
             template,
             version,
@@ -245,7 +245,7 @@ public abstract class ProjectCreationCommandBase
             mobileApp,
             publicWebSite,
             gitHubTiknasLocalRepositoryPath,
-            gitHubVoloLocalRepositoryPath,
+            gitHubTiknasLocalRepositoryPath,
             templateSource,
             commandLineArgs.Options,
             connectionString,
@@ -254,7 +254,7 @@ public abstract class ProjectCreationCommandBase
             themeStyle,
             skipCache,
             trustUserVersion
-        );
+        ));
     }
 
     protected void ExtractProjectZip(ProjectBuildResult project, string outputFolder)
@@ -594,7 +594,7 @@ public abstract class ProjectCreationCommandBase
         return Task.CompletedTask;
     }
 
-    protected async Task ConfigurePwaSupportForAngular(ProjectBuildArgs projectArgs)
+    protected Task ConfigurePwaSupportForAngular(ProjectBuildArgs projectArgs)
     {
         var isAngular = projectArgs.UiFramework == UiFramework.Angular;
         var isPwa = projectArgs.Pwa;
@@ -605,6 +605,8 @@ public abstract class ProjectCreationCommandBase
 
             AngularPwaSupportAdder.AddPwaSupport(projectArgs.OutputFolder);
         }
+
+        return Task.CompletedTask;
     }
 
     protected virtual DatabaseManagementSystem GetDatabaseManagementSystem(CommandLineArgs commandLineArgs)
@@ -842,9 +844,9 @@ public abstract class ProjectCreationCommandBase
             public const string Long = "tiknas-path";
         }
 
-        public static class GitHubVoloLocalRepositoryPath
+        public static class GitHubTiknasLocalRepositoryPath
         {
-            public const string Long = "volo-path";
+            public const string Long = "tiknas-path";
         }
 
         public static class Version

@@ -6,8 +6,8 @@ namespace Tiknas.TestApp.Application;
 [IntegrationService]
 public class PeopleIntegrationService : ApplicationService, IPeopleIntegrationService
 {
-    public async Task<string> GetValueAsync()
+    public Task<string> GetValueAsync()
     {
-        return "42";
+        return Task.FromResult("42");
     }
 }

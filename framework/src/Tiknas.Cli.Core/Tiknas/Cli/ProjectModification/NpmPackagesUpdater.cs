@@ -117,8 +117,8 @@ public class NpmPackagesUpdater : ITransientDependency
     {
         var fileName = Path.Combine(directoryName, ".npmrc");
         var tiknasRegistry = "@tiknas:registry=https://www.myget.org/F/tiknas-nightly/npm";
-        var voloRegistry = "@volo:registry=https://www.myget.org/F/tiknas-commercial-npm-nightly/npm";
-        var volosoftRegistry = "@volosoft:registry=https://www.myget.org/F/tiknas-commercial-npm-nightly/npm";
+        var tiknasRegistry = "@tiknas:registry=https://www.myget.org/F/tiknas-commercial-npm-nightly/npm";
+        var tiknassoftRegistry = "@tiknassoft:registry=https://www.myget.org/F/tiknas-commercial-npm-nightly/npm";
 
         if (await NpmrcFileExistAsync(directoryName))
         {
@@ -129,14 +129,14 @@ public class NpmPackagesUpdater : ITransientDependency
                 fileContent += Environment.NewLine + tiknasRegistry;
             }
 
-            if (!fileContent.Contains(voloRegistry))
+            if (!fileContent.Contains(tiknasRegistry))
             {
-                fileContent += Environment.NewLine + voloRegistry;
+                fileContent += Environment.NewLine + tiknasRegistry;
             }
 
-            if (!fileContent.Contains(volosoftRegistry))
+            if (!fileContent.Contains(tiknassoftRegistry))
             {
-                fileContent += volosoftRegistry;
+                fileContent += tiknassoftRegistry;
             }
 
             File.WriteAllText(fileName, fileContent);
@@ -147,8 +147,8 @@ public class NpmPackagesUpdater : ITransientDependency
         using var sw = File.CreateText(fileName);
 
         sw.WriteLine(tiknasRegistry);
-        sw.WriteLine(voloRegistry);
-        sw.WriteLine(volosoftRegistry);
+        sw.WriteLine(tiknasRegistry);
+        sw.WriteLine(tiknassoftRegistry);
     }
 
     private static bool IsAngularProject(string fileDirectory)
@@ -341,8 +341,8 @@ public class NpmPackagesUpdater : ITransientDependency
                 .AddRange(
                 properties.Where(
                       p => p.Name.StartsWith("@tiknas/")
-                        || p.Name.StartsWith("@volo/")
-                        || p.Name.StartsWith("@volosoft/")).ToList()
+                        || p.Name.StartsWith("@tiknas/")
+                        || p.Name.StartsWith("@tiknassoft/")).ToList()
                 );
         }
 

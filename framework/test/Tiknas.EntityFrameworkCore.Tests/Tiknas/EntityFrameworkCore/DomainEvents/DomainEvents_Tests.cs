@@ -153,10 +153,12 @@ public class TiknasEfCoreDomainEvents_Tests : EntityFrameworkCoreTestBase
         LocalEventBus.Subscribe<EntityUpdatedEventData<AppEntityWithNavigationChildOneToOne>>(async _ =>
         {
             oneToOneEntityUpdatedEventTriggered = true;
+            await Task.CompletedTask;
         });
         LocalEventBus.Subscribe<EntityUpdatedEventData<AppEntityWithNavigationChildOneToOneAndOneToOne>>(async _ =>
         {
             oneToOneAndOneToOneEntityUpdatedEventTriggered = true;
+            await Task.CompletedTask;
         });
 
         entityUpdatedEventTriggered = false;
@@ -232,13 +234,15 @@ public class TiknasEfCoreDomainEvents_Tests : EntityFrameworkCoreTestBase
         var oneToManyEntityUpdatedEventTriggered = false;
         var oneToManyAndOneToManyEntityUpdatedEventTriggered = false;
 
-        LocalEventBus.Subscribe<EntityUpdatedEventData<AppEntityWithNavigationChildOneToMany>>(async _ =>
+        LocalEventBus.Subscribe<EntityUpdatedEventData<AppEntityWithNavigationChildOneToMany>>(_ =>
         {
             oneToManyEntityUpdatedEventTriggered = true;
+            return Task.CompletedTask;
         });
-        LocalEventBus.Subscribe<EntityUpdatedEventData<AppEntityWithNavigationChildOneToManyAndOneToMany>>(async _ =>
+        LocalEventBus.Subscribe<EntityUpdatedEventData<AppEntityWithNavigationChildOneToManyAndOneToMany>>(_ =>
         {
             oneToManyAndOneToManyEntityUpdatedEventTriggered = true;
+            return Task.CompletedTask;
         });
 
         entityUpdatedEventTriggered = false;

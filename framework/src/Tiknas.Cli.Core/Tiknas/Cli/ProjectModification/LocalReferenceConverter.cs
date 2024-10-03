@@ -37,7 +37,7 @@ public class LocalReferenceConverter : ITransientDependency
         Logger.LogInformation($"Converted {targetProjects.Length} projects to local references.");
     }
 
-    private async Task ConvertProjectToLocalReferences(string targetProject, List<string> localProjects)
+    private Task ConvertProjectToLocalReferences(string targetProject, List<string> localProjects)
     {
         var xmlDocument = new XmlDocument() { PreserveWhitespace = true };
         xmlDocument.Load(GenerateStreamFromString(File.ReadAllText(targetProject)));
@@ -46,7 +46,7 @@ public class LocalReferenceConverter : ITransientDependency
 
         if (matchedNodes == null || matchedNodes.Count == 0)
         {
-            return;
+            return Task.CompletedTask;
         }
         
         foreach (XmlNode matchedNode in matchedNodes)
@@ -74,8 +74,9 @@ public class LocalReferenceConverter : ITransientDependency
         }
         
         File.WriteAllText(targetProject, XDocument.Parse(xmlDocument.OuterXml).ToString());
+        return Task.CompletedTask;
     }
-    
+
     private string CalculateRelativePath(string targetProject, string localProject)
     {
         return new Uri(targetProject).MakeRelativeUri(new Uri(localProject)).ToString();

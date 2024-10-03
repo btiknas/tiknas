@@ -84,6 +84,6 @@ public class RecreateInitialMigrationCommand : IConsoleCommand, ITransientDepend
 
     public static string GetShortDescription()
     {
-        return "This is a internal command. Please run 'tiknas recreate-initial-migration' command in tiknas or volo root directory.";
+        return "This is a internal command. Please run 'tiknas recreate-initial-migration' command in tiknas or tiknas root directory.";
     }
 }

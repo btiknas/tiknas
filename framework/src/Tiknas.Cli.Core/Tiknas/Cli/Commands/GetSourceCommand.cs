@@ -48,16 +48,16 @@ public class GetSourceCommand : IConsoleCommand, ITransientDependency
             Logger.LogInformation("GitHub Tiknas Local Repository Path: " + gitHubTiknasLocalRepositoryPath);
         }
 
-        var gitHubVoloLocalRepositoryPath = commandLineArgs.Options.GetOrNull(Options.GitHubVoloLocalRepositoryPath.Long);
-        if (gitHubVoloLocalRepositoryPath != null)
+        var gitHubTiknasLocalRepositoryPath = commandLineArgs.Options.GetOrNull(Options.GitHubTiknasLocalRepositoryPath.Long);
+        if (gitHubTiknasLocalRepositoryPath != null)
         {
-            Logger.LogInformation("GitHub Volo Local Repository Path: " + gitHubVoloLocalRepositoryPath);
+            Logger.LogInformation("GitHub Tiknas Local Repository Path: " + gitHubTiknasLocalRepositoryPath);
         }
 
         commandLineArgs.Options.Add(CliConsts.Command, commandLineArgs.Command);
 
         await _sourceCodeDownloadService.DownloadModuleAsync(
-            commandLineArgs.Target, outputFolder, version, gitHubTiknasLocalRepositoryPath, gitHubVoloLocalRepositoryPath, commandLineArgs.Options);
+            commandLineArgs.Target, outputFolder, version, gitHubTiknasLocalRepositoryPath, gitHubTiknasLocalRepositoryPath, commandLineArgs.Options);
     }
 
     private static string GetOutPutFolder(CommandLineArgs commandLineArgs)
@@ -97,8 +97,8 @@ public class GetSourceCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("");
         sb.AppendLine("Examples:");
         sb.AppendLine("");
-        sb.AppendLine("  tiknas get-source Volo.Blogging");
-        sb.AppendLine("  tiknas get-source Volo.Blogging -o d:\\my-project");
+        sb.AppendLine("  tiknas get-source Tiknas.Blogging");
+        sb.AppendLine("  tiknas get-source Tiknas.Blogging -o d:\\my-project");
         sb.AppendLine("");
         sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
 
@@ -123,9 +123,9 @@ public class GetSourceCommand : IConsoleCommand, ITransientDependency
             public const string Long = "tiknas-path";
         }
 
-        public static class GitHubVoloLocalRepositoryPath
+        public static class GitHubTiknasLocalRepositoryPath
         {
-            public const string Long = "volo-path";
+            public const string Long = "tiknas-path";
         }
 
         public static class Version

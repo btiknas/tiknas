@@ -23,7 +23,7 @@ public class BuildProjectListSorter_Tests : TiknasCliTestBase
         // C -> G
         // Final build order must be: G, 
 
-        var repositoryName = "volo";
+        var repositoryName = "tiknas";
         var source = new List<DotNetProjectInfo>
             {
                 new DotNetProjectInfo(repositoryName, "A", true)

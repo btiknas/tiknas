@@ -24,13 +24,13 @@ public class SuiteAppSettingsService : ITransientDependency
         return await GetSuitePortAsync(GetCurrentSuiteVersion());
     }
     
-    public async Task<int> GetSuitePortAsync(string version)
+    public Task<int> GetSuitePortAsync(string version)
     {
         var filePath = GetFilePathOrNull(version);
 
         if (filePath == null)
         {
-            return DefaultPort;
+            return Task.FromResult(DefaultPort);
         }
 
         var content = File.ReadAllText(filePath);
@@ -41,10 +41,10 @@ public class SuiteAppSettingsService : ITransientDependency
 
         if (url == null)
         {
-            return DefaultPort;
+            return Task.FromResult(DefaultPort);
         }
         
-        return Convert.ToInt32(url.Split(":").Last());
+        return Task.FromResult(Convert.ToInt32(url.Split(":").Last()));
     }
     
     public int GetSuitePort()
@@ -87,9 +87,9 @@ public class SuiteAppSettingsService : ITransientDependency
             ".dotnet",
             "tools",
             ".store",
-            "volo.tiknas.suite",
+            "tiknas.tiknas.suite",
             version,
-            "volo.tiknas.suite",
+            "tiknas.tiknas.suite",
             version,
             "tools",
             "net9.0",
@@ -110,7 +110,7 @@ public class SuiteAppSettingsService : ITransientDependency
         var dotnetToolList = CmdHelper.RunCmdAndGetOutput("dotnet tool list -g", out int exitCode);
 
         var suiteLine = dotnetToolList.Split(Environment.NewLine)
-            .FirstOrDefault(l => l.ToLower().StartsWith("volo.tiknas.suite "));
+            .FirstOrDefault(l => l.ToLower().StartsWith("tiknas.tiknas.suite "));
 
         if (string.IsNullOrEmpty(suiteLine))
         {

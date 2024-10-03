@@ -31,7 +31,7 @@ public class SourceCodeDownloadService : ITransientDependency
         Logger = NullLogger<SourceCodeDownloadService>.Instance;
     }
 
-    public async Task DownloadModuleAsync(string moduleName, string outputFolder, string version, string gitHubTiknasLocalRepositoryPath, string gitHubVoloLocalRepositoryPath, TiknasCommandLineOptions options)
+    public async Task DownloadModuleAsync(string moduleName, string outputFolder, string version, string gitHubTiknasLocalRepositoryPath, string gitHubTiknasLocalRepositoryPath, TiknasCommandLineOptions options)
     {
         Logger.LogInformation($"Downloading source code of {moduleName} ({(version != null ? "v" + version : "Latest")})");
         Logger.LogInformation("Output folder: " + outputFolder);
@@ -48,7 +48,7 @@ public class SourceCodeDownloadService : ITransientDependency
                 null,
                 false,
                 gitHubTiknasLocalRepositoryPath,
-                gitHubVoloLocalRepositoryPath,
+                gitHubTiknasLocalRepositoryPath,
                 null,
                 options
             )

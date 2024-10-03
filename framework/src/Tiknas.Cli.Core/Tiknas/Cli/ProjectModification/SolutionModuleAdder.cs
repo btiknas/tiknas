@@ -242,7 +242,7 @@ public class SolutionModuleAdder : ITransientDependency
         File.WriteAllText(appRoutingModulePath, appRoutingModuleFileContent);
     }
 
-    private async Task SetLeptonXTiknasVersionsAsync(string solutionFile, string combine)
+    private Task SetLeptonXTiknasVersionsAsync(string solutionFile, string combine)
     {
         var tiknasVersion = SolutionPackageVersionFinder.FindByCsprojVersion(solutionFile);
 
@@ -254,6 +254,8 @@ public class SolutionModuleAdder : ITransientDependency
                 File.ReadAllText(project).Replace("\"$(TiknasVersion)\"", $"\"{tiknasVersion}\"")
             );
         }
+
+        return Task.CompletedTask;
     }
 
     private async Task PublishEventAsync(int currentStep, string message)
@@ -402,7 +404,7 @@ public class SolutionModuleAdder : ITransientDependency
         return projectsToKeep.Select(File.ReadAllText).Any(content => content.Contains($"\"{projectToRemove}\""));
     }
 
-    private async Task<List<string>> FindProjectsToRemoveByTarget(ModuleWithMastersInfo module,
+    private Task<List<string>> FindProjectsToRemoveByTarget(ModuleWithMastersInfo module,
         NuGetPackageTarget target, bool isTieredProject)
     {
         var projectsToRemove = new List<string>();
@@ -423,10 +425,10 @@ public class SolutionModuleAdder : ITransientDependency
             projectsToRemove.Add(package.Name);
         }
 
-        return projectsToRemove;
+        return Task.FromResult(projectsToRemove);
     }
 
-    private async Task<List<string>> FindProjectsToRemoveByPostFix(string moduleDirectory, string targetFolder,
+    private Task<List<string>> FindProjectsToRemoveByPostFix(string moduleDirectory, string targetFolder,
         string postFix)
     {
         var projectsToRemove = new List<string>();
@@ -434,7 +436,7 @@ public class SolutionModuleAdder : ITransientDependency
 
         if (!Directory.Exists(srcPath))
         {
-            return projectsToRemove;
+            return Task.FromResult(projectsToRemove);
         }
 
         var projectFolderPaths = Directory.GetDirectories(srcPath).Where(d => d.EndsWith(postFix)).ToList();
@@ -444,7 +446,7 @@ public class SolutionModuleAdder : ITransientDependency
             projectsToRemove.Add(new DirectoryInfo(projectFolderPath).Name);
         }
 
-        return projectsToRemove;
+        return Task.FromResult(projectsToRemove);
     }
 
     private async Task RemoveProjectFromSolutionAsync(string moduleSolutionFile, string projectName)
@@ -881,11 +883,11 @@ public class SolutionModuleAdder : ITransientDependency
         return module;
     }
 
-    protected virtual async Task<bool> IsProjectTiered(string[] projectFiles)
+    protected virtual Task<bool> IsProjectTiered(string[] projectFiles)
     {
-        return projectFiles.Select(ProjectFileNameHelper.GetAssemblyNameFromProjectPath)
+        return Task.FromResult(projectFiles.Select(ProjectFileNameHelper.GetAssemblyNameFromProjectPath)
             .Any(p => p.EndsWith(".HttpApi.Host"))
             && projectFiles.Select(ProjectFileNameHelper.GetAssemblyNameFromProjectPath)
-            .Any(p => p.EndsWith(".IdentityServer") || p.EndsWith(".AuthServer"));
+            .Any(p => p.EndsWith(".IdentityServer") || p.EndsWith(".AuthServer")));
     }
 }

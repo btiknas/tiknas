@@ -26,7 +26,7 @@ public class CliVersionService : ITransientDependency
         string line;
         while ((line = await consoleOutput.ReadLineAsync()) != null)
         {
-            if (line.StartsWith("volo.tiknas.cli", StringComparison.InvariantCultureIgnoreCase))
+            if (line.StartsWith("tiknas.tiknas.cli", StringComparison.InvariantCultureIgnoreCase))
             {
                 var version = line.Split(new char[0], StringSplitOptions.RemoveEmptyEntries)[1];
 

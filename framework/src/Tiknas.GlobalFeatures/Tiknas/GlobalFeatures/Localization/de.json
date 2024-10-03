@@ -1,6 +1,6 @@
 {
   "culture": "de",
   "texts": {
-    "Volo.GlobalFeature:010001": "Der Dienst \"{ServiceName}\" muss die Funktion \"{GlobalFeatureName}\" aktivieren."
+    "Tiknas.GlobalFeature:010001": "Der Dienst \"{ServiceName}\" muss die Funktion \"{GlobalFeatureName}\" aktivieren."
   }
 }

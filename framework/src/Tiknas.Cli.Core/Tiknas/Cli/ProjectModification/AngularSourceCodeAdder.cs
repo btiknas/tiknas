@@ -75,7 +75,7 @@ public class AngularSourceCodeAdder : ITransientDependency
         await AddProjectToAppRoutingTsAsync(angularPath, moduleName);
     }
 
-    private async Task AddProjectsToAngularJsonAsync(string angularPath, List<string> projects)
+    private Task AddProjectsToAngularJsonAsync(string angularPath, List<string> projects)
     {
         var angularJsonFilePath = Path.Combine(angularPath, "angular.json");
         var fileContent = File.ReadAllText(angularJsonFilePath);
@@ -123,9 +123,10 @@ public class AngularSourceCodeAdder : ITransientDependency
         }
 
         File.WriteAllText(angularJsonFilePath, json.ToString(Formatting.Indented));
+        return Task.CompletedTask;
     }
 
-    private async Task AddScriptsToPackageJsonAsync(string angularPath)
+    private Task AddScriptsToPackageJsonAsync(string angularPath)
     {
         var packageJsonFilePath = Path.Combine(angularPath, "package.json");
         var fileContent = File.ReadAllText(packageJsonFilePath);
@@ -137,7 +138,7 @@ public class AngularSourceCodeAdder : ITransientDependency
         if (scriptsJobject == null || scriptsJobject["postinstall"] != null ||
             scriptsJobject["compile:ivy"] != null)
         {
-            return;
+            return Task.CompletedTask;
         }
 
         scriptsJobject["postinstall"] = "npm run compile:ivy";
@@ -145,15 +146,16 @@ public class AngularSourceCodeAdder : ITransientDependency
             "yarn ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points --tsconfig './tsconfig.prod.json' --source node_modules";
 
         File.WriteAllText(packageJsonFilePath, json.ToString(Formatting.Indented));
+        return Task.CompletedTask;
     }
 
-    private async Task CreateTsConfigProdJsonAsync(string angularPath)
+    private Task CreateTsConfigProdJsonAsync(string angularPath)
     {
         var tsConfigProdJsonFilePath = Path.Combine(angularPath, "tsconfig.prod.json");
 
         if (File.Exists(tsConfigProdJsonFilePath))
         {
-            return;
+            return Task.CompletedTask;
         }
 
         var json = new JObject(
@@ -180,6 +182,7 @@ public class AngularSourceCodeAdder : ITransientDependency
         );
 
         File.WriteAllText(tsConfigProdJsonFilePath, json.ToString(Formatting.Indented));
+        return Task.CompletedTask;
     }
 
     private async Task AddPathsToTsConfigAsync(string angularPath, string angularProjectsPath,
@@ -238,13 +241,13 @@ public class AngularSourceCodeAdder : ITransientDependency
         File.WriteAllText(tsConfigPath, tsConfigAsJson.ToString(Formatting.Indented));
     }
 
-    private async Task AddProjectToEnvironmentTsAsync(string angularPath, string moduleName)
+    private Task AddProjectToEnvironmentTsAsync(string angularPath, string moduleName)
     {
         var filePath = Path.Combine(angularPath, "src", "environments", "environment.ts");
 
         if (!File.Exists(filePath))
         {
-            return;
+            return Task.CompletedTask;
         }
 
         var fileContent = File.ReadAllText(filePath);
@@ -256,15 +259,16 @@ public class AngularSourceCodeAdder : ITransientDependency
             "    },");
 
         File.WriteAllText(filePath, fileContent);
+        return Task.CompletedTask;
     }
 
-    private async Task AddProjectToAppModuleTsAsync(string angularPath, string moduleName)
+    private Task AddProjectToAppModuleTsAsync(string angularPath, string moduleName)
     {
         var filePath = Path.Combine(angularPath, "src", "app", "app.module.ts");
 
         if (!File.Exists(filePath))
         {
-            return;
+            return Task.CompletedTask;
         }
 
         var fileContent = File.ReadAllText(filePath);
@@ -284,20 +288,21 @@ public class AngularSourceCodeAdder : ITransientDependency
             "    " + moduleName.Split(".").Last() + "ConfigModule.forRoot(),");
 
         File.WriteAllText(filePath, fileContent);
+        return Task.CompletedTask;
     }
 
-    private async Task AddProjectToAppRoutingTsAsync(string angularPath, string moduleName)
+    private Task AddProjectToAppRoutingTsAsync(string angularPath, string moduleName)
     {
-        string filePath = Path.Combine(angularPath, "src", "app", "app-routing.module.ts");
+        var filePath = Path.Combine(angularPath, "src", "app", "app-routing.module.ts");
 
         if (!File.Exists(filePath))
         {
-            return;
+            return Task.CompletedTask;
         }
 
-        string fileContent = File.ReadAllText(filePath);
-        string moduleNameAsConfigPath = moduleName.ToKebabCase();
-        string path = moduleName.ToKebabCase();
+        var fileContent = File.ReadAllText(filePath);
+        var moduleNameAsConfigPath = moduleName.ToKebabCase();
+        var path = moduleName.ToKebabCase();
 
         if (moduleName.Contains("."))
         {
@@ -306,8 +311,8 @@ public class AngularSourceCodeAdder : ITransientDependency
             path = $"{moduleNameSplitted.Last().ToKebabCase()}";
         }
 
-        string pattern = "Routes\\s*=\\s*\\[";
-        string newContent = $@"Routes = [
+        var pattern = "Routes\\s*=\\s*\\[";
+        var newContent = $@"Routes = [
     {{
         path: '{path.ToKebabCase()}',
         loadChildren: () => import('@{moduleNameAsConfigPath}')
@@ -317,9 +322,10 @@ public class AngularSourceCodeAdder : ITransientDependency
 
         fileContent = Regex.Replace(fileContent, pattern, newContent);
         File.WriteAllText(filePath, fileContent);
+        return Task.CompletedTask;
     }
 
-    private async Task<List<string>> CopyAndGetNamesOfAngularProjectsAsync(string solutionFilePath,
+    private Task<List<string>> CopyAndGetNamesOfAngularProjectsAsync(string solutionFilePath,
         string angularProjectsPath)
     {
         var projects = new List<string>();
@@ -393,15 +399,15 @@ public class AngularSourceCodeAdder : ITransientDependency
             }
         }
 
-        return projects;
+        return Task.FromResult(projects);
     }
 
-    private async Task<string> GetProjectPackageNameAsync(string angularProjectsPath, string project)
+    private Task<string> GetProjectPackageNameAsync(string angularProjectsPath, string project)
     {
         var packageJsonPath = Path.Combine(angularProjectsPath, project, "package.json");
 
         var fileContent = File.ReadAllText(packageJsonPath);
 
-        return (string)JObject.Parse(fileContent)["name"];
+        return Task.FromResult((string)JObject.Parse(fileContent)["name"]);
     }
 }

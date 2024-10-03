@@ -18,16 +18,17 @@ public class DotnetEfToolManager : ISingletonDependency
         Logger = NullLogger<DotnetEfToolManager>.Instance;
     }
 
-    public async Task BeSureInstalledAsync()
+    public Task BeSureInstalledAsync()
     {
         if (IsDotNetEfToolInstalled())
         {
-            return;
+            return Task.CompletedTask;
         }
 
         InstallDotnetEfTool();
+        return Task.CompletedTask;
     }
-    
+
     private bool IsDotNetEfToolInstalled()
     {
         var output = CmdHelper.RunCmdAndGetOutput("dotnet tool list -g");

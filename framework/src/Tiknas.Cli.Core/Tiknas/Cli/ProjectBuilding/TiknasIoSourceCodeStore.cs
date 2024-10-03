@@ -140,10 +140,10 @@ public class TiknasIoSourceCodeStore : ISourceCodeStore, ITransientDependency
                     ? $"The specified template version ({templateVersion}) is different than the CLI version ({currentCliVersion}). This may cause compatibility issues."
                     : $"The latest template version ({templateVersion}) is different than the CLI version ({currentCliVersion}). This may cause compatibility issues.");
                 Logger.LogWarning("Please upgrade/downgrade the CLI version to the template version.");
-                Logger.LogWarning($"> dotnet tool uninstall -g volo.tiknas.cli");
+                Logger.LogWarning($"> dotnet tool uninstall -g tiknas.tiknas.cli");
                 Logger.LogWarning(!templateVersion.IsPrerelease
-                    ? $"> dotnet tool install -g volo.tiknas.cli --version \"{templateVersion.Major}.{templateVersion.Minor}.*\""
-                    : $"> dotnet tool install -g volo.tiknas.cli --version {templateVersion}");
+                    ? $"> dotnet tool install -g tiknas.tiknas.cli --version \"{templateVersion.Major}.{templateVersion.Minor}.*\""
+                    : $"> dotnet tool install -g tiknas.tiknas.cli --version {templateVersion}");
 
                 if (userSpecifiedVersion)
                 {

@@ -2,5 +2,5 @@
 
 public class TiknasGlobalFeatureErrorCodes
 {
-    public const string GlobalFeatureIsNotEnabled = "Volo.GlobalFeature:010001";
+    public const string GlobalFeatureIsNotEnabled = "Tiknas.GlobalFeature:010001";
 }

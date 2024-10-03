@@ -198,7 +198,7 @@ public class ProjectNpmPackageAdder : ITransientDependency
 
             foreach (var package in packages)
             {
-                if ((package.Name.StartsWith("@tiknas/") || package.Name.StartsWith("@volo/")) && !package.Name.Contains("leptonx"))
+                if ((package.Name.StartsWith("@tiknas/") || package.Name.StartsWith("@tiknas/")) && !package.Name.Contains("leptonx"))
                 {
                     return package.Value.ToString();
                 }

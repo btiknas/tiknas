@@ -60,13 +60,13 @@ public abstract class MicroserviceTemplateBase : TemplateInfo
 
     private static void ReplaceLeptonXThemePackagesFromPackageJsonFiles(List<ProjectBuildPipelineStep> steps, UiFramework uiFramework, Theme? theme, string version)
     {
-        var mvcUiPackageName = "@volo/tiknas.aspnetcore.mvc.ui.theme.leptonx";
+        var mvcUiPackageName = "@tiknas/tiknas.aspnetcore.mvc.ui.theme.leptonx";
         var newMvcUiPackageName = theme switch
         {
             Theme.Basic => "@tiknas/aspnetcore.mvc.ui.theme.basic",
-            Theme.Lepton => "@volo/tiknas.aspnetcore.mvc.ui.theme.lepton",
+            Theme.Lepton => "@tiknas/tiknas.aspnetcore.mvc.ui.theme.lepton",
             Theme.LeptonXLite => "@tiknas/aspnetcore.mvc.ui.theme.leptonxlite",
-            Theme.LeptonX => "@volo/tiknas.aspnetcore.mvc.ui.theme.leptonx",
+            Theme.LeptonX => "@tiknas/tiknas.aspnetcore.mvc.ui.theme.leptonx",
             _ => throw new TiknasException("Unknown theme: " + theme?.ToString())
         };
         if (theme == Theme.LeptonX || theme == Theme.LeptonXLite)
@@ -86,13 +86,13 @@ public abstract class MicroserviceTemplateBase : TemplateInfo
 
         if (uiFramework == UiFramework.BlazorServer || uiFramework == UiFramework.BlazorWebApp)
         {
-            var blazorServerUiPackageName = "@volo/aspnetcore.components.server.leptonxtheme";
+            var blazorServerUiPackageName = "@tiknas/aspnetcore.components.server.leptonxtheme";
             var newBlazorServerUiPackageName = theme switch
             {
                 Theme.Basic => "@tiknas/aspnetcore.components.server.basictheme",
-                Theme.Lepton => "@volo/tiknas.aspnetcore.components.server.leptontheme",
+                Theme.Lepton => "@tiknas/tiknas.aspnetcore.components.server.leptontheme",
                 Theme.LeptonXLite => "@tiknas/aspnetcore.components.server.leptonxlitetheme",
-                Theme.LeptonX => "@volo/aspnetcore.components.server.leptonxtheme",
+                Theme.LeptonX => "@tiknas/aspnetcore.components.server.leptonxtheme",
                 _ => throw new TiknasException("Unknown theme: " + theme?.ToString())
             };
             var blazorServerPackageJsonFilePaths = new List<string>
@@ -108,13 +108,13 @@ public abstract class MicroserviceTemplateBase : TemplateInfo
         }
         else if (uiFramework == UiFramework.Angular)
         {
-            var ngUiPackageName = "@volosoft/tiknas.ng.theme.lepton-x";
+            var ngUiPackageName = "@tiknassoft/tiknas.ng.theme.lepton-x";
             var newNgUiPackageName = theme switch
             {
                 Theme.Basic => "@tiknas/ng.theme.basic",
-                Theme.Lepton => "@volo/tiknas.ng.theme.lepton",
+                Theme.Lepton => "@tiknas/tiknas.ng.theme.lepton",
                 Theme.LeptonXLite => "@tiknas/ng.theme.lepton-x",
-                Theme.LeptonX => "@volosoft/tiknas.ng.theme.lepton-x",
+                Theme.LeptonX => "@tiknassoft/tiknas.ng.theme.lepton-x",
                 _ => throw new TiknasException("Unknown theme: " + theme?.ToString())
             };
             var angularPackageJsonFilePaths = new List<string>

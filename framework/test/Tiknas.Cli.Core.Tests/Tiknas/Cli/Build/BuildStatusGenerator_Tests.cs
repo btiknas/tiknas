@@ -27,7 +27,7 @@ public class BuildStatusGenerator_Tests : TiknasCliTestBase
     {
         var buildConfig = new DotNetProjectBuildConfig
         {
-            GitRepository = new GitRepository("volo", "dev", "")
+            GitRepository = new GitRepository("tiknas", "dev", "")
             {
                 DependingRepositories = new List<GitRepository>()
                     {
@@ -38,7 +38,7 @@ public class BuildStatusGenerator_Tests : TiknasCliTestBase
 
         var changedProjects = new List<DotNetProjectInfo>()
             {
-                new DotNetProjectInfo("volo", "project1.csproj", true)
+                new DotNetProjectInfo("tiknas", "project1.csproj", true)
             };
 
         var builtProjects = new List<string>()
@@ -48,7 +48,7 @@ public class BuildStatusGenerator_Tests : TiknasCliTestBase
 
         var lastCommitId = "1";
         _gitRepositoryHelper.GetLastCommitId(buildConfig.GitRepository).Returns(lastCommitId);
-        _gitRepositoryHelper.GetFriendlyName(buildConfig.GitRepository).Returns("volo");
+        _gitRepositoryHelper.GetFriendlyName(buildConfig.GitRepository).Returns("tiknas");
 
         var status = _buildStatusGenerator.Generate(buildConfig, changedProjects, builtProjects);
         status.CommitId.ShouldBe(lastCommitId);
@@ -60,7 +60,7 @@ public class BuildStatusGenerator_Tests : TiknasCliTestBase
     {
         var buildConfig = new DotNetProjectBuildConfig
         {
-            GitRepository = new GitRepository("volo", "dev", "")
+            GitRepository = new GitRepository("tiknas", "dev", "")
             {
                 DependingRepositories = new List<GitRepository>()
                     {
@@ -92,7 +92,7 @@ public class BuildStatusGenerator_Tests : TiknasCliTestBase
     {
         var buildConfig = new DotNetProjectBuildConfig
         {
-            GitRepository = new GitRepository("volo", "dev", "")
+            GitRepository = new GitRepository("tiknas", "dev", "")
             {
                 DependingRepositories = new List<GitRepository>()
                     {
@@ -104,7 +104,7 @@ public class BuildStatusGenerator_Tests : TiknasCliTestBase
 
         var changedProjects = new List<DotNetProjectInfo>()
             {
-                new DotNetProjectInfo("volo", "project1.csproj", true)
+                new DotNetProjectInfo("tiknas", "project1.csproj", true)
             };
 
         var builtProjects = new List<string>()
@@ -114,7 +114,7 @@ public class BuildStatusGenerator_Tests : TiknasCliTestBase
 
         var lastCommitId = "1";
         _gitRepositoryHelper.GetLastCommitId(buildConfig.GitRepository).Returns(lastCommitId);
-        _gitRepositoryHelper.GetFriendlyName(buildConfig.GitRepository).Returns("volo");
+        _gitRepositoryHelper.GetFriendlyName(buildConfig.GitRepository).Returns("tiknas");
 
         var status = _buildStatusGenerator.Generate(buildConfig, changedProjects, builtProjects);
         status.CommitId.ShouldBeNull();

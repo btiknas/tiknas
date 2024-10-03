@@ -68,9 +68,9 @@ public class ChangeThemeStep : ProjectBuildPipelineStep
     {
         return theme switch
         {
-            Theme.LeptonX => "@volosoft/tiknas.ng.theme.lepton-x",
+            Theme.LeptonX => "@tiknassoft/tiknas.ng.theme.lepton-x",
             Theme.LeptonXLite => "@tiknas/ng.theme.lepton-x",
-            Theme.Lepton => "@volo/tiknas.ng.theme.lepton",
+            Theme.Lepton => "@tiknas/tiknas.ng.theme.lepton",
             Theme.Basic => "@tiknas/ng.theme.basic",
             _ => string.Empty
         };

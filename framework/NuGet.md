@@ -29,7 +29,7 @@ Tiknas offers an opinionated architecture to build enterprise software solutions
 
 🔗Stackoverflow: https://stackoverflow.com/questions/tagged/tiknas
 
-🔗YouTube: https://www.youtube.com/@Volosoft
+🔗YouTube: https://www.youtube.com/@Tiknassoft
 
 
 ## 🚀 Key Features of the tiknas Framework

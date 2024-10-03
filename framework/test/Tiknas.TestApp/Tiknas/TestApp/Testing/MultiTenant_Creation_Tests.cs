@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using NSubstitute;
 using Shouldly;
@@ -32,7 +33,7 @@ public abstract class MultiTenant_Creation_Tests<TStartupModule> : TestAppTestBa
     }
 
     [Fact]
-    public async void Should_Set_TenantId_For_New_Person()
+    public async Task Should_Set_TenantId_For_New_Person()
     {
         _fakeCurrentTenant.Id.Returns(TestDataBuilder.TenantId1);
 
@@ -53,7 +54,7 @@ public abstract class MultiTenant_Creation_Tests<TStartupModule> : TestAppTestBa
     }
 
     [Fact]
-    public async void Should_Set_Null_TenantId_For_Host_Tenant()
+    public async Task Should_Set_Null_TenantId_For_Host_Tenant()
     {
         _fakeCurrentTenant.Id.Returns((Guid?)null);
 

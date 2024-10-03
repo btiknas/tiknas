@@ -20,7 +20,7 @@ public class NugetPackageToLocalReferenceConverter : ITransientDependency
         Logger = NullLogger<NugetPackageToLocalReferenceConverter>.Instance;
     }
     
-    public async Task Convert(ModuleWithMastersInfo module, string solutionFile, string modulePrefix = "Volo.")
+    public Task Convert(ModuleWithMastersInfo module, string solutionFile, string modulePrefix = "Tiknas.")
     {
         var nugetPackageList = GetNugetPackages(module);
         var modulesFolder = Path.Combine(Path.GetDirectoryName(solutionFile), "modules");
@@ -30,6 +30,7 @@ public class NugetPackageToLocalReferenceConverter : ITransientDependency
         ConvertToLocalReference(modulesFolder, nugetPackageList, "..\\..\\..\\", "src", modulePrefix);
         ConvertToLocalReference(srcFolder, nugetPackageList, "..\\..\\modules\\", "src", modulePrefix);
         ConvertToLocalReference(testFolder, nugetPackageList, "..\\..\\modules\\", "test", modulePrefix);
+        return Task.CompletedTask;
     }
 
     private void ConvertToLocalReference(string folder, List<NugetPackageInfoWithModuleName> nugetPackageList, string localPathPrefix, string sourceFile, string modulePrefix)

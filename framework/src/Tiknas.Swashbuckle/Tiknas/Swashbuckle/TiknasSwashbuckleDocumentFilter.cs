@@ -10,7 +10,7 @@ namespace Tiknas.Swashbuckle;
 
 public class TiknasSwashbuckleDocumentFilter : IDocumentFilter
 {
-    protected virtual string[] ActionUrlPrefixes { get; set; } = new[] { "Volo." };
+    protected virtual string[] ActionUrlPrefixes { get; set; } = new[] { "Tiknas." };
 
     protected virtual string RegexConstraintPattern => @":regex\(([^()]*)\)";
     

@@ -31,7 +31,7 @@ public class ProjectVersionParse_Tests
                                      "<PackageReference Include=\"Tiknas.Identity.Pro.Domain\" Version=\"4.4.0-rc.1\" />" +
                                      "<PackageReference Include=\"Tiknas.LanguageManagement.Domain\" Version=\"4.4.0-rc.1\" />" +
                                      "<PackageReference Include=\"Tiknas.LeptonTheme.Management.Domain\" Version=\"4.4.0-rc.1\" />" +
-                                     "<PackageReference Include=\"Volo.Saas.Domain\" Version=\"4.4.0-rc.1\" />" +
+                                     "<PackageReference Include=\"Tiknas.Saas.Domain\" Version=\"4.4.0-rc.1\" />" +
                                      "<PackageReference Include=\"Tiknas.TextTemplateManagement.Domain\" Version=\"4.4.0-rc.1\" />" +
                                      "</ItemGroup>" +
                                      "</Project>";

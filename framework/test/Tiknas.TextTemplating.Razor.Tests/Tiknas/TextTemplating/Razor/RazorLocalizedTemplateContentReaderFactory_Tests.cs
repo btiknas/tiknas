@@ -12,7 +12,7 @@ public class RazorLocalizedTemplateContentReaderFactory_Tests : LocalizedTemplat
         LocalizedTemplateContentReaderFactory = new LocalizedTemplateContentReaderFactory(
             new PhysicalFileVirtualFileProvider(
                 new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),
-                    "Volo", "Tiknas", "TextTemplating", "Razor"))),
+                    "Tiknas", "Tiknas", "TextTemplating", "Razor"))),
             GetRequiredService<ITiknasHostEnvironment>());
 
         WelcomeEmailEnglishContent = "@inherits Tiknas.TextTemplating.Razor.RazorTemplatePageBase<Tiknas.TextTemplating.Razor.RazorTemplateRendererProvider_Tests.WelcomeEmailModel>" +

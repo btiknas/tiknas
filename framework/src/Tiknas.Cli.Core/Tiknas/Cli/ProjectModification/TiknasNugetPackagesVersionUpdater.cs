@@ -49,7 +49,7 @@ public class TiknasNugetPackagesVersionUpdater : ITransientDependency
                     {
                         var fileContent = await sr.ReadToEndAsync();
 
-                        var updatedContent = await UpdateVoloPackagesAsync(fileContent,
+                        var updatedContent = await UpdateTiknasPackagesAsync(fileContent,
                             includePreviews,
                             includeReleaseCandidates,
                             switchToStable,
@@ -91,7 +91,7 @@ public class TiknasNugetPackagesVersionUpdater : ITransientDependency
                 {
                     var fileContent = await sr.ReadToEndAsync();
 
-                    var updatedContent = await UpdateVoloPackagesAsync(fileContent,
+                    var updatedContent = await UpdateTiknasPackagesAsync(fileContent,
                         includeNightlyPreviews,
                         includeReleaseCandidates,
                         switchToStable,
@@ -121,7 +121,7 @@ public class TiknasNugetPackagesVersionUpdater : ITransientDependency
             {
                 var fileContent = await sr.ReadToEndAsync();
 
-                var updatedContent = await UpdateVoloPackagesAsync(fileContent, includeNightlyPreviews, includeReleaseCandidates, switchToStable);
+                var updatedContent = await UpdateTiknasPackagesAsync(fileContent, includeNightlyPreviews, includeReleaseCandidates, switchToStable);
 
                 fs.Seek(0, SeekOrigin.Begin);
                 fs.SetLength(0);
@@ -147,7 +147,7 @@ public class TiknasNugetPackagesVersionUpdater : ITransientDependency
         return versionList.Any(v => v.Equals(version, StringComparison.OrdinalIgnoreCase));
     }
 
-    private async Task<string> UpdateVoloPackagesAsync(string content,
+    private async Task<string> UpdateTiknasPackagesAsync(string content,
         bool includeNightlyPreviews = false,
         bool includeReleaseCandidates = false,
         bool switchToStable = false,
@@ -167,7 +167,7 @@ public class TiknasNugetPackagesVersionUpdater : ITransientDependency
 
             doc.LoadXml(content);
 
-            var packageNodeList = doc.SelectNodes("/Project/ItemGroup/PackageReference[starts-with(@Include, 'Volo.')]");
+            var packageNodeList = doc.SelectNodes("/Project/ItemGroup/PackageReference[starts-with(@Include, 'Tiknas.')]");
 
             if (packageNodeList != null)
             {
@@ -306,7 +306,7 @@ public class TiknasNugetPackagesVersionUpdater : ITransientDependency
         }
         catch (Exception ex)
         {
-            Logger.LogError("Cannot update Volo.* packages! An error occurred while updating the package \"{PackageId}\". Error: {ErrorMessage}", packageId, ex.Message);
+            Logger.LogError("Cannot update Tiknas.* packages! An error occurred while updating the package \"{PackageId}\". Error: {ErrorMessage}", packageId, ex.Message);
             Logger.LogException(ex);
         }
 

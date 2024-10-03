@@ -37,7 +37,7 @@ public class AppUrlProvider_Tests : TiknasIntegratedTest<TiknasUiNavigationTestM
             options.Applications["MVC"].Urls["PasswordReset"] = "account/reset-password";
             options.RedirectAllowedUrls.AddRange(new List<string>()
             {
-                "https://wwww.volosoft.com",
+                "https://wwww.tiknassoft.com",
                 "https://wwww.aspnetzero.com",
                 "https://{{tenantName}}.tiknas.io",
                 "https://{{tenantId}}.tiknas.io",
@@ -102,12 +102,12 @@ public class AppUrlProvider_Tests : TiknasIntegratedTest<TiknasUiNavigationTestM
     [Fact]
     public async Task IsRedirectAllowedUrlAsync()
     {
-        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.volosoft.com")).ShouldBeTrue();
+        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.tiknassoft.com")).ShouldBeTrue();
         (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.demo.mytiknas.io")).ShouldBeTrue();
         (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://demo.mytiknas.io")).ShouldBeTrue();
         (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://api.demo.mytiknas.io")).ShouldBeTrue();
         (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://test.api.demo.mytiknas.io")).ShouldBeTrue();
-        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://volosoft.com/demo.mytiknas.io")).ShouldBeFalse();
+        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://tiknassoft.com/demo.mytiknas.io")).ShouldBeFalse();
         (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.mytiknas.io")).ShouldBeFalse();
 
         using (_currentTenant.Change(null))
