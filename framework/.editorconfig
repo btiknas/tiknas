@@ -1,0 +1,4 @@
+# .editorconfig file placed at the solution level
+
+[*.cs]
+dotnet_diagnostic.CS1066.severity = none
