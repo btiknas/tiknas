@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Concurrent;
+using System.Runtime.Serialization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
@@ -47,7 +48,7 @@ public class TiknasNewtonsoftJsonSerializer : IJsonSerializer, ITransientDepende
         {
             var settings = new JsonSerializerSettings
             {
-                Binder = Options.Value.JsonSerializerSettings.Binder,
+                SerializationBinder = Options.Value.JsonSerializerSettings.SerializationBinder,
                 CheckAdditionalContent = Options.Value.JsonSerializerSettings.CheckAdditionalContent,
                 Context = Options.Value.JsonSerializerSettings.Context,
                 ContractResolver = Options.Value.JsonSerializerSettings.ContractResolver,
@@ -71,12 +72,9 @@ public class TiknasNewtonsoftJsonSerializer : IJsonSerializer, ITransientDepende
                 ObjectCreationHandling = Options.Value.JsonSerializerSettings.ObjectCreationHandling,
                 PreserveReferencesHandling = Options.Value.JsonSerializerSettings.PreserveReferencesHandling,
                 ReferenceLoopHandling = Options.Value.JsonSerializerSettings.ReferenceLoopHandling,
-                ReferenceResolver = Options.Value.JsonSerializerSettings.ReferenceResolver,
                 ReferenceResolverProvider = Options.Value.JsonSerializerSettings.ReferenceResolverProvider,
-                SerializationBinder = Options.Value.JsonSerializerSettings.SerializationBinder,
                 StringEscapeHandling = Options.Value.JsonSerializerSettings.StringEscapeHandling,
                 TraceWriter = Options.Value.JsonSerializerSettings.TraceWriter,
-                TypeNameAssemblyFormat = Options.Value.JsonSerializerSettings.TypeNameAssemblyFormat,
                 TypeNameHandling = Options.Value.JsonSerializerSettings.TypeNameHandling,
                 TypeNameAssemblyFormatHandling = Options.Value.JsonSerializerSettings.TypeNameAssemblyFormatHandling
             };
