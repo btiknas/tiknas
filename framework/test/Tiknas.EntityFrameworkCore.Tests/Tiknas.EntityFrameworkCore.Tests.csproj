@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.EntityFrameworkCore.Sqlite\Tiknas.EntityFrameworkCore.Sqlite.csproj" />
+    <ProjectReference Include="..\..\test\Tiknas.TestBase\Tiknas.TestBase.csproj" />
+    <ProjectReference Include="..\Tiknas.EntityFrameworkCore.Tests.SecondContext\Tiknas.EntityFrameworkCore.Tests.SecondContext.csproj" />
+    <ProjectReference Include="..\Tiknas.TestApp\Tiknas.TestApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>

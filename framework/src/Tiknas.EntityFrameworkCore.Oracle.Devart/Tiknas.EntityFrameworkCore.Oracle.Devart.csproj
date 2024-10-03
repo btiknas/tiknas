@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <AssemblyName>Tiknas.EntityFrameworkCore.Oracle.Devart</AssemblyName>
+        <PackageId>Tiknas.EntityFrameworkCore.Oracle.Devart</PackageId>
+        <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.EntityFrameworkCore\Tiknas.EntityFrameworkCore.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Devart.Data.Oracle.EFCore" />
+    </ItemGroup>
+
+</Project>

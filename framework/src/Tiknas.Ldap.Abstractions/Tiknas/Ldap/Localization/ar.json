@@ -1,0 +1,19 @@
+{
+  "culture": "ar",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP عبر SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP عبر SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "اسم الخادم",
+    "Description:Tiknas.Ldap.ServerHost": "اسم الخادم",
+    "DisplayName:Tiknas.Ldap.ServerPort": "منفذ الخادم",
+    "Description:Tiknas.Ldap.ServerPort": "منفذ الخادم",
+    "DisplayName:Tiknas.Ldap.BaseDc": "مكون المجال الأساسي",
+    "Description:Tiknas.Ldap.BaseDc": "مكون المجال الأساسي",
+    "DisplayName:Tiknas.Ldap.Domain": "اختصاص",
+    "Description:Tiknas.Ldap.Domain": "اختصاص",
+    "DisplayName:Tiknas.Ldap.UserName": "اسم المستخدم",
+    "Description:Tiknas.Ldap.UserName": "اسم المستخدم",
+    "DisplayName:Tiknas.Ldap.Password": "كلمة السر",
+    "Description:Tiknas.Ldap.Password": "كلمة السر"
+  }
+}

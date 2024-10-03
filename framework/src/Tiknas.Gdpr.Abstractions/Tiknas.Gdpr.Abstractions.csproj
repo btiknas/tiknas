@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <RootNamespace />
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.Core\Tiknas.Core.csproj" />
+    </ItemGroup>
+
+</Project>

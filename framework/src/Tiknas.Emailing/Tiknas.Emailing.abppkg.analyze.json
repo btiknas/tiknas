@@ -1,0 +1,182 @@
+{
+  "name": "Tiknas.Emailing",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Emailing",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.Settings",
+          "namespace": "Tiknas.Settings",
+          "name": "TiknasSettingsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.VirtualFileSystem",
+          "namespace": "Tiknas.VirtualFileSystem",
+          "name": "TiknasVirtualFileSystemModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.BackgroundJobs.Abstractions",
+          "namespace": "Tiknas.BackgroundJobs",
+          "name": "TiknasBackgroundJobsAbstractionsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Localization",
+          "namespace": "Tiknas.Localization",
+          "name": "TiknasLocalizationModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.TextTemplating",
+          "namespace": "Tiknas.TextTemplating",
+          "name": "TiknasTextTemplatingModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasEmailingModule",
+      "summary": null
+    },
+    {
+      "defaultValue": "127.0.0.1",
+      "displayName": "Sunucu",
+      "description": "SMTP üzerinden e-posta göndermek için kullanılacak sunucunun IP adresi ya da adı.",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.Smtp.Host",
+      "summary": null
+    },
+    {
+      "defaultValue": "25",
+      "displayName": "Port",
+      "description": "Sunucunun SMTP portu.",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.Smtp.Port",
+      "summary": null
+    },
+    {
+      "defaultValue": null,
+      "displayName": "Kullanıcı adı",
+      "description": "Varsayılan kimlik kullanılmaması durumunda kullanılacak kullanıcı adı.",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.Smtp.UserName",
+      "summary": null
+    },
+    {
+      "defaultValue": null,
+      "displayName": "Şifre",
+      "description": "Varsayılan kimlik kullanılmaması durumunda kullanılacak şifre.",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": true,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.Smtp.Password",
+      "summary": null
+    },
+    {
+      "defaultValue": null,
+      "displayName": "Domain",
+      "description": "Kimlik bilgilerinin doğrulanacağı sunucu/domain.",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.Smtp.Domain",
+      "summary": null
+    },
+    {
+      "defaultValue": "false",
+      "displayName": "SSL aktif",
+      "description": "Email gönderiminde SSL kullanılıp kullanılmayacağı.",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.Smtp.EnableSsl",
+      "summary": null
+    },
+    {
+      "defaultValue": "true",
+      "displayName": "Varsayılan kimlik kullan",
+      "description": "Varsayılan kimlik bilgilerinin kullanılıp kullanılmayacağı.",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.Smtp.UseDefaultCredentials",
+      "summary": null
+    },
+    {
+      "defaultValue": "noreply@tiknas.io",
+      "displayName": "Varsayılan gönderici adresi",
+      "description": "Varsayılan gönderici adresi",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.DefaultFromAddress",
+      "summary": null
+    },
+    {
+      "defaultValue": "TIKNAS application",
+      "displayName": "Varsayılan gönderici adı",
+      "description": "Varsayılan gönderici adı",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Mailing.DefaultFromDisplayName",
+      "summary": null
+    }
+  ]
+}

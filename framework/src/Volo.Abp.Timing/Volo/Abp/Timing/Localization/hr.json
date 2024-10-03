@@ -1,7 +1,0 @@
-{
-  "culture": "hr",
-  "texts": {
-    "DisplayName:Abp.Timing.Timezone": "Vremenska zona",
-    "Description:Abp.Timing.Timezone": "Vremenska zona aplikacije"
-  }
-}

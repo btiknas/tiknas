@@ -1,0 +1,19 @@
+{
+  "culture": "el",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP μέσω SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP μέσω SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Κεντρικός διακομιστής",
+    "Description:Tiknas.Ldap.ServerHost": "Κεντρικός διακομιστής",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Θύρα",
+    "Description:Tiknas.Ldap.ServerPort": "Θύρα",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Στοιχείο Βασικού τομέα",
+    "Description:Tiknas.Ldap.BaseDc": "Στοιχείο Βασικού τομέα",
+    "DisplayName:Tiknas.Ldap.Domain": "Τομέας",
+    "Description:Tiknas.Ldap.Domain": "Τομέας",
+    "DisplayName:Tiknas.Ldap.UserName": "Όνομα χρήστη",
+    "Description:Tiknas.Ldap.UserName": "Όνομα χρήστη",
+    "DisplayName:Tiknas.Ldap.Password": "Κωδικός Πρόσβασης",
+    "Description:Tiknas.Ldap.Password": "Κωδικός Πρόσβασης"
+  }
+}

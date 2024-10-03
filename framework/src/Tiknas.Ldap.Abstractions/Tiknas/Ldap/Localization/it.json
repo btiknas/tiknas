@@ -1,0 +1,19 @@
+{
+  "culture": "it",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP su SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP su SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Server host",
+    "Description:Tiknas.Ldap.ServerHost": "Server host",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Porta del server",
+    "Description:Tiknas.Ldap.ServerPort": "Porta del server",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Componente del dominio di base",
+    "Description:Tiknas.Ldap.BaseDc": "Componente del dominio di base",
+    "DisplayName:Tiknas.Ldap.Domain": "Dominio",
+    "Description:Tiknas.Ldap.Domain": "Dominio",
+    "DisplayName:Tiknas.Ldap.UserName": "Nome utente",
+    "Description:Tiknas.Ldap.UserName": "Nome utente",
+    "DisplayName:Tiknas.Ldap.Password": "Password",
+    "Description:Tiknas.Ldap.Password": "Password"
+  }
+}

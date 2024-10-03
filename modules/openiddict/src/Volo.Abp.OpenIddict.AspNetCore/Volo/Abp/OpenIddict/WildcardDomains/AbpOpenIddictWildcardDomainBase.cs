@@ -1,12 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
 using OpenIddict.Server;
-using Volo.Abp.Http;
+using Volo.Abp.Text.Formatting;
 
 namespace Volo.Abp.OpenIddict.WildcardDomains;
 
@@ -31,24 +29,30 @@ public abstract class AbpOpenIddictWildcardDomainBase<THandler, TOriginalHandler
 
     protected virtual Task<bool> CheckWildcardDomainAsync(string url)
     {
-        if (WildcardDomainOptions.WildcardDomainsFormat.IsNullOrEmpty())
-        {
-            Logger.LogDebug("No wildcard domain format configured.");
-            return Task.FromResult(false);
-        }
-
         Logger.LogDebug("Checking wildcard domain for url: {url}", url);
-        foreach (var domain in WildcardDomainOptions.WildcardDomainsFormat.Select(domainFormat => domainFormat.Replace("{0}", "*")))
+
+        foreach (var domainFormat in WildcardDomainOptions.WildcardDomainsFormat)
         {
-            Logger.LogDebug("Checking wildcard domain format: {domain}", domain);
-            if (UrlHelpers.IsSubdomainOf(url, domain))
+            Logger.LogDebug("Checking wildcard domain format: {domainFormat}", domainFormat);
+            var extractResult = FormattedStringValueExtracter.Extract(url, domainFormat, ignoreCase: true);
+            if (extractResult.IsMatch)
             {
-                Logger.LogDebug("The url: {url} is a wildcard domain of: {domain}", url, domain);
+                Logger.LogDebug("Wildcard domain found for url: {url}", url);
                 return Task.FromResult(true);
             }
         }
 
-        Logger.LogDebug("No wildcard domain found for url: {url}", url);
+        foreach (var domainFormat in WildcardDomainOptions.WildcardDomainsFormat)
+        {
+            Logger.LogDebug("Checking wildcard domain format: {domainFormat}", domainFormat);
+            if (domainFormat.Replace("{0}.", "").Equals(url, StringComparison.OrdinalIgnoreCase))
+            {
+                Logger.LogDebug("Wildcard domain found for url: {url}", url);
+                return Task.FromResult(true);
+            }
+        }
+
+        Logger.LogDebug("Wildcard domain not found for url: {url}", url);
         return Task.FromResult(false);
     }
 }

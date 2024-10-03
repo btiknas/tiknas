@@ -1,0 +1,25 @@
+{
+  "culture": "pt-BR",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Endereço de origem padrão",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Padrão do nome de exibição",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Hospedeiro",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Porta",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Nome do usuário",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Senha",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domínio",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Habilitar SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Usar credenciais padrão",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "O endereço de origem padrão",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "O nome de exibição padrão",
+    "Description:Tiknas.Mailing.Smtp.Host": "O nome ou endereço IP do host usado para transações SMTP.",
+    "Description:Tiknas.Mailing.Smtp.Port": "A porta usada para transações SMTP.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Nome de usuário associado às credenciais.",
+    "Description:Tiknas.Mailing.Smtp.Password": "A senha para o nome de usuário associado às credenciais.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "O domínio ou nome do computador que verifica as credenciais.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Se o SmtpClient usa Secure Sockets Layer (SSL) para criptografar a conexão.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Se o DefaultCredentials é enviado com solicitações.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Modelo de layout de e-mail padrão",
+    "TextTemplate:StandardEmailTemplates.Message": "Modelo de mensagem simples para e-mails"
+  }
+}

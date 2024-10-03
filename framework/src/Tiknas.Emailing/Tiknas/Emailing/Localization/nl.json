@@ -1,0 +1,25 @@
+{
+  "culture": "nl",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Standaard vanaf adres",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Standaard vanaf weergavenaam",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Host",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Poort",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Gebruikersnaam",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Wachtwoord",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domein",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "SSL toestaan",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Gebruik standaard inloggegevens",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Standaard vanaf adres",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Standaard vanaf weergavenaam",
+    "Description:Tiknas.Mailing.Smtp.Host": "De naam of het IP-adres van de host die wordt gebruikt voor SMTP-transacties.",
+    "Description:Tiknas.Mailing.Smtp.Port": "De poort die wordt gebruikt voor SMTP-transacties.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Gebruikersnaam gekoppeld aan de inloggegevens.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Het wachtwoord voor de gebruikersnaam die bij de inloggegevens hoort.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Het domein of de computernaam die de inloggegevens verifieert.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Of de SmtpClient Secure Sockets Layer (SSL) gebruikt om de verbinding te versleutelen.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Of de standaard inloggegevens worden verzonden met verzoeken.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Standaard sjabloon voor e-mail lay-out",
+    "TextTemplate:StandardEmailTemplates.Message": "Eenvoudig berichtsjabloon voor e-mails"
+  }
+}

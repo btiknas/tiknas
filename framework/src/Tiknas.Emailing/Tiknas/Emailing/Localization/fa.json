@@ -1,0 +1,25 @@
+{
+  "culture": "fa",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "آدرس ارسال کننده پیش فرض",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "نام نمایشی ارسال کننده پیش فرض",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "هاست",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "پورت",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "نام کاربری",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "گذرواژه",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "دامنه",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "فعال سازی SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "از اعتبارنامه های پیش فرض استفاده کنید",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "آدرس ارسال کننده پیش فرض",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "نام نمایشی ارسال کننده پیش فرض",
+    "Description:Tiknas.Mailing.Smtp.Host": "نام یا آدرس IP میزبان مورد استفاده برای تراکنش های SMTP.",
+    "Description:Tiknas.Mailing.Smtp.Port": "پورتی که برای تراکنش های SMTP استفاده می شود.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "نام کاربری مرتبط با اعتبارنامه",
+    "Description:Tiknas.Mailing.Smtp.Password": "گذرواژه مرتبط با اعتبارنامه.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "نام دامنه یا رایانه ای که اعتبار را تأیید می کند.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "آیا SmtpClient از لایه سوکت های امن (SSL) برای رمزگذاری هنگام ارتباط استفاده می کند.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "اینکه آیا DefaultCredentials همراه با درخواست ها ارسال می شوند.",
+    "TextTemplate:StandardEmailTemplates.Layout": "قالب پیش فرض ایمیل",
+    "TextTemplate:StandardEmailTemplates.Message": "قالب ایمیل برای پیامهای ساده"
+  }
+}

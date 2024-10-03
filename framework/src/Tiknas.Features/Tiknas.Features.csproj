@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.Features</AssemblyName>
+    <PackageId>Tiknas.Features</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Tiknas\Features\Localization\*.json" />
+    <EmbeddedResource Include="Tiknas\Features\Localization\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.Localization\Tiknas.Localization.csproj" />
+    <ProjectReference Include="..\Tiknas.MultiTenancy\Tiknas.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Tiknas.Validation\Tiknas.Validation.csproj" />
+    <ProjectReference Include="..\Tiknas.Authorization.Abstractions\Tiknas.Authorization.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

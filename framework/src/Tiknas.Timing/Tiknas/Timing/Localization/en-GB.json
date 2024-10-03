@@ -1,0 +1,7 @@
+{
+  "culture": "en-GB",
+  "texts": {
+    "DisplayName:Tiknas.Timing.Timezone": "Timezone",
+    "Description:Tiknas.Timing.Timezone": "Application time zone"
+  }
+}

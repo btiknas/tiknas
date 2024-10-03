@@ -1,0 +1,19 @@
+{
+  "culture": "nl",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP via SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP via SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Serverhost",
+    "Description:Tiknas.Ldap.ServerHost": "Serverhost",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Server poort",
+    "Description:Tiknas.Ldap.ServerPort": "Server poort",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Basisdomein component",
+    "Description:Tiknas.Ldap.BaseDc": "Basisdomein component",
+    "DisplayName:Tiknas.Ldap.Domain": "Domain",
+    "Description:Tiknas.Ldap.Domain": "Domain",
+    "DisplayName:Tiknas.Ldap.UserName": "Gebruikersnaam",
+    "Description:Tiknas.Ldap.UserName": "Gebruikersnaam",
+    "DisplayName:Tiknas.Ldap.Password": "Wachtwoord",
+    "Description:Tiknas.Ldap.Password": "Wachtwoord"
+  }
+}

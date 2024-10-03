@@ -1,0 +1,25 @@
+{
+  "culture": "ar",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "العنوان الإفتراضي",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "اسم المرسل الإفتراضي",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "المضيف",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "المنفذ",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "اسم المستخدم",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "كلمة المرور",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "المجال",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "تمكين SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "استخدام الصلاحيات الإفتراضية",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "وصف العنوان الافتراضي",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "وصف اسم المرسل الإفتراضي",
+    "Description:Tiknas.Mailing.Smtp.Host": "اسم أو عنوان IP للمضيف المستخدم في معاملات SMTP.",
+    "Description:Tiknas.Mailing.Smtp.Port": "المنفذ المستخدم في معاملات.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "اسم المستخدم المرتبط ببيانات الاعتماد.",
+    "Description:Tiknas.Mailing.Smtp.Password": "كلمة المرور لاسم المستخدم المرتبط ببيانات الاعتماد.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "اسم المجال أو الكمبيوتر الذي يتحقق من بيانات الاعتماد.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "ما إذا كان SmtpClient يستخدم (SSL) لتشفير الاتصال.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "إرسال الصلاحيات الافتراضية مع الطلب.",
+    "TextTemplate:StandardEmailTemplates.Layout": "نموذج تخطيط إفتراضي للبريد الإلكتروني",
+    "TextTemplate:StandardEmailTemplates.Message": "نموذج بسيط للرسائل الإلكترونية"
+  }
+}

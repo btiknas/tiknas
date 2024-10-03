@@ -1,0 +1,89 @@
+{
+  "name": "Tiknas.Localization",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Localization",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.VirtualFileSystem",
+          "namespace": "Tiknas.VirtualFileSystem",
+          "name": "TiknasVirtualFileSystemModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Settings",
+          "namespace": "Tiknas.Settings",
+          "name": "TiknasSettingsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Localization.Abstractions",
+          "namespace": "Tiknas.Localization",
+          "name": "TiknasLocalizationAbstractionsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Threading",
+          "namespace": "Tiknas.Threading",
+          "name": "TiknasThreadingModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasLocalizationModule",
+      "summary": null
+    },
+    {
+      "defaultValue": "en",
+      "displayName": "Varsayılan dil",
+      "description": "Varsayılan uygulama dili.",
+      "isVisibleToClient": true,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Localization.DefaultLanguage",
+      "summary": null
+    }
+  ]
+}

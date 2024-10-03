@@ -1,0 +1,19 @@
+{
+  "culture": "fa",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP از طریق SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP از طریق SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "میزبان سرور",
+    "Description:Tiknas.Ldap.ServerHost": "میزبان سرور",
+    "DisplayName:Tiknas.Ldap.ServerPort": "پورت سرور",
+    "Description:Tiknas.Ldap.ServerPort": "پورت سرور",
+    "DisplayName:Tiknas.Ldap.BaseDc": "کامپوننت پایه دامنه",
+    "Description:Tiknas.Ldap.BaseDc": "کامپوننت پایه دامنه",
+    "DisplayName:Tiknas.Ldap.Domain": "دامنه",
+    "Description:Tiknas.Ldap.Domain": "دامنه",
+    "DisplayName:Tiknas.Ldap.UserName": "نام کاربری",
+    "Description:Tiknas.Ldap.UserName": "نام کاربری",
+    "DisplayName:Tiknas.Ldap.Password": "رمز عبور",
+    "Description:Tiknas.Ldap.Password": "رمز عبور"
+  }
+}

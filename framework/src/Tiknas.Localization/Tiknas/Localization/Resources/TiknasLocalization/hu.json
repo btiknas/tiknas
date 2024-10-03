@@ -1,0 +1,7 @@
+{
+  "culture": "hu",
+  "texts": {
+    "DisplayName:Tiknas.Localization.DefaultLanguage": "Alapértelmezett nyelv",
+    "Description:Tiknas.Localization.DefaultLanguage": "Az alkalmazás alapértelmezett nyelve."
+  }
+}

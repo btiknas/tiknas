@@ -1,0 +1,25 @@
+{
+  "culture": "ro-RO",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Implicit de la adresa",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Implicit de la numele afişat",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Host",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Port",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Nume de utilizator",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Parola",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domeniu",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Activează SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Folosiţi credenţialele implicite",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Implicit de la adresa",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Implicit de la numele afişat",
+    "Description:Tiknas.Mailing.Smtp.Host": "Numele sau adresa IP al hostului folosit pentru tranzacţiile SMTP.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Portul folosit pentru tranzacţiile SMTP.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Numele de utilizator asociat credenţialelor.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Parola folosită pentru numele de utilizator asociat credenţialelor.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Domeniul sau numele calculatorului care verifică credenţialele.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Dacă SmtpClient foloseste Secure Sockets Layer (SSL) pentru a cripta conexiunea.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Dacă DefaultCredentials sunt trimise odată cu solicitările.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Şablon aspect implicit pentru email",
+    "TextTemplate:StandardEmailTemplates.Message": "Şablon de mesaj simplu pentru emailuri"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Tiknas.AspNetCore.Mvc.UI.Theme.Shared",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.AspNetCore.Mvc.UI.Theme.Shared",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.AspNetCore.Mvc.UI.Bootstrap",
+          "namespace": "Tiknas.AspNetCore.Mvc.UI.Bootstrap",
+          "name": "TiknasAspNetCoreMvcUiBootstrapModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.AspNetCore.Mvc.UI.Packages",
+          "namespace": "Tiknas.AspNetCore.Mvc.UI.Packages",
+          "name": "TiknasAspNetCoreMvcUiPackagesModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.AspNetCore.Mvc.UI.Widgets",
+          "namespace": "Tiknas.AspNetCore.Mvc.UI.Widgets",
+          "name": "TiknasAspNetCoreMvcUiWidgetsModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasAspNetCoreMvcUiThemeSharedModule",
+      "summary": null
+    }
+  ]
+}

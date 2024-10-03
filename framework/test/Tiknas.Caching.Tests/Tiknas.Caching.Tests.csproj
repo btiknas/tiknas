@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <AssemblyName>Tiknas.Caching.Tests</AssemblyName>
+    <PackageId>Tiknas.Caching.Tests</PackageId>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\test\Tiknas.TestBase\Tiknas.TestBase.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.Caching\Tiknas.Caching.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>

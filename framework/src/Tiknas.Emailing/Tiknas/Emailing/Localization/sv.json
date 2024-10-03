@@ -1,0 +1,25 @@
+{
+  "culture": "sv",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Standard från adress",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Standard från visningsnamn",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Värd",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Port",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Användarens namn",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Lösenord",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domän",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Aktivera SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Använda standardautentiseringsuppgifter",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Standardadressen från",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Standard från visningsnamn",
+    "Description:Tiknas.Mailing.Smtp.Host": "Namnet på eller IP-adressen till den värd som används för SMTP-transaktioner.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Den port som används för SMTP-transaktioner.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Användarnamn som är kopplat till autentiseringsuppgifterna.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Lösenordet för det användarnamn som är kopplat till autentiseringsuppgifterna.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Domän- eller datornamnet som verifierar autentiseringsuppgifterna.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Om SmtpClient använder SSL (Secure Sockets Layer) för att kryptera anslutningen.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Om DefaultCredentials skickas med förfrågningar.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Standardmall för e-postlayout",
+    "TextTemplate:StandardEmailTemplates.Message": "Enkel meddelandemall för e-post"
+  }
+}

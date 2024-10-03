@@ -5,7 +5,7 @@ using Volo.Abp.MultiTenancy;
 
 namespace Volo.Abp.Identity;
 
-public class IdentitySession : AggregateRoot<Guid>, IMultiTenant
+public class IdentitySession : BasicAggregateRoot<Guid>, IMultiTenant
 {
     public virtual string SessionId { get; protected set; }
 
@@ -80,22 +80,7 @@ public class IdentitySession : AggregateRoot<Guid>, IMultiTenant
     private static string JoinAsString(IEnumerable<string> list)
     {
         var serialized = string.Join(",", list);
-        if (serialized.IsNullOrWhiteSpace())
-        {
-            return null;
-        }
-
-        while (serialized.Length > IdentitySessionConsts.MaxIpAddressesLength)
-        {
-            var lastCommaIndex = serialized.IndexOf(',');
-            if (lastCommaIndex < 0)
-            {
-                return serialized;
-            }
-            serialized = serialized.Substring(lastCommaIndex + 1);
-        }
-
-        return serialized;
+        return serialized.IsNullOrWhiteSpace() ? null : serialized;
     }
 
     private string[] GetArrayFromString(string str)

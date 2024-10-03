@@ -1,0 +1,79 @@
+{
+  "name": "Tiknas.Timing",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Timing",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.Localization",
+          "namespace": "Tiknas.Localization",
+          "name": "TiknasLocalizationModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Settings",
+          "namespace": "Tiknas.Settings",
+          "name": "TiknasSettingsModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasTimingModule",
+      "summary": null
+    },
+    {
+      "defaultValue": "UTC",
+      "displayName": "saat dilimi",
+      "description": "Uygulama saat dilimi",
+      "isVisibleToClient": true,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Timing.TimeZone",
+      "summary": null
+    }
+  ]
+}

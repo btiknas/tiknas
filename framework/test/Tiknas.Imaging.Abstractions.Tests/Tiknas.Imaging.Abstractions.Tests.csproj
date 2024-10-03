@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\common.test.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+        <ProjectReference Include="..\..\src\Tiknas.Imaging.Abstractions\Tiknas.Imaging.Abstractions.csproj" />
+        <ProjectReference Include="..\..\test\Tiknas.TestBase\Tiknas.TestBase.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <EmbeddedResource Include="Tiknas\Imaging\Files\**" />
+    </ItemGroup>
+</Project>

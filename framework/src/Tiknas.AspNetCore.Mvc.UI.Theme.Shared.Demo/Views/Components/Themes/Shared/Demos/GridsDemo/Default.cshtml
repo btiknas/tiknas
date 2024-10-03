@@ -1,0 +1,223 @@
+@using Tiknas.AspNetCore.Mvc.UI.Theme.Shared.Demo.Views.Components.Themes.Shared.Demos.GridsDemo
+
+<tiknas-component-demo-section title="Equal-width" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row>
+            <tiknas-column>1 of 2</tiknas-column>
+            <tiknas-column>2 of 2</tiknas-column>
+        </tiknas-row>
+        <tiknas-row>
+            <tiknas-column>1 of 3</tiknas-column>
+            <tiknas-column>2 of 3</tiknas-column>
+            <tiknas-column>3 of 3</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Column Breaker" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row>
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column-breaker />
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column>column</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Setting one column width" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row>
+            <tiknas-column>1 of 3</tiknas-column>
+            <tiknas-column size="_6">2 of 3 (wider)</tiknas-column>
+            <tiknas-column>3 of 3</tiknas-column>
+        </tiknas-row>
+        <tiknas-row>
+            <tiknas-column>1 of 3</tiknas-column>
+            <tiknas-column size="_5">2 of 3 (wider)</tiknas-column>
+            <tiknas-column>3 of 3</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Variable width content" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row h-align="Center">
+            <tiknas-column size-lg="_2">1 of 3</tiknas-column>
+            <tiknas-column size-md="Auto">Variable width content</tiknas-column>
+            <tiknas-column size-lg="_2">3 of 3</tiknas-column>
+        </tiknas-row>
+        <tiknas-row>
+            <tiknas-column>1 of 3</tiknas-column>
+            <tiknas-column size-md="Auto">Variable width content</tiknas-column>
+            <tiknas-column size-lg="_2">3 of 3</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Responsive classes" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-row>
+        <tiknas-column>col</tiknas-column>
+        <tiknas-column>col</tiknas-column>
+        <tiknas-column>col</tiknas-column>
+        <tiknas-column>col</tiknas-column>
+    </tiknas-row>
+    <tiknas-row>
+        <tiknas-column size="_8">col-8</tiknas-column>
+        <tiknas-column size="_4">col-4</tiknas-column>
+    </tiknas-row>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="All breakpoints" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-row>
+        <tiknas-column size-sm="_8">col-sm-8</tiknas-column>
+        <tiknas-column size-sm="_4">col-sm-4</tiknas-column>
+    </tiknas-row>
+    <tiknas-row>
+        <tiknas-column size-sm="_">col-sm</tiknas-column>
+        <tiknas-column size-sm="_">col-sm</tiknas-column>
+        <tiknas-column size-sm="_">col-sm</tiknas-column>
+        <tiknas-column size-sm="_">col-sm</tiknas-column>
+    </tiknas-row>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Mix and match" view-path="@GridsDemoViewComponent.ViewPath">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <tiknas-row>
+        <tiknas-column size="_12" size-md="_8">.col-12 .col-md-8</tiknas-column>
+        <tiknas-column size="_6" size-md="_4">.col-6 .col-md-4</tiknas-column>
+    </tiknas-row>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <tiknas-row>
+        <tiknas-column size="_6" size-md="_4">.col-6 .col-md-4</tiknas-column>
+        <tiknas-column size="_6" size-md="_4">.col-6 .col-md-4</tiknas-column>
+        <tiknas-column size="_6" size-md="_4">.col-6 .col-md-4</tiknas-column>
+    </tiknas-row>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <tiknas-row>
+        <tiknas-column size="_6">.col-6</tiknas-column>
+        <tiknas-column size="_6">.col-6</tiknas-column>
+    </tiknas-row>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Vertical Alignment" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row v-align="Start">
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column>column</tiknas-column>
+        </tiknas-row>
+        <tiknas-row v-align="Center">
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column>column</tiknas-column>
+        </tiknas-row>
+        <tiknas-row v-align="End">
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column>column</tiknas-column>
+            <tiknas-column>column</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Vertical Alignment 2" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row v-align="Start">
+            <tiknas-column v-align="Start">column</tiknas-column>
+            <tiknas-column v-align="Center">column</tiknas-column>
+            <tiknas-column v-align="End">column</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Horizontal alignment" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row h-align="Start">
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+        </tiknas-row>
+        <tiknas-row h-align="Center">
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+        </tiknas-row>
+        <tiknas-row h-align="End">
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+        </tiknas-row>
+        <tiknas-row h-align="Around">
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+        </tiknas-row>
+        <tiknas-row h-align="Between">
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+            <tiknas-column size="_4">One of two columns</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="No gutters" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-row gutters="false">
+        <tiknas-column size="_8">One of two columns</tiknas-column>
+        <tiknas-column size="_4">One of two columns</tiknas-column>
+    </tiknas-row>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Column wrapping" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-row>
+        <tiknas-column size="_9">.col-9</tiknas-column>
+        <tiknas-column size="_4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</tiknas-column>
+        <tiknas-column size="_6">.col-6<br>Subsequent columns continue along the new line.s</tiknas-column>
+    </tiknas-row>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Reordering" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row>
+            <tiknas-column order="_12">First, but Last</tiknas-column>
+            <tiknas-column>Second, but unordered</tiknas-column>
+            <tiknas-column order="_6">Third, but Second</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Reordering 2" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row>
+            <tiknas-column order="Last">First, but Last</tiknas-column>
+            <tiknas-column>Second, but unordered</tiknas-column>
+            <tiknas-column order="First">Third, but First</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Offsetting columns" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row>
+            <tiknas-column size-md="_4">.col-md-4</tiknas-column>
+            <tiknas-column size-md="_4" offset-md="_4">.col-md-4 .offset-md-4</tiknas-column>
+        </tiknas-row>
+        <tiknas-row>
+            <tiknas-column size-md="_3" offset-md="_3">.col-md-3 .offset-md-3</tiknas-column>
+            <tiknas-column size-md="_3" offset-md="_3">.col-md-3 .offset-md-3</tiknas-column>
+        </tiknas-row>
+        <tiknas-row>
+            <tiknas-column size-md="_6" offset-md="_3">.col-md-6 .offset-md-3</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Offsetting columns 2" view-path="@GridsDemoViewComponent.ViewPath">
+    <tiknas-container>
+        <tiknas-row>
+            <tiknas-column size-sm="_5" size-md="_6">.col-sm-5 .col-md-6</tiknas-column>
+            <tiknas-column size-sm="_5" offset-sm="_2" size-md="_6" offset-md="_">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</tiknas-column>
+        </tiknas-row>
+        <tiknas-row>
+            <tiknas-column size-sm="_6" size-md="_5" size-lg="_6">col-sm-6 .col-md-5 .col-lg-6</tiknas-column>
+            <tiknas-column size-sm="_6" size-md="_5" offset-md="_2" size-lg="_6" offset-lg="_">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</tiknas-column>
+        </tiknas-row>
+    </tiknas-container>
+</tiknas-component-demo-section>

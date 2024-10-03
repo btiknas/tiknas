@@ -1,0 +1,9 @@
+﻿@if (TiknasDynamicLayoutComponentOptions.Value.Components.Any())
+{
+
+    foreach (var (componentType, parameters) in TiknasDynamicLayoutComponentOptions.Value.Components)
+
+    {
+        <DynamicComponent Type="@componentType" Parameters="@parameters" />   
+    }
+}

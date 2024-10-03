@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.IdentityModel</AssemblyName>
+    <PackageId>Tiknas.IdentityModel</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+    <ProjectReference Include="..\Tiknas.Caching\Tiknas.Caching.csproj" />
+    <ProjectReference Include="..\Tiknas.MultiTenancy\Tiknas.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Tiknas.Threading\Tiknas.Threading.csproj" />
+  </ItemGroup>
+
+</Project>

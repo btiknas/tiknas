@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.Emailing</AssemblyName>
+    <PackageId>Tiknas.Emailing</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Tiknas\Emailing\Localization\*.json" />
+    <EmbeddedResource Include="Tiknas\Emailing\Localization\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Tiknas\Emailing\Templates\**\*.tpl" />
+    <EmbeddedResource Include="Tiknas\Emailing\Templates\**\*.tpl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.BackgroundJobs.Abstractions\Tiknas.BackgroundJobs.Abstractions.csproj" />
+    <ProjectReference Include="..\Tiknas.Localization\Tiknas.Localization.csproj" />
+    <ProjectReference Include="..\Tiknas.Settings\Tiknas.Settings.csproj" />
+    <ProjectReference Include="..\Tiknas.TextTemplating\Tiknas.TextTemplating.csproj" />
+    <ProjectReference Include="..\Tiknas.VirtualFileSystem\Tiknas.VirtualFileSystem.csproj" />
+  </ItemGroup>
+
+</Project>

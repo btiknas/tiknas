@@ -1,0 +1,25 @@
+{
+  "culture": "fi",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Oletus osoitteesta",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Oletus näyttönimestä",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Isäntä",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Portti",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Käyttäjänimi",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Salasana",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Verkkotunnus",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Ota SSL käyttöön",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Käytä oletusarvoisia tunnistetietoja",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Oletus osoitteesta",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Oletusnimi näyttönimestä",
+    "Description:Tiknas.Mailing.Smtp.Host": "SMTP-tapahtumiin käytetyn isännän nimi tai IP-osoite.",
+    "Description:Tiknas.Mailing.Smtp.Port": "SMTP-tapahtumiin käytetty portti.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Käyttäjätunnuksiin liittyvä käyttäjänimi.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Tunnistetietoihin liittyvän käyttäjänimen salasana.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Verkkotunnus tai tietokoneen nimi, joka tarkistaa tunnistetiedot.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Käyttääkö SmtpClient Secure Sockets Layer (SSL) -yhteyttä yhteyden salaamiseen.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Lähetetäänkö DefaultCredentials pyyntöjen kanssa.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Oletussähköpostiasettelumalli",
+    "TextTemplate:StandardEmailTemplates.Message": "Yksinkertainen viestimalli sähköpostiviesteille"
+  }
+}

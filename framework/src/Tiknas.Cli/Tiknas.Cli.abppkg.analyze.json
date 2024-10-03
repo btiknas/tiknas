@@ -1,0 +1,68 @@
+{
+  "name": "Tiknas.Cli",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Cli",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.Cli.Core",
+          "namespace": "Tiknas.Cli",
+          "name": "TiknasCliCoreModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Autofac",
+          "namespace": "Tiknas.Autofac",
+          "name": "TiknasAutofacModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasCliModule",
+      "summary": null
+    }
+  ]
+}

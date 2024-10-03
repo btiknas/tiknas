@@ -1,0 +1,71 @@
+@using Tiknas.AspNetCore.Mvc.UI.Theme.Shared.Demo.Views.Components.Themes.Shared.Demos.NavbarsDemo
+
+<tiknas-component-demo-section title="Example" view-path="@NavbarsDemoViewComponent.ViewPath">
+    <tiknas-nav-bar size="Lg" navbar-style="Dark_Dark">
+        <a tiknas-navbar-brand href="#">Navbar</a>
+        <tiknas-navbar-toggle>
+            <tiknas-navbar-nav>
+                <tiknas-nav-item active="true">
+                    <a tiknas-nav-link href="#">Home <span class="visually-hidden">(current)</span></a>
+                </tiknas-nav-item>
+                <tiknas-nav-item>
+                    <a tiknas-nav-link href="#">Link</a>
+                </tiknas-nav-item>
+                <tiknas-nav-item dropdown="true">
+                    <tiknas-dropdown>
+                        <tiknas-dropdown-button nav-link="true" text="Dropdown" />
+                        <tiknas-dropdown-menu>
+                            <tiknas-dropdown-header>Dropdown header</tiknas-dropdown-header>
+                            <tiknas-dropdown-item href="#" active="true">Action</tiknas-dropdown-item>
+                            <tiknas-dropdown-item href="#" disabled="true">Another disabled action</tiknas-dropdown-item>
+                            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+                            <tiknas-dropdown-divider />
+                            <tiknas-dropdown-item href="#">Separated link</tiknas-dropdown-item>
+                        </tiknas-dropdown-menu>
+                    </tiknas-dropdown>
+                </tiknas-nav-item>
+                <tiknas-nav-item>
+                    <a tiknas-nav-link disabled="true" href="#">Disabled</a>
+                </tiknas-nav-item>
+            </tiknas-navbar-nav>
+            <span tiknas-navbar-text>
+                Sample Text
+            </span>
+        </tiknas-navbar-toggle>
+    </tiknas-nav-bar>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Example" view-path="@NavbarsDemoViewComponent.ViewPath">
+    <tiknas-nav-bar size="Lg" navbar-style="Dark_Primary">
+        <a tiknas-navbar-brand href="#">Navbar</a>
+        <tiknas-navbar-toggle>
+            <tiknas-navbar-nav>
+                <tiknas-nav-item active="true">
+                    <a tiknas-nav-link href="#">Home <span class="visually-hidden">(current)</span></a>
+                </tiknas-nav-item>
+                <tiknas-nav-item>
+                    <a tiknas-nav-link href="#">Link</a>
+                </tiknas-nav-item>
+                <tiknas-nav-item dropdown="true">
+                    <tiknas-dropdown>
+                        <tiknas-dropdown-button nav-link="true" text="Dropdown" />
+                        <tiknas-dropdown-menu>
+                            <tiknas-dropdown-header>Dropdown header</tiknas-dropdown-header>
+                            <tiknas-dropdown-item href="#" active="true">Action</tiknas-dropdown-item>
+                            <tiknas-dropdown-item href="#" disabled="true">Another disabled action</tiknas-dropdown-item>
+                            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+                            <tiknas-dropdown-divider />
+                            <tiknas-dropdown-item href="#">Separated link</tiknas-dropdown-item>
+                        </tiknas-dropdown-menu>
+                    </tiknas-dropdown>
+                </tiknas-nav-item>
+                <tiknas-nav-item>
+                    <a tiknas-nav-link disabled="true" href="#">Disabled</a>
+                </tiknas-nav-item>
+            </tiknas-navbar-nav>
+            <span tiknas-navbar-text>
+                Sample Text
+            </span>
+        </tiknas-navbar-toggle>
+    </tiknas-nav-bar>
+</tiknas-component-demo-section>

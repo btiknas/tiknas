@@ -1,0 +1,19 @@
+{
+  "culture": "is",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP yfir SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP yfir SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Server host",
+    "Description:Tiknas.Ldap.ServerHost": "Server host",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Server port",
+    "Description:Tiknas.Ldap.ServerPort": "Server port",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Grunn léna hlutur",
+    "Description:Tiknas.Ldap.BaseDc": "Grunn léna hluturt",
+    "DisplayName:Tiknas.Ldap.Domain": "Lén",
+    "Description:Tiknas.Ldap.Domain": "Lén",
+    "DisplayName:Tiknas.Ldap.UserName": "Notanda nafn",
+    "Description:Tiknas.Ldap.UserName": "Notanda nafn",
+    "DisplayName:Tiknas.Ldap.Password": "Lykilorð",
+    "Description:Tiknas.Ldap.Password": "Lykilorð"
+  }
+}

@@ -1,0 +1,15 @@
+@using Tiknas.AspNetCore.Mvc.UI.Theme.Shared.Demo.Views.Components.Themes.Shared.Demos.ModalsDemo
+@using Tiknas.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+
+<tiknas-component-demo-section title="Example" view-path="@ModalsDemoViewComponent.ViewPath">
+
+    <tiknas-button button-type="Primary" data-bs-toggle="modal" data-bs-target="#myModal">Launch modal</tiknas-button>
+
+    <tiknas-modal centered="true" size="Large" id="myModal">
+        <tiknas-modal-header title="Modal title"></tiknas-modal-header>
+        <tiknas-modal-body>
+            Woohoo, you're reading this text in a modal!
+        </tiknas-modal-body>
+        <tiknas-modal-footer buttons="@(TiknasModalButtons.Save|TiknasModalButtons.Close)"></tiknas-modal-footer>
+    </tiknas-modal>
+</tiknas-component-demo-section>

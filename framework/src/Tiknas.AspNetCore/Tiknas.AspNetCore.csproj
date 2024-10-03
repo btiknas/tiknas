@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.AspNetCore</AssemblyName>
+    <PackageId>Tiknas.AspNetCore</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.AspNetCore.Abstractions\Tiknas.AspNetCore.Abstractions.csproj" />
+    <ProjectReference Include="..\Tiknas.Auditing\Tiknas.Auditing.csproj" />
+    <ProjectReference Include="..\Tiknas.Authorization\Tiknas.Authorization.csproj" />
+    <ProjectReference Include="..\Tiknas.ExceptionHandling\Tiknas.ExceptionHandling.csproj" />
+    <ProjectReference Include="..\Tiknas.Http\Tiknas.Http.csproj" />
+    <ProjectReference Include="..\Tiknas.Security\Tiknas.Security.csproj" />
+    <ProjectReference Include="..\Tiknas.Uow\Tiknas.Uow.csproj" />
+    <ProjectReference Include="..\Tiknas.Validation\Tiknas.Validation.csproj" />
+    <ProjectReference Include="..\Tiknas.VirtualFileSystem\Tiknas.VirtualFileSystem.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" />
+    <PackageReference Include="IdentityModel" />
+    <PackageReference Include="DeviceDetector.NET" />
+  </ItemGroup>
+
+</Project>

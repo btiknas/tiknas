@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.Auditing</AssemblyName>
+    <PackageId>Tiknas.Auditing</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.Auditing.Contracts\Tiknas.Auditing.Contracts.csproj" />
+    <ProjectReference Include="..\Tiknas.Data\Tiknas.Data.csproj" />
+    <ProjectReference Include="..\Tiknas.Json\Tiknas.Json.csproj" />
+    <ProjectReference Include="..\Tiknas.MultiTenancy\Tiknas.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Tiknas.Security\Tiknas.Security.csproj" />
+    <ProjectReference Include="..\Tiknas.Threading\Tiknas.Threading.csproj" />
+    <ProjectReference Include="..\Tiknas.Timing\Tiknas.Timing.csproj" />
+  </ItemGroup>
+
+</Project>

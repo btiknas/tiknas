@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.Ddd.Domain</AssemblyName>
+    <PackageId>Tiknas.Ddd.Domain</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.Ddd.Domain.Shared\Tiknas.Ddd.Domain.Shared.csproj" />
+    <ProjectReference Include="..\Tiknas.Auditing\Tiknas.Auditing.csproj" />
+    <ProjectReference Include="..\Tiknas.Caching\Tiknas.Caching.csproj" />
+    <ProjectReference Include="..\Tiknas.Data\Tiknas.Data.csproj" />
+    <ProjectReference Include="..\Tiknas.EventBus\Tiknas.EventBus.csproj" />
+    <ProjectReference Include="..\Tiknas.ExceptionHandling\Tiknas.ExceptionHandling.csproj" />
+    <ProjectReference Include="..\Tiknas.Guids\Tiknas.Guids.csproj" />
+    <ProjectReference Include="..\Tiknas.ObjectMapping\Tiknas.ObjectMapping.csproj" />
+    <ProjectReference Include="..\Tiknas.Specifications\Tiknas.Specifications.csproj" />
+    <ProjectReference Include="..\Tiknas.Timing\Tiknas.Timing.csproj" />
+  </ItemGroup>
+
+</Project>

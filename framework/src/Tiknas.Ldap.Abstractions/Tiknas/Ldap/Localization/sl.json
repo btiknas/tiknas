@@ -1,0 +1,19 @@
+{
+  "culture": "sl",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP preko SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP preko SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Gostitelj strežnika",
+    "Description:Tiknas.Ldap.ServerHost": "Gostitelj strežnika",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Vrata strežnika",
+    "Description:Tiknas.Ldap.ServerPort": "Vrata strežnika",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Komponenta osnovne domene",
+    "Description:Tiknas.Ldap.BaseDc": "Komponenta osnovne domene",
+    "DisplayName:Tiknas.Ldap.Domain": "domena",
+    "Description:Tiknas.Ldap.Domain": "domena",
+    "DisplayName:Tiknas.Ldap.UserName": "Uporabniško ime",
+    "Description:Tiknas.Ldap.UserName": "Uporabniško ime",
+    "DisplayName:Tiknas.Ldap.Password": "Geslo",
+    "Description:Tiknas.Ldap.Password": "Geslo"
+  }
+}

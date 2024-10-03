@@ -1,0 +1,25 @@
+{
+  "culture": "is",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Sjálfgefið frá heimilisfang",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Sjálfgefið frá skjánafn",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Hýsill",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Port",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Notandanafn",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Lykilorð",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Lén",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Virkja SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Nota sjálfgefin auðkenni",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Sjálfgefið frá heimilisfangi",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Sjálfgefið frá skjánafni",
+    "Description:Tiknas.Mailing.Smtp.Host": "Nafn eða IP -tala gestgjafans sem notuð er fyrir SMTP færslur.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Portin sem notuð er fyrir SMTP færslur.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Notandanafn tengt auðkennum.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Lykilorðið fyrir notendanafnið sem tengist auðkennum.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Lénið eða tölvuheitið sem staðfestir auðkennin.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Hvort SmtpClient notar Secure Sockets Layer (SSL) til að dulkóða tenginguna.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Hvort DefaultCredentials eru sendar með beiðnum.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Sjálfgefið sniðmát fyrir tölvupóst",
+    "TextTemplate:StandardEmailTemplates.Message": "Einfalt skilaboðasniðmát fyrir tölvupósta"
+  }
+}

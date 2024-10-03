@@ -1,0 +1,25 @@
+{
+  "culture": "pl-PL",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Domyślnie z adresu",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Domyślnie z wyświetlanej nazwy",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Gospodarz",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Port",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Nazwa użytkownika",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Hasło",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domena",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Włącz SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Użyj domyślnych danych logowania",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Domyślny z adresu",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Wartość domyślna z wyświetlanej nazwy",
+    "Description:Tiknas.Mailing.Smtp.Host": "Nazwa lub adres IP hosta używanego do transakcji SMTP.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Port używany do transakcji SMTP.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Nazwa użytkownika powiązana z poświadczeniami.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Hasło dla nazwy użytkownika powiązanej z poświadczeniami.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Nazwa domeny lub komputera, który weryfikuje poświadczenia.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Czy SmtpClient używa protokołu Secure Sockets Layer (SSL) do szyfrowania połączenia.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Czy DefaultCredentials są wysyłane z żądaniami.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Domyślny szablon układu wiadomości e-mail",
+    "TextTemplate:StandardEmailTemplates.Message": "Prosty szablon wiadomości na e-maile"
+  }
+}

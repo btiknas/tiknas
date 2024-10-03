@@ -1,0 +1,63 @@
+@using Tiknas.AspNetCore.Mvc.UI.Theme.Shared.Demo.Views.Components.Themes.Shared.Demos.TabsDemo
+
+<tiknas-component-demo-section title="Example" view-path="@TabsDemoViewComponent.ViewPath">
+    <tiknas-tabs>
+        <tiknas-tab title="Home">
+            Content_Home
+        </tiknas-tab>
+        <tiknas-tab-link title="Link" href="#" />
+        <tiknas-tab title="profile">
+            Content_Profile
+        </tiknas-tab>
+        <tiknas-tab-dropdown title="Contact" name="ContactDropdown">
+            <tiknas-tab title="Contact 1" parent-dropdown-name="ContactDropdown">
+                Content_1_Content
+            </tiknas-tab>
+            <tiknas-tab title="Contact 2" parent-dropdown-name="ContactDropdown">
+                Content_2_Content
+            </tiknas-tab>
+        </tiknas-tab-dropdown>
+    </tiknas-tabs>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Tab attributes" view-path="@TabsDemoViewComponent.ViewPath">
+    <tiknas-tabs>
+        <tiknas-tab name="nav-home" title="Home">
+            Content_Home
+        </tiknas-tab>
+        <tiknas-tab name="nav-profile" active="true" title="profile">
+            Content_Profile
+        </tiknas-tab>
+        <tiknas-tab name="nav-contact" title="Contact">
+            Content_Contact
+        </tiknas-tab>
+    </tiknas-tabs>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Pill Example" view-path="@TabsDemoViewComponent.ViewPath">
+    <tiknas-tabs tab-style="Pill">
+        <tiknas-tab title="Home">
+            Content_Home
+        </tiknas-tab>
+        <tiknas-tab title="profile">
+            Content_Profile
+        </tiknas-tab>
+        <tiknas-tab title="Contact">
+            Content_Contact
+        </tiknas-tab>
+    </tiknas-tabs>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Vertical Example" view-path="@TabsDemoViewComponent.ViewPath">
+    <tiknas-tabs tab-style="PillVertical" vertical-header-size="_2">
+        <tiknas-tab active="true" title="Home">
+            Content_Home
+        </tiknas-tab>
+        <tiknas-tab title="profile">
+            Content_Profile
+        </tiknas-tab>
+        <tiknas-tab title="Contact">
+            Content_Contact
+        </tiknas-tab>
+    </tiknas-tabs>
+</tiknas-component-demo-section>

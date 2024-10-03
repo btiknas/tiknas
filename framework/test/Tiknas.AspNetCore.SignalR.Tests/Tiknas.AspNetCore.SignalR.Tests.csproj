@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tiknas.AspNetCore.SignalR\Tiknas.AspNetCore.SignalR.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+    <ProjectReference Include="..\Tiknas.AspNetCore.Tests\Tiknas.AspNetCore.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

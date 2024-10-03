@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <AssemblyName>Tiknas.AspNetCore.Components.MauiBlazor</AssemblyName>
+        <PackageId>Tiknas.AspNetCore.Components.MauiBlazor</PackageId>
+        <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.AspNetCore.Components.Web\Tiknas.AspNetCore.Components.Web.csproj" />
+        <ProjectReference Include="..\Tiknas.AspNetCore.Mvc.Client.Common\Tiknas.AspNetCore.Mvc.Client.Common.csproj" />
+        <ProjectReference Include="..\Tiknas.UI\Tiknas.UI.csproj" />
+    </ItemGroup>
+
+</Project>

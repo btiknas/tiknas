@@ -1,0 +1,75 @@
+@using Tiknas.AspNetCore.Mvc.UI.Theme.Shared.Demo.Views.Components.Themes.Shared.Demos.ButtonGroupsDemo
+
+<tiknas-component-demo-section title="Basic example" view-path="@ButtonGroupsDemoViewComponent.ViewPath">
+    <tiknas-button-group>
+        <tiknas-button button-type="Secondary">Left</tiknas-button>
+        <tiknas-button button-type="Secondary">Middle</tiknas-button>
+        <tiknas-button button-type="Secondary">Right</tiknas-button>
+    </tiknas-button-group>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Button Toolbar" view-path="@ButtonGroupsDemoViewComponent.ViewPath">
+    <tiknas-button-toolbar>
+        <tiknas-button-group class="me-2">
+            <tiknas-button button-type="Secondary">1</tiknas-button>
+            <tiknas-button button-type="Secondary">2</tiknas-button>
+            <tiknas-button button-type="Secondary">3</tiknas-button>
+            <tiknas-button button-type="Secondary">4</tiknas-button>
+        </tiknas-button-group>
+        <tiknas-button-group class="me-2">
+            <tiknas-button button-type="Secondary">5</tiknas-button>
+            <tiknas-button button-type="Secondary">6</tiknas-button>
+            <tiknas-button button-type="Secondary">7</tiknas-button>
+        </tiknas-button-group>
+        <tiknas-button-group>
+            <tiknas-button button-type="Secondary">8</tiknas-button>
+        </tiknas-button-group>
+    </tiknas-button-toolbar>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Sizing" view-path="@ButtonGroupsDemoViewComponent.ViewPath">
+    <tiknas-button-group size="Large">
+        <tiknas-button button-type="Secondary">Left</tiknas-button>
+        <tiknas-button button-type="Secondary">Middle</tiknas-button>
+        <tiknas-button button-type="Secondary">Right</tiknas-button>
+    </tiknas-button-group>
+    <tiknas-button-group>
+        <tiknas-button button-type="Secondary">Left</tiknas-button>
+        <tiknas-button button-type="Secondary">Middle</tiknas-button>
+        <tiknas-button button-type="Secondary">Right</tiknas-button>
+    </tiknas-button-group>
+    <tiknas-button-group size="Small">
+        <tiknas-button button-type="Secondary">Left</tiknas-button>
+        <tiknas-button button-type="Secondary">Middle</tiknas-button>
+        <tiknas-button button-type="Secondary">Right</tiknas-button>
+    </tiknas-button-group>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Nesting" view-path="@ButtonGroupsDemoViewComponent.ViewPath">
+    <tiknas-button-group>
+        <tiknas-button button-type="Secondary">1</tiknas-button>
+        <tiknas-button button-type="Secondary">2</tiknas-button>
+        <tiknas-dropdown>
+            <tiknas-dropdown-button button-type="Secondary" text="Dropdown" />
+            <tiknas-dropdown-menu>
+                <tiknas-dropdown-item href="#"> Dropdown link </tiknas-dropdown-item>
+                <tiknas-dropdown-item href="#"> Dropdown link </tiknas-dropdown-item>
+            </tiknas-dropdown-menu>
+        </tiknas-dropdown>
+    </tiknas-button-group>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Vertical variation" view-path="@ButtonGroupsDemoViewComponent.ViewPath">
+    <tiknas-button-group direction="Vertical">
+        <tiknas-button button-type="Secondary">Button</tiknas-button>
+        <tiknas-button button-type="Secondary">Button</tiknas-button>
+        <tiknas-button button-type="Secondary">Button</tiknas-button>
+        <tiknas-dropdown>
+            <tiknas-dropdown-button button-type="Secondary" text="Dropdown" />
+            <tiknas-dropdown-menu>
+                <tiknas-dropdown-item href="#"> Dropdown link </tiknas-dropdown-item>
+                <tiknas-dropdown-item href="#"> Dropdown link </tiknas-dropdown-item>
+            </tiknas-dropdown-menu>
+        </tiknas-dropdown>
+    </tiknas-button-group>
+</tiknas-component-demo-section>

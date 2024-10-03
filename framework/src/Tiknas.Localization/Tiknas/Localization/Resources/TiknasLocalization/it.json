@@ -1,0 +1,7 @@
+{
+  "culture": "it",
+  "texts": {
+    "DisplayName:Tiknas.Localization.DefaultLanguage": "Lingua di default",
+    "Description:Tiknas.Localization.DefaultLanguage": "La lingua predefinita dell'applicazione."
+  }
+}

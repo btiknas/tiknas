@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <ProjectReference Include="..\..\src\Tiknas.Ldap\Tiknas.Ldap.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+    <ProjectReference Include="..\..\test\Tiknas.TestBase\Tiknas.TestBase.csproj" />
+  </ItemGroup>
+</Project>

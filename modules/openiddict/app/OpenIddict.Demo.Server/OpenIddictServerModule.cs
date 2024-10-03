@@ -34,7 +34,6 @@ using Volo.Abp.SettingManagement.Web;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.Web;
-using Volo.Abp.Uow;
 
 namespace OpenIddict.Demo.Server;
 
@@ -117,7 +116,7 @@ public class OpenIddictServerModule : AbpModule
         PreConfigure<AbpOpenIddictWildcardDomainOptions>(options =>
         {
             options.EnableWildcardDomainSupport = true;
-            options.WildcardDomainsFormat.Add("https://*.abp.io");
+            options.WildcardDomainsFormat.Add("https://{0}.abp.io/signin-oidc");
         });
 
         PreConfigure<OpenIddictBuilder>(builder =>
@@ -156,19 +155,8 @@ public class OpenIddictServerModule : AbpModule
         });
     }
 
-    public async override Task OnPreApplicationInitializationAsync(ApplicationInitializationContext context)
+    public async override Task OnApplicationInitializationAsync(ApplicationInitializationContext context)
     {
-        using var uow = context.ServiceProvider.GetRequiredService<IUnitOfWorkManager>().Begin();
-        {
-            var dbContext = await context.ServiceProvider.GetRequiredService<IDbContextProvider<ServerDbContext>>().GetDbContextAsync();
-            if ((await dbContext.Database.GetPendingMigrationsAsync()).Any())
-            {
-                await dbContext.Database.MigrateAsync();
-            }
-
-            await uow.CompleteAsync();
-        }
-
         await context.ServiceProvider
             .GetRequiredService<IDataSeeder>()
             .SeedAsync();

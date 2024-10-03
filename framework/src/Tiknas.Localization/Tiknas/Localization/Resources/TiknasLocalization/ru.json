@@ -1,0 +1,7 @@
+{
+  "culture": "ru",
+  "texts": {
+    "DisplayName:Tiknas.Localization.DefaultLanguage": "Язык по умолчанию",
+    "Description:Tiknas.Localization.DefaultLanguage": "Язык приложения по умолчанию."
+  }
+}

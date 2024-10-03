@@ -1,0 +1,7 @@
+{
+  "culture": "nl",
+  "texts": {
+    "DisplayName:Tiknas.Localization.DefaultLanguage": "Standaard taal",
+    "Description:Tiknas.Localization.DefaultLanguage": "De standaardtaal van de applicatie."
+  }
+}

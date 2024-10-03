@@ -99,12 +99,6 @@ public class AbpIdentityDomainModule : AbpModule
                 IdentityModuleExtensionConsts.EntityNames.OrganizationUnit,
                 typeof(OrganizationUnit)
             );
-
-            ModuleExtensionConfigurationHelper.ApplyEntityConfigurationToEntity(
-                IdentityModuleExtensionConsts.ModuleName,
-                IdentityModuleExtensionConsts.EntityNames.IdentitySession,
-                typeof(IdentitySession)
-            );
         });
     }
 }

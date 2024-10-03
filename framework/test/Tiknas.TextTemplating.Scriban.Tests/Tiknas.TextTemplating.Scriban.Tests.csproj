@@ -1,0 +1,23 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\common.test.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Tiknas\TextTemplating\Scriban\SampleTemplates\**\*.tpl">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <None Remove="Tiknas\TextTemplating\Scriban\SampleTemplates\**\*.tpl" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.TextTemplating.Tests\Tiknas.TextTemplating.Tests.csproj" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    </ItemGroup>
+
+</Project>

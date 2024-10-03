@@ -1,0 +1,20 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Pages.Tiknas.MultiTenancy
+@using Tiknas.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@using Tiknas.AspNetCore.Mvc.UI.MultiTenancy.Localization
+@model TenantSwitchModalModel
+@inject IHtmlLocalizer<TiknasUiMultiTenancyResource> L
+@{
+    Layout = null;
+}
+<tiknas-dynamic-form tiknas-model="@Model.Input" asp-page="/Tiknas/MultiTenancy/TenantSwitchModal">
+    <tiknas-modal>
+        <tiknas-modal-header title="@L["SwitchTenant"].Value"></tiknas-modal-header>
+        <tiknas-modal-body>
+            <tiknas-form-content />
+        </tiknas-modal-body>
+        @* TODO: A "Submit" would be better than "Save"! *@
+        <tiknas-modal-footer buttons="@(TiknasModalButtons.Cancel|TiknasModalButtons.Save)"></tiknas-modal-footer>
+    </tiknas-modal>
+</tiknas-dynamic-form>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.Ldap.Abstractions</AssemblyName>
+    <PackageId>Tiknas.Ldap.Abstractions</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Tiknas\Ldap\Localization\*.json" />
+    <EmbeddedResource Include="Tiknas\Ldap\Localization\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.Core\Tiknas.Core.csproj" />
+    <ProjectReference Include="..\Tiknas.Localization\Tiknas.Localization.csproj" />
+    <ProjectReference Include="..\Tiknas.VirtualFileSystem\Tiknas.VirtualFileSystem.csproj" />
+  </ItemGroup>
+</Project>

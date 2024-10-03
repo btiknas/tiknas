@@ -1,0 +1,25 @@
+{
+  "culture": "tr",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Varsayılan gönderici adresi",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Varsayılan gönderici adı",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Sunucu",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Port",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Kullanıcı adı",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Şifre",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domain",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "SSL aktif",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Varsayılan kimlik kullan",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Varsayılan gönderici adresi",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Varsayılan gönderici adı",
+    "Description:Tiknas.Mailing.Smtp.Host": "SMTP üzerinden e-posta göndermek için kullanılacak sunucunun IP adresi ya da adı.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Sunucunun SMTP portu.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Varsayılan kimlik kullanılmaması durumunda kullanılacak kullanıcı adı.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Varsayılan kimlik kullanılmaması durumunda kullanılacak şifre.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Kimlik bilgilerinin doğrulanacağı sunucu/domain.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Email gönderiminde SSL kullanılıp kullanılmayacağı.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Varsayılan kimlik bilgilerinin kullanılıp kullanılmayacağı.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Varsayılan e-posta layout şablonu",
+    "TextTemplate:StandardEmailTemplates.Message": "Basit bir mesaj göndermek için e-posta şablonu"
+  }
+}

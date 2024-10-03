@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.AspNetCore.MultiTenancy\Tiknas.AspNetCore.MultiTenancy.csproj" />
+        <ProjectReference Include="..\Tiknas.AspNetCore.Authentication.OAuth\Tiknas.AspNetCore.Authentication.OAuth.csproj" />
+        <ProjectReference Include="..\Tiknas.RemoteServices\Tiknas.RemoteServices.csproj" />
+        <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" />
+        <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" />
+    </ItemGroup>
+
+</Project>

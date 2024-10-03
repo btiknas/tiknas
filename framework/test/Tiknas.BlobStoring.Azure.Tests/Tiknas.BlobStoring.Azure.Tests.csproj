@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\common.test.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace />
+        <UserSecretsId>9f0d2c00-80c1-435b-bfab-2c39c8249091</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\Tiknas.BlobStoring.Azure\Tiknas.BlobStoring.Azure.csproj" />
+        <ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+        <ProjectReference Include="..\..\test\Tiknas.TestBase\Tiknas.TestBase.csproj" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <ProjectReference Include="..\Tiknas.BlobStoring.Tests\Tiknas.BlobStoring.Tests.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+{
+  "culture": "el",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Προεπιλογή από τη διεύθυνση",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Προεπιλογή από το εμφανιζόμενο όνομα",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Διακομιστής",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Θύρα",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Όνομα χρήστη",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Κωδικός πρόσβασης",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Τομέας",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Ενεργοποίηση SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Χρήση προεπιλεγμένων διαπιστευτηρίων",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Προεπιλογή από τη διεύθυνση",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Προεπιλογή από το εμφανιζόμενο όνομα",
+    "Description:Tiknas.Mailing.Smtp.Host": "Το όνομα ή διεύθυνση IP του διακομιστή που χρησιμοποιείται για συναλλαγές SMTP.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Θύρα που χρησιμοποιείται για συναλλαγές SMTP.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Όνομα χρήστη που συνδέεται με τα διαπιστευτήρια.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Κωδικός πρόσβασης για το όνομα χρήστη που συνδέεται με τα διαπιστευτήρια .",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Ο τομέας ή το όνομα του διακομιστή που επαληθεύει τα διαπιστευτήρια.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Εάν o SmtpClient χρησιμοποιεί Secure Sockets Layer (SSL) για την κρυπτογράφηση της σύνδεσης.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Εάν τα προεπιλεγμένα διαπιστευτήρια αποστέλλονται με αιτήματα.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Προεπιλεγμένο πρότυπο διάταξης email",
+    "TextTemplate:StandardEmailTemplates.Message": "Απλό πρότυπο μηνυμάτων για email"
+  }
+}

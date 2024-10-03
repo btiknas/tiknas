@@ -1,7 +1,0 @@
-{
-  "culture": "sv",
-  "texts": {
-    "DisplayName:Abp.Timing.Timezone": "Tidszon",
-    "Description:Abp.Timing.Timezone": "Tidszon för tillämpning"
-  }
-}

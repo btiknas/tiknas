@@ -1,0 +1,93 @@
+{
+  "name": "Tiknas.Auditing",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Auditing",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.Data",
+          "namespace": "Tiknas.Data",
+          "name": "TiknasDataModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Json",
+          "namespace": "Tiknas.Json",
+          "name": "TiknasJsonModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Timing",
+          "namespace": "Tiknas.Timing",
+          "name": "TiknasTimingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Security",
+          "namespace": "Tiknas.Security",
+          "name": "TiknasSecurityModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Threading",
+          "namespace": "Tiknas.Threading",
+          "name": "TiknasThreadingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.MultiTenancy",
+          "namespace": "Tiknas.MultiTenancy",
+          "name": "TiknasMultiTenancyModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Auditing.Contracts",
+          "namespace": "Tiknas.Auditing",
+          "name": "TiknasAuditingContractsModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasAuditingModule",
+      "summary": null
+    }
+  ]
+}

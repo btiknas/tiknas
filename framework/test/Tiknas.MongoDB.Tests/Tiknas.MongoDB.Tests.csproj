@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+    <ProjectReference Include="..\..\test\Tiknas.TestBase\Tiknas.TestBase.csproj" />
+    <ProjectReference Include="..\Tiknas.MongoDB.Tests.SecondContext\Tiknas.MongoDB.Tests.SecondContext.csproj" />
+    <ProjectReference Include="..\Tiknas.TestApp\Tiknas.TestApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EphemeralMongo.Core" />
+    <PackageReference Include="EphemeralMongo6.runtime.linux-x64" Condition="$([MSBuild]::IsOSPlatform('Linux'))" />
+    <PackageReference Include="EphemeralMongo6.runtime.osx-x64" Condition="$([MSBuild]::IsOSPlatform('OSX'))" />
+    <PackageReference Include="EphemeralMongo6.runtime.win-x64" Condition="$([MSBuild]::IsOSPlatform('Windows'))" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>

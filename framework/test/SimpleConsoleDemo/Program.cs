@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Volo.Abp;
-using Volo.Abp.DependencyInjection;
-using Volo.Abp.Modularity;
+using Tiknas;
+using Tiknas.DependencyInjection;
+using Tiknas.Modularity;
 
 namespace SimpleConsoleDemo;
 
@@ -12,7 +12,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        using (var application = AbpApplicationFactory.Create<MyConsoleModule>(options =>
+        using (var application = TiknasApplicationFactory.Create<MyConsoleModule>(options =>
         {
             options.Configuration.CommandLineArgs = args;
             options.UseAutofac();
@@ -49,7 +49,7 @@ class Program
     }
 }
 
-public class MyConsoleModule : AbpModule
+public class MyConsoleModule : TiknasModule
 {
 
 }
@@ -78,6 +78,6 @@ public class MessageSource : ITransientDependency
 {
     public string GetMessage()
     {
-        return "Hello ABP!";
+        return "Hello TIKNAS!";
     }
 }

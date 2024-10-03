@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Tiknas\TextTemplating\Localization\**\*.json" />
+    <None Remove="Tiknas\TextTemplating\Localization\**\*.json" />
+    <EmbeddedResource Include="Tiknas\TextTemplating\SampleTemplates\**\*.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="Tiknas\TextTemplating\SampleTemplates\**\*.cshtml" />
+    <EmbeddedResource Include="Tiknas\TextTemplating\SampleTemplates\**\*.tpl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="Tiknas\TextTemplating\SampleTemplates\**\*.tpl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tiknas.Localization\Tiknas.Localization.csproj" />
+    <ProjectReference Include="..\..\test\Tiknas.TestBase\Tiknas.TestBase.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.TextTemplating\Tiknas.TextTemplating.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.TextTemplating.Scriban\Tiknas.TextTemplating.Scriban.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.TextTemplating.Razor\Tiknas.TextTemplating.Razor.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>

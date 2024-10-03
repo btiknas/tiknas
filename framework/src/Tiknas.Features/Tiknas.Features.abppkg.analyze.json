@@ -1,0 +1,78 @@
+{
+  "name": "Tiknas.Features",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Features",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.Localization",
+          "namespace": "Tiknas.Localization",
+          "name": "TiknasLocalizationModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.MultiTenancy",
+          "namespace": "Tiknas.MultiTenancy",
+          "name": "TiknasMultiTenancyModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Validation",
+          "namespace": "Tiknas.Validation",
+          "name": "TiknasValidationModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Authorization.Abstractions",
+          "namespace": "Tiknas.Authorization",
+          "name": "TiknasAuthorizationAbstractionsModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasFeaturesModule",
+      "summary": null
+    }
+  ]
+}

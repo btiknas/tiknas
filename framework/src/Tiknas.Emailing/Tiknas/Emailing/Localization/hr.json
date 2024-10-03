@@ -1,0 +1,25 @@
+{
+  "culture": "hr",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Zadana adresa",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Zadano iz imena za prikaz",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Domaćin",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Luka",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Korisničko ime",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Lozinka",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domena",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Omogući SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Koristite zadane vjerodajnice",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Zadana adresa pošiljatelja",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Zadani naziv za prikaz",
+    "Description:Tiknas.Mailing.Smtp.Host": "Naziv ili IP adresa glavnog računala koji se koristi za SMTP transakcije.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Port koji se koristi za SMTP transakcije.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Korisničko ime povezano s vjerodajnicama.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Lozinka za korisničko ime povezano s vjerodajnicama.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Naziv domene ili računala koji provjerava vjerodajnice.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Koristi li SmtpClient Secure Sockets Layer (SSL) za šifriranje veze.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Jesu li DefaultCredentials poslani sa zahtjevima.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Zadani predložak izgleda e-pošte",
+    "TextTemplate:StandardEmailTemplates.Message": "Jednostavan predložak poruke za e-poštu"
+  }
+}

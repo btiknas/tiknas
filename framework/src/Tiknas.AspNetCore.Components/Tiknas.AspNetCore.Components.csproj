@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.AspNetCore.Components</AssemblyName>
+    <PackageId>Tiknas.AspNetCore.Components</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.Timing\Tiknas.Timing.csproj" />
+    <ProjectReference Include="..\Tiknas.ObjectMapping\Tiknas.ObjectMapping.csproj" />
+    <ProjectReference Include="..\Tiknas.Security\Tiknas.Security.csproj" />
+    <ProjectReference Include="..\Tiknas.MultiTenancy.Abstractions\Tiknas.MultiTenancy.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" />
+  </ItemGroup>
+
+</Project>

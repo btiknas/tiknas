@@ -1,0 +1,25 @@
+{
+  "culture": "vi",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Mặc định từ địa chỉ",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Mặc định từ tên hiển thị",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Tổ chức",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Hải cảng",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Tên tài khoản",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Mật khẩu",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Lãnh địa",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Bật SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Sử dụng thông tin đăng nhập mặc định",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Địa chỉ từ mặc định",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Mặc định từ tên hiển thị",
+    "Description:Tiknas.Mailing.Smtp.Host": "Tên hoặc địa chỉ IP của máy chủ được sử dụng cho các giao dịch SMTP.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Cổng được sử dụng cho các giao dịch SMTP.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Tên người dùng được liên kết với thông tin xác thực.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Mật khẩu cho tên người dùng được liên kết với thông tin đăng nhập.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Miền hoặc tên máy tính xác minh thông tin đăng nhập.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "SmtpClient có sử dụng Lớp cổng bảo mật (SSL) để mã hóa kết nối hay không.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Thông tin đăng nhập mặc định có được gửi cùng với các yêu cầu hay không.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Mẫu bố cục email mặc định",
+    "TextTemplate:StandardEmailTemplates.Message": "Mẫu tin nhắn đơn giản cho email"
+  }
+}

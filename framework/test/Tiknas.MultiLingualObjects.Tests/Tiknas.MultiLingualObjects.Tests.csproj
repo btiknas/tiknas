@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.test.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace />
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+		<ProjectReference Include="..\..\src\Tiknas.MultiLingualObjects\Tiknas.MultiLingualObjects.csproj" />
+		<ProjectReference Include="..\..\src\Tiknas.ObjectMapping\Tiknas.ObjectMapping.csproj" />
+		<ProjectReference Include="..\..\src\Tiknas.AutoMapper\Tiknas.AutoMapper.csproj" />
+
+		<ProjectReference Include="..\..\test\Tiknas.TestBase\Tiknas.TestBase.csproj" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+	</ItemGroup>
+
+</Project>

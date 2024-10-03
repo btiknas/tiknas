@@ -1,0 +1,19 @@
+{
+  "culture": "hu",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP SSL-n keresztül",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP SSL-n keresztül",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Szerver host",
+    "Description:Tiknas.Ldap.ServerHost": "Az LDAP ksizolgáló szerver hostneve vagy IP címe",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Szerver port",
+    "Description:Tiknas.Ldap.ServerPort": "LDAP kommunikáció portja",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Bázis tartomány-komponens",
+    "Description:Tiknas.Ldap.BaseDc": "Bázis tartomány-komponens",
+    "DisplayName:Tiknas.Ldap.Domain": "Tartomány",
+    "Description:Tiknas.Ldap.Domain": "Tartomány",
+    "DisplayName:Tiknas.Ldap.UserName": "Felhasználónév",
+    "Description:Tiknas.Ldap.UserName": "Felhasználónév",
+    "DisplayName:Tiknas.Ldap.Password": "Jelszó",
+    "Description:Tiknas.Ldap.Password": "Jelszó"
+  }
+}

@@ -40,13 +40,4 @@ public class IdentityModuleExtensionConfiguration : ModuleExtensionConfiguration
             configureAction
         );
     }
-
-    public IdentityModuleExtensionConfiguration ConfigureIdentitySession(
-        Action<EntityExtensionConfiguration> configureAction)
-    {
-        return this.ConfigureEntity(
-            IdentityModuleExtensionConsts.EntityNames.IdentitySession,
-            configureAction
-        );
-    }
 }

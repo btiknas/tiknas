@@ -1,0 +1,19 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "基于SSL的LDAP",
+    "Description:Tiknas.Ldap.Ldaps": "基于SSL的LDAP",
+    "DisplayName:Tiknas.Ldap.ServerHost": "服务器主机",
+    "Description:Tiknas.Ldap.ServerHost": "服务器主机",
+    "DisplayName:Tiknas.Ldap.ServerPort": "服务器端口",
+    "Description:Tiknas.Ldap.ServerPort": "服务器端口",
+    "DisplayName:Tiknas.Ldap.BaseDc": "基域组件",
+    "Description:Tiknas.Ldap.BaseDc": "基域组件",
+    "DisplayName:Tiknas.Ldap.Domain": "域",
+    "Description:Tiknas.Ldap.Domain": "域",
+    "DisplayName:Tiknas.Ldap.UserName": "用户名",
+    "Description:Tiknas.Ldap.UserName": "用户名",
+    "DisplayName:Tiknas.Ldap.Password": "密码",
+    "Description:Tiknas.Ldap.Password": "密码"
+  }
+}

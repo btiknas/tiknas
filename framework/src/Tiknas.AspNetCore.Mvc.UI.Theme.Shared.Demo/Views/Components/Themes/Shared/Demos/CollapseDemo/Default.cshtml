@@ -1,0 +1,43 @@
+@using Tiknas.AspNetCore.Mvc.UI.Theme.Shared.Demo.Views.Components.Themes.Shared.Demos.CollapseDemo
+
+<tiknas-component-demo-section title="Example" view-path="@CollapseDemoViewComponent.ViewPath">
+    <tiknas-button button-type="Primary" tiknas-collapse-id="collapseExample" text="Button with data-target" />
+    <a tiknas-button="Primary" tiknas-collapse-id="collapseExample"> Link with href </a>
+
+    <tiknas-collapse-body id="collapseExample">
+        Anim pariatur wolf moon tempor,,, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </tiknas-collapse-body>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Multiple targets" view-path="@CollapseDemoViewComponent.ViewPath">
+    <a tiknas-button="Primary" tiknas-collapse-id="FirstCollapseExample"> Toggle first element </a>
+    <tiknas-button button-type="Primary" tiknas-collapse-id="SecondCollapseExample" text="Toggle second element" />
+    <tiknas-button button-type="Primary" tiknas-collapse-id="FirstCollapseExample SecondCollapseExample" text="Toggle both elements" />
+
+    <tiknas-row class="mt-3">
+        <tiknas-column size-sm="_6">
+            <tiknas-collapse-body id="FirstCollapseExample" multi="true">
+                Curabitur porta porttitor libero eu luctus. Praesent ultrices mattis commodo. Integer sodales massa risus, in molestie enim sagittis blandit
+            </tiknas-collapse-body>
+        </tiknas-column>
+        <tiknas-column size-sm="_6">
+            <tiknas-collapse-body id="SecondCollapseExample" multi="true">
+                Anim pariatur  wolf moon tempor,,, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            </tiknas-collapse-body>
+        </tiknas-column>
+    </tiknas-row>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Accordion example" view-path="@CollapseDemoViewComponent.ViewPath">
+    <tiknas-accordion>
+        <tiknas-accordion-item title="Collapsible Group Item #1">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry rtat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </tiknas-accordion-item>
+        <tiknas-accordion-item title="Collapsible Group Item #2">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </tiknas-accordion-item>
+        <tiknas-accordion-item title="Collapsible Group Item #3">
+            Anim pariatur  wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </tiknas-accordion-item>
+    </tiknas-accordion>
+</tiknas-component-demo-section>

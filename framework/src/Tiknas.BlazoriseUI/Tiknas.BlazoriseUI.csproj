@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.AspNetCore.Components.Web\Tiknas.AspNetCore.Components.Web.csproj" />
+        <ProjectReference Include="..\Tiknas.Authorization\Tiknas.Authorization.csproj" />
+        <ProjectReference Include="..\Tiknas.Ddd.Application.Contracts\Tiknas.Ddd.Application.Contracts.csproj" />
+        <ProjectReference Include="..\Tiknas.Features\Tiknas.Features.csproj" />
+        <ProjectReference Include="..\Tiknas.GlobalFeatures\Tiknas.GlobalFeatures.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Blazorise" />
+        <PackageReference Include="Blazorise.DataGrid" />
+        <PackageReference Include="Blazorise.Snackbar" />
+        <PackageReference Include="Blazorise.Components" />
+    </ItemGroup>
+
+</Project>

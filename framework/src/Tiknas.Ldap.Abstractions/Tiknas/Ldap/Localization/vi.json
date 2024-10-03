@@ -1,0 +1,19 @@
+{
+  "culture": "vi",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP qua SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP qua SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Máy chủ lưu trữ",
+    "Description:Tiknas.Ldap.ServerHost": "Máy chủ lưu trữ",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Cổng máy chủ",
+    "Description:Tiknas.Ldap.ServerPort": "Cổng máy chủ",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Thành phần miền cơ sở",
+    "Description:Tiknas.Ldap.BaseDc": "Thành phần miền cơ sở",
+    "DisplayName:Tiknas.Ldap.Domain": "Lãnh địa",
+    "Description:Tiknas.Ldap.Domain": "Lãnh địa",
+    "DisplayName:Tiknas.Ldap.UserName": "tên tài khoản",
+    "Description:Tiknas.Ldap.UserName": "tên tài khoản",
+    "DisplayName:Tiknas.Ldap.Password": "Mật khẩu",
+    "Description:Tiknas.Ldap.Password": "Mật khẩu"
+  }
+}

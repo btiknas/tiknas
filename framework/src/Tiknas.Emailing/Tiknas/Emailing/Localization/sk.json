@@ -1,0 +1,25 @@
+{
+  "culture": "sk",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Predvolená adresa Od",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Predvolené meno Od",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Host server",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Port",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Meno používateľa",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Heslo",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Doména",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Povoliť SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Použiť predovlené prihlasovacie údaje",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Predvolené adresa Od",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Predvolené meno Od",
+    "Description:Tiknas.Mailing.Smtp.Host": "Názov alebo IP adresa host servera používaného pre SMTP transakcie.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Port používaný pre SMTP transakcie.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Meno používateľa spojené s prihlasovacími údajmi.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Heslo pre používateľské meno spojené s prihlasovacími údajmi.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Názov domény alebo počítača, ktorý overuje prihlasovacie údaje.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Či SMTP klient používa na šifrovanie spojenia Secure Sockets Layer (SSL).",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Či sa spolu s požiadavkami posielajú aj predvolené prihlasovacie údaje.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Predvolená šablóna rozloženia emailu",
+    "TextTemplate:StandardEmailTemplates.Message": "Jednoduchá šablóna správy pre emaily"
+  }
+}

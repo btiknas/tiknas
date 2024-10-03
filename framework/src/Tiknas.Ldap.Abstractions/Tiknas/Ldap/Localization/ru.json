@@ -1,0 +1,19 @@
+{
+  "culture": "ru",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP через SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP через SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Хост сервера",
+    "Description:Tiknas.Ldap.ServerHost": "Хост сервера",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Порт сервера",
+    "Description:Tiknas.Ldap.ServerPort": "Порт сервера",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Компонент базового домена",
+    "Description:Tiknas.Ldap.BaseDc": "Компонент базового домена",
+    "DisplayName:Tiknas.Ldap.Domain": "Домен",
+    "Description:Tiknas.Ldap.Domain": "Домен",
+    "DisplayName:Tiknas.Ldap.UserName": "Имя пользователя",
+    "Description:Tiknas.Ldap.UserName": "Имя пользователя",
+    "DisplayName:Tiknas.Ldap.Password": "Пароль",
+    "Description:Tiknas.Ldap.Password": "Пароль"
+  }
+}

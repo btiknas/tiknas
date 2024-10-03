@@ -1,0 +1,6 @@
+{
+  "culture": "fr",
+  "texts": {
+    "Tiknas.Http.DynamicProxying:10001": "Exception métier avec données: {0}"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Tiknas.EventBus",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.EventBus",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.EventBus.Abstractions",
+          "namespace": "Tiknas.EventBus.Abstractions",
+          "name": "TiknasEventBusAbstractionsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.MultiTenancy",
+          "namespace": "Tiknas.MultiTenancy",
+          "name": "TiknasMultiTenancyModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Json",
+          "namespace": "Tiknas.Json",
+          "name": "TiknasJsonModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Guids",
+          "namespace": "Tiknas.Guids",
+          "name": "TiknasGuidsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.BackgroundWorkers",
+          "namespace": "Tiknas.BackgroundWorkers",
+          "name": "TiknasBackgroundWorkersModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.DistributedLocking.Abstractions",
+          "namespace": "Tiknas.DistributedLocking",
+          "name": "TiknasDistributedLockingAbstractionsModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasEventBusModule",
+      "summary": null
+    }
+  ]
+}

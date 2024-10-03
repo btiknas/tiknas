@@ -1,0 +1,19 @@
+{
+  "culture": "fi",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP SSL:n kautta",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP SSL:n kautta",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Palvelimen isäntä",
+    "Description:Tiknas.Ldap.ServerHost": "Palvelimen isäntä",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Palvelimen portti",
+    "Description:Tiknas.Ldap.ServerPort": "Palvelimen portti",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Perustoimialueen komponentti",
+    "Description:Tiknas.Ldap.BaseDc": "Perustoimialueen komponentti",
+    "DisplayName:Tiknas.Ldap.Domain": "Verkkotunnus",
+    "Description:Tiknas.Ldap.Domain": "Verkkotunnus",
+    "DisplayName:Tiknas.Ldap.UserName": "Käyttäjätunnus",
+    "Description:Tiknas.Ldap.UserName": "Käyttäjätunnus",
+    "DisplayName:Tiknas.Ldap.Password": "Salasana",
+    "Description:Tiknas.Ldap.Password": "Salasana"
+  }
+}

@@ -1,0 +1,26 @@
+﻿using System;
+using System.Linq;
+using Tiknas.MultiTenancy;
+
+namespace Tiknas.IdentityModel;
+
+[Serializable]
+public class IdentityModelTokenCacheItem
+{
+    public string AccessToken { get; set; } = default!;
+
+    public IdentityModelTokenCacheItem()
+    {
+
+    }
+
+    public IdentityModelTokenCacheItem(string accessToken)
+    {
+        AccessToken = accessToken;
+    }
+
+    public static string CalculateCacheKey(IdentityClientConfiguration configuration)
+    {
+        return string.Join(",", configuration.Select(x => x.Key + ":" + x.Value)).ToSha256();
+    }
+}

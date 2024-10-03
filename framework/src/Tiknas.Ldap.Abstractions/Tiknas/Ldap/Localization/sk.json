@@ -1,0 +1,19 @@
+{
+  "culture": "sk",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP cez SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP cez SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Server host",
+    "Description:Tiknas.Ldap.ServerHost": "Server host",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Server port",
+    "Description:Tiknas.Ldap.ServerPort": "Server post",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Základný komponent domény",
+    "Description:Tiknas.Ldap.BaseDc": "Základný komponent domény",
+    "DisplayName:Tiknas.Ldap.Domain": "doména",
+    "Description:Tiknas.Ldap.Domain": "doména",
+    "DisplayName:Tiknas.Ldap.UserName": "Používateľské meno",
+    "Description:Tiknas.Ldap.UserName": "Používateľské meno",
+    "DisplayName:Tiknas.Ldap.Password": "Heslo",
+    "Description:Tiknas.Ldap.Password": "Heslo"
+  }
+}

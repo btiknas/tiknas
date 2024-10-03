@@ -1,0 +1,25 @@
+{
+  "culture": "hu",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Alapértlemezett feladó címe",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Feladó alapértelmezett megjelenő neve",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Kiszolgáló",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Port",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Felhasználónév",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Jelszó",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domain",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "SSL engedélyezése",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Használja az alapértelmezett hitelesítő adatokat",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Az alapértlemezett feladó címe",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "A feladó alapértelmezett megjelenő neve",
+    "Description:Tiknas.Mailing.Smtp.Host": "Az SMTP kiszolgáló neve vagy IP címe.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Az SMTP forgalomhoz használt port.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "A hitelesítő adatokhoz társított felhasználói név..",
+    "Description:Tiknas.Mailing.Smtp.Password": "A hitelesítő adatokhoz társított felhasználói név jelszava.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "A hitelesítő adatokat igazoló tartomány vagy számítógép neve.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Engedélyezze, ha a levelező programja Secure Sockets Layer (SSL) protokollt használ a kapcsolat titkosításához.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Alkalmazza, hogy a kérésekhez az alapértelmezett hitelesítést használja.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Alapértelmezett e-mail elrendezési sablon",
+    "TextTemplate:StandardEmailTemplates.Message": "Egyszerű üzenet sablon az e-mailekhez"
+  }
+}

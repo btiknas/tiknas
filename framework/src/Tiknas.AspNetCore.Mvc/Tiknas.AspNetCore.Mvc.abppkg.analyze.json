@@ -1,0 +1,98 @@
+{
+  "name": "Tiknas.AspNetCore.Mvc",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.AspNetCore.Mvc",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.AspNetCore",
+          "namespace": "Tiknas.AspNetCore",
+          "name": "TiknasAspNetCoreModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Localization",
+          "namespace": "Tiknas.Localization",
+          "name": "TiknasLocalizationModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.ApiVersioning.Abstractions",
+          "namespace": "Tiknas.ApiVersioning",
+          "name": "TiknasApiVersioningAbstractionsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.AspNetCore.Mvc.Contracts",
+          "namespace": "Tiknas.AspNetCore.Mvc",
+          "name": "TiknasAspNetCoreMvcContractsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.UI.Navigation",
+          "namespace": "Tiknas.UI.Navigation",
+          "name": "TiknasUiNavigationModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.GlobalFeatures",
+          "namespace": "Tiknas.GlobalFeatures",
+          "name": "TiknasGlobalFeaturesModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Ddd.Application",
+          "namespace": "Tiknas.Application",
+          "name": "TiknasDddApplicationModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Json.SystemTextJson",
+          "namespace": "Tiknas.Json.SystemTextJson",
+          "name": "TiknasJsonSystemTextJsonModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasAspNetCoreMvcModule",
+      "summary": null
+    }
+  ]
+}

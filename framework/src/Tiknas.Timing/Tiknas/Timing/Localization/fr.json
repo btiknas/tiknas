@@ -1,0 +1,7 @@
+{
+ "culture": "fr",
+ "texts": {
+  "DisplayName:Tiknas.Timing.Timezone": "Fuseau horaire",
+  "Description:Tiknas.Timing.Timezone": "Fuseau horaire de l'application"
+ }
+}

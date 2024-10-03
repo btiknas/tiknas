@@ -1,7 +1,0 @@
-{
-  "culture": "hr",
-  "texts": {
-    "DisplayName:Abp.Localization.DefaultLanguage": "Zadani jezik",
-    "Description:Abp.Localization.DefaultLanguage": "Zadani jezik aplikacije."
-  }
-}

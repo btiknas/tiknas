@@ -1,0 +1,19 @@
+{
+  "culture": "hi",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "एसएसएल पर एलडीएपी",
+    "Description:Tiknas.Ldap.Ldaps": "एसएसएल पर एलडीएपी",
+    "DisplayName:Tiknas.Ldap.ServerHost": "सर्वर होस्ट",
+    "Description:Tiknas.Ldap.ServerHost": "सर्वर होस्ट",
+    "DisplayName:Tiknas.Ldap.ServerPort": "सर्वर पोर्ट",
+    "Description:Tiknas.Ldap.ServerPort": "सर्वर पोर्ट",
+    "DisplayName:Tiknas.Ldap.BaseDc": "बेस डोमेन घटक",
+    "Description:Tiknas.Ldap.BaseDc": "बेस डोमेन घटक",
+    "DisplayName:Tiknas.Ldap.Domain": "कार्यक्षेत्र",
+    "Description:Tiknas.Ldap.Domain": "कार्यक्षेत्र",
+    "DisplayName:Tiknas.Ldap.UserName": "उपयोगकर्ता नाम",
+    "Description:Tiknas.Ldap.UserName": "उपयोगकर्ता नाम",
+    "DisplayName:Tiknas.Ldap.Password": "कुंजिका",
+    "Description:Tiknas.Ldap.Password": "कुंजिका"
+  }
+}

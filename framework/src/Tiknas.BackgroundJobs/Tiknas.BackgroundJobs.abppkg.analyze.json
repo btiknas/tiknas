@@ -1,0 +1,83 @@
+{
+  "name": "Tiknas.BackgroundJobs",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.BackgroundJobs",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.BackgroundJobs.Abstractions",
+          "namespace": "Tiknas.BackgroundJobs",
+          "name": "TiknasBackgroundJobsAbstractionsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.BackgroundWorkers",
+          "namespace": "Tiknas.BackgroundWorkers",
+          "name": "TiknasBackgroundWorkersModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Timing",
+          "namespace": "Tiknas.Timing",
+          "name": "TiknasTimingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Guids",
+          "namespace": "Tiknas.Guids",
+          "name": "TiknasGuidsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.DistributedLocking.Abstractions",
+          "namespace": "Tiknas.DistributedLocking",
+          "name": "TiknasDistributedLockingAbstractionsModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasBackgroundJobsModule",
+      "summary": null
+    }
+  ]
+}

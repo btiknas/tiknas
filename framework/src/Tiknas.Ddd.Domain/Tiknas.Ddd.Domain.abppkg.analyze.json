@@ -1,0 +1,103 @@
+{
+  "name": "Tiknas.Ddd.Domain",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Domain",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.Auditing",
+          "namespace": "Tiknas.Auditing",
+          "name": "TiknasAuditingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Data",
+          "namespace": "Tiknas.Data",
+          "name": "TiknasDataModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.EventBus",
+          "namespace": "Tiknas.EventBus",
+          "name": "TiknasEventBusModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Guids",
+          "namespace": "Tiknas.Guids",
+          "name": "TiknasGuidsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Timing",
+          "namespace": "Tiknas.Timing",
+          "name": "TiknasTimingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.ObjectMapping",
+          "namespace": "Tiknas.ObjectMapping",
+          "name": "TiknasObjectMappingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.ExceptionHandling",
+          "namespace": "Tiknas.ExceptionHandling",
+          "name": "TiknasExceptionHandlingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Specifications",
+          "namespace": "Tiknas.Specifications",
+          "name": "TiknasSpecificationsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Caching",
+          "namespace": "Tiknas.Caching",
+          "name": "TiknasCachingModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasDddDomainModule",
+      "summary": null
+    }
+  ]
+}

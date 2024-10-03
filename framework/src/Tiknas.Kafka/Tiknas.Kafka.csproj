@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Confluent.Kafka" />
+      <ProjectReference Include="..\Tiknas.Json\Tiknas.Json.csproj" />
+      <ProjectReference Include="..\Tiknas.Threading\Tiknas.Threading.csproj" />
+    </ItemGroup>
+
+</Project>

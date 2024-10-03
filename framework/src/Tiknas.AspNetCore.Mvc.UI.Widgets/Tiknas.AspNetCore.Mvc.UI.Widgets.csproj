@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <AssemblyName>Tiknas.AspNetCore.Mvc.UI.Widgets</AssemblyName>
+    <PackageId>Tiknas.AspNetCore.Mvc.UI.Widgets</PackageId>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.AspNetCore.Mvc.UI.Bundling\Tiknas.AspNetCore.Mvc.UI.Bundling.csproj" />
+  </ItemGroup>
+
+</Project>

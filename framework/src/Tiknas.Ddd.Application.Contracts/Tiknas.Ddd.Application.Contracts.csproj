@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.Ddd.Application.Contracts</AssemblyName>
+    <PackageId>Tiknas.Ddd.Application.Contracts</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Tiknas\Application\Localization\Resources\TiknasDdd\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\ar.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\cs.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\de.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\el.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\en-GB.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\en.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\es.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\fa.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\fi.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\fr.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\hi.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\hr.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\hu.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\is.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\it.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\nl.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\pl-PL.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\pt-BR.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\ro-RO.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\ru.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\sk.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\sl.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\sv.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\tr.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\vi.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\zh-Hans.json" />
+    <EmbeddedResource Remove="Tiknas\Application\Localization\Resources\TiknasDdd\zh-Hant.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Tiknas\Application\TiknasDddApplicationContractsModule.cs~RF895365.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.Auditing.Contracts\Tiknas.Auditing.Contracts.csproj" />
+    <ProjectReference Include="..\Tiknas.Localization\Tiknas.Localization.csproj" />
+    <ProjectReference Include="..\Tiknas.Data\Tiknas.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.AspNetCore.Components.Web.Theming\Tiknas.AspNetCore.Components.Web.Theming.csproj" />
+        <ProjectReference Include="..\Tiknas.AspNetCore.Components.MauiBlazor\Tiknas.AspNetCore.Components.MauiBlazor.csproj" />
+    </ItemGroup>
+
+</Project>

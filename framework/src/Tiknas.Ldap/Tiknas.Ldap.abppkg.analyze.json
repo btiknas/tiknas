@@ -1,0 +1,139 @@
+{
+  "name": "Tiknas.Ldap",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Ldap",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.Settings",
+          "namespace": "Tiknas.Settings",
+          "name": "TiknasSettingsModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.VirtualFileSystem",
+          "namespace": "Tiknas.VirtualFileSystem",
+          "name": "TiknasVirtualFileSystemModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Localization",
+          "namespace": "Tiknas.Localization",
+          "name": "TiknasLocalizationModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasLdapModule",
+      "summary": null
+    },
+    {
+      "defaultValue": "",
+      "displayName": "Sunucu Ana Bilgisayarı",
+      "description": "Sunucu Ana Bilgisayarı",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Ldap.ServerHost",
+      "summary": null
+    },
+    {
+      "defaultValue": "389",
+      "displayName": "Sunucu portu",
+      "description": "Sunucu portu",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Ldap.ServerPort",
+      "summary": null
+    },
+    {
+      "defaultValue": "",
+      "displayName": "Temel alan bileşeni",
+      "description": "Temel alan bileşeni",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Ldap.BaseDc",
+      "summary": null
+    },
+    {
+      "defaultValue": "",
+      "displayName": "Alan adı",
+      "description": "Alan adı",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Ldap.Domain",
+      "summary": null
+    },
+    {
+      "defaultValue": "",
+      "displayName": "Kullanıcı adı",
+      "description": "Kullanıcı adı",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": false,
+      "contentType": "setting",
+      "name": "Tiknas.Ldap.UserName",
+      "summary": null
+    },
+    {
+      "defaultValue": "",
+      "displayName": "Parola",
+      "description": "Parola",
+      "isVisibleToClient": false,
+      "isInherited": true,
+      "isEncrypted": true,
+      "contentType": "setting",
+      "name": "Tiknas.Ldap.Password",
+      "summary": null
+    }
+  ]
+}

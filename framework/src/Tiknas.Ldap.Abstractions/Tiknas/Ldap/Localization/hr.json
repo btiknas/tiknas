@@ -1,0 +1,19 @@
+{
+  "culture": "hr",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP preko SSL-a",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP preko SSL-a",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Domaćin poslužitelja",
+    "Description:Tiknas.Ldap.ServerHost": "Domaćin poslužitelja",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Port poslužitelja",
+    "Description:Tiknas.Ldap.ServerPort": "Port poslužitelja",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Komponenta osnovne domene",
+    "Description:Tiknas.Ldap.BaseDc": "Komponenta osnovne domene",
+    "DisplayName:Tiknas.Ldap.Domain": "Domena",
+    "Description:Tiknas.Ldap.Domain": "Domena",
+    "DisplayName:Tiknas.Ldap.UserName": "Korisničko ime",
+    "Description:Tiknas.Ldap.UserName": "Korisničko ime",
+    "DisplayName:Tiknas.Ldap.Password": "Lozinka",
+    "Description:Tiknas.Ldap.Password": "Lozinka"
+  }
+}

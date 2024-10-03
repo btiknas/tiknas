@@ -1,0 +1,10 @@
+using Tiknas.DependencyInjection;
+using Tiknas.Security.Claims;
+
+namespace Tiknas.AspNetCore.Authentication.JwtBearer.DynamicClaims;
+
+[DisableConventionalRegistration]
+public class WebRemoteDynamicClaimsPrincipalContributor : RemoteDynamicClaimsPrincipalContributorBase<WebRemoteDynamicClaimsPrincipalContributor, WebRemoteDynamicClaimsPrincipalContributorCache>
+{
+
+}

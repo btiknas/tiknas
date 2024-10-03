@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.BlobStoring\Tiknas.BlobStoring.csproj" />
+        <ProjectReference Include="..\Tiknas.Caching\Tiknas.Caching.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.S3" />
+      <PackageReference Include="AWSSDK.SecurityToken" />
+    </ItemGroup>
+
+</Project>

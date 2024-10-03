@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <IsPackable>true</IsPackable>
+        <OutputType>Library</OutputType>
+        <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tiknas.AspNetCore.Components.Web\Tiknas.AspNetCore.Components.Web.csproj" />
+        <ProjectReference Include="..\Tiknas.AspNetCore.Mvc.Contracts\Tiknas.AspNetCore.Mvc.Contracts.csproj" />
+        <ProjectReference Include="..\Tiknas.EventBus\Tiknas.EventBus.csproj" />
+        <ProjectReference Include="..\Tiknas.Http.Client\Tiknas.Http.Client.csproj" />
+        <ProjectReference Include="..\Tiknas.AspNetCore.SignalR\Tiknas.AspNetCore.SignalR.csproj" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" />
+        <PackageReference Include="IdentityModel" />
+    </ItemGroup>
+
+</Project>

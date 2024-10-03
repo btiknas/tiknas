@@ -1,0 +1,93 @@
+{
+  "name": "Tiknas.Http.Client",
+  "hash": "",
+  "contents": [
+    {
+      "namespace": "Tiknas.Http.Client",
+      "dependsOnModules": [
+        {
+          "declaringAssemblyName": "Tiknas.Http",
+          "namespace": "Tiknas.Http",
+          "name": "TiknasHttpModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Castle.Core",
+          "namespace": "Tiknas.Castle",
+          "name": "TiknasCastleCoreModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Threading",
+          "namespace": "Tiknas.Threading",
+          "name": "TiknasThreadingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.MultiTenancy",
+          "namespace": "Tiknas.MultiTenancy",
+          "name": "TiknasMultiTenancyModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.Validation",
+          "namespace": "Tiknas.Validation",
+          "name": "TiknasValidationModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.ExceptionHandling",
+          "namespace": "Tiknas.ExceptionHandling",
+          "name": "TiknasExceptionHandlingModule"
+        },
+        {
+          "declaringAssemblyName": "Tiknas.RemoteServices",
+          "namespace": "Tiknas.RemoteServices",
+          "name": "TiknasRemoteServicesModule"
+        }
+      ],
+      "implementingInterfaces": [
+        {
+          "name": "ITiknasModule",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.ITiknasModule"
+        },
+        {
+          "name": "IOnPreApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPreApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationInitialization",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationInitialization"
+        },
+        {
+          "name": "IOnPostApplicationInitialization",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IOnPostApplicationInitialization"
+        },
+        {
+          "name": "IOnApplicationShutdown",
+          "namespace": "Tiknas",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.IOnApplicationShutdown"
+        },
+        {
+          "name": "IPreConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPreConfigureServices"
+        },
+        {
+          "name": "IPostConfigureServices",
+          "namespace": "Tiknas.Modularity",
+          "declaringAssemblyName": "Tiknas.Core",
+          "fullName": "Tiknas.Modularity.IPostConfigureServices"
+        }
+      ],
+      "contentType": "tiknasModule",
+      "name": "TiknasHttpClientModule",
+      "summary": null
+    }
+  ]
+}

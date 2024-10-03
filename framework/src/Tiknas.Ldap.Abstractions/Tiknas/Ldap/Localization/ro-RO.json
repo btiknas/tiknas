@@ -1,0 +1,19 @@
+{
+  "culture": "ro-RO",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP peste SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP peste SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Server host",
+    "Description:Tiknas.Ldap.ServerHost": "Server host",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Server port",
+    "Description:Tiknas.Ldap.ServerPort": "Server port",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Componenta domeniului de bază",
+    "Description:Tiknas.Ldap.BaseDc": "Componenta domeniului de bază",
+    "DisplayName:Tiknas.Ldap.Domain": "Domeniu",
+    "Description:Tiknas.Ldap.Domain": "Domeniu",
+    "DisplayName:Tiknas.Ldap.UserName": "Nume de utilizator",
+    "Description:Tiknas.Ldap.UserName": "Nume de utilizator",
+    "DisplayName:Tiknas.Ldap.Password": "Parola",
+    "Description:Tiknas.Ldap.Password": "Parola"
+  }
+}

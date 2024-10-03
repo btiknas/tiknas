@@ -142,3 +142,6 @@ GitHub repository stars are an important indicator of popularity and the size of
 
 We have a Discord server where you can chat with other ABP users. Share your ideas, report technical issues, showcase your creations, share the tips that worked for you and catch up with the latest news and announcements about ABP Framework. Join 👉 https://discord.gg/abp.
 
+
+
+Mit git rebase upstream/dev werden immer die aktuellsten Entwicklungen von abp dazu gemerged. Aber ein upstream/master gibt es bei abp leider nicht.

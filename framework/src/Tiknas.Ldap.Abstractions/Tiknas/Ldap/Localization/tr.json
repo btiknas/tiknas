@@ -1,0 +1,19 @@
+{
+  "culture": "tr",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "SSL üzerinden LDAP",
+    "Description:Tiknas.Ldap.Ldaps": "SSL üzerinden LDAP",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Sunucu Ana Bilgisayarı",
+    "Description:Tiknas.Ldap.ServerHost": "Sunucu Ana Bilgisayarı",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Sunucu portu",
+    "Description:Tiknas.Ldap.ServerPort": "Sunucu portu",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Temel alan bileşeni",
+    "Description:Tiknas.Ldap.BaseDc": "Temel alan bileşeni",
+    "DisplayName:Tiknas.Ldap.Domain": "Alan adı",
+    "Description:Tiknas.Ldap.Domain": "Alan adı",
+    "DisplayName:Tiknas.Ldap.UserName": "Kullanıcı adı",
+    "Description:Tiknas.Ldap.UserName": "Kullanıcı adı",
+    "DisplayName:Tiknas.Ldap.Password": "Parola",
+    "Description:Tiknas.Ldap.Password": "Parola"
+  }
+}

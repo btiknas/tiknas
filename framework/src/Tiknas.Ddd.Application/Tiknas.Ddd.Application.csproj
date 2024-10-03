@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AssemblyName>Tiknas.Ddd.Application</AssemblyName>
+    <PackageId>Tiknas.Ddd.Application</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.Authorization\Tiknas.Authorization.csproj" />
+    <ProjectReference Include="..\Tiknas.Ddd.Application.Contracts\Tiknas.Ddd.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Tiknas.Ddd.Domain\Tiknas.Ddd.Domain.csproj" />
+    <ProjectReference Include="..\Tiknas.Features\Tiknas.Features.csproj" />
+    <ProjectReference Include="..\Tiknas.GlobalFeatures\Tiknas.GlobalFeatures.csproj" />
+    <ProjectReference Include="..\Tiknas.Http.Abstractions\Tiknas.Http.Abstractions.csproj" />
+    <ProjectReference Include="..\Tiknas.Localization\Tiknas.Localization.csproj" />
+    <ProjectReference Include="..\Tiknas.ObjectMapping\Tiknas.ObjectMapping.csproj" />
+    <ProjectReference Include="..\Tiknas.Security\Tiknas.Security.csproj" />
+    <ProjectReference Include="..\Tiknas.Settings\Tiknas.Settings.csproj" />
+    <ProjectReference Include="..\Tiknas.Validation\Tiknas.Validation.csproj" />
+  </ItemGroup>
+
+</Project>

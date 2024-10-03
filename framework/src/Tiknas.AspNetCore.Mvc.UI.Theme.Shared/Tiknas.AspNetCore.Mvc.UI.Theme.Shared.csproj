@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <AssemblyName>Tiknas.AspNetCore.Mvc.UI.Theme.Shared</AssemblyName>
+    <PackageId>Tiknas.AspNetCore.Mvc.UI.Theme.Shared</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="wwwroot\**\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\**\*.*" />
+    <Content Remove="compilerconfig.json" />
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.AspNetCore.Mvc.UI.Bootstrap\Tiknas.AspNetCore.Mvc.UI.Bootstrap.csproj" />
+    <ProjectReference Include="..\Tiknas.AspNetCore.Mvc.UI.Packages\Tiknas.AspNetCore.Mvc.UI.Packages.csproj" />
+    <ProjectReference Include="..\Tiknas.AspNetCore.Mvc.UI.Widgets\Tiknas.AspNetCore.Mvc.UI.Widgets.csproj" />
+  </ItemGroup>
+
+</Project>

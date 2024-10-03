@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <AssemblyName>Tiknas.AspNetCore.Mvc.UI.MultiTenancy</AssemblyName>
+    <PackageId>Tiknas.AspNetCore.Mvc.UI.MultiTenancy</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\**\*.js" />
+    <EmbeddedResource Include="Tiknas\AspNetCore\Mvc\UI\MultiTenancy\Localization\*.json" />
+    <EmbeddedResource Include="Components\**\*.js" />
+    <EmbeddedResource Include="Components\**\*.css" />
+    <Content Remove="Pages\**\*.js" />
+    <Content Remove="Tiknas\AspNetCore\Mvc\UI\MultiTenancy\Localization\*.json" />
+    <Content Remove="Components\**\*.js" />
+    <Content Remove="Components\**\*.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.AspNetCore.MultiTenancy\Tiknas.AspNetCore.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Tiknas.AspNetCore.Mvc.UI.Theme.Shared\Tiknas.AspNetCore.Mvc.UI.Theme.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

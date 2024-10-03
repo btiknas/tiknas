@@ -1,0 +1,25 @@
+{
+  "culture": "ru",
+  "texts": {
+    "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Адрес отправления по умолчанию",
+    "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Имя отправителя по умолчанию",
+    "DisplayName:Tiknas.Mailing.Smtp.Host": "Сервер",
+    "DisplayName:Tiknas.Mailing.Smtp.Port": "Порт",
+    "DisplayName:Tiknas.Mailing.Smtp.UserName": "Имя пользователя",
+    "DisplayName:Tiknas.Mailing.Smtp.Password": "Пароль",
+    "DisplayName:Tiknas.Mailing.Smtp.Domain": "Домен",
+    "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Включить SSL",
+    "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Использовать учетные данные по умолчанию",
+    "Description:Tiknas.Mailing.DefaultFromAddress": "Отправление по умолчанию от адреса.",
+    "Description:Tiknas.Mailing.DefaultFromDisplayName": "Имя отправителя по умолчанию.",
+    "Description:Tiknas.Mailing.Smtp.Host": "Имя или IP- адрес сервера, используемого для отправки по протоколу SMTP.",
+    "Description:Tiknas.Mailing.Smtp.Port": "Порт, используемый для отправки по протоколу SMTP.",
+    "Description:Tiknas.Mailing.Smtp.UserName": "Имя пользователя для SMTP-сервера.",
+    "Description:Tiknas.Mailing.Smtp.Password": "Пароль для SMTP-сервера.",
+    "Description:Tiknas.Mailing.Smtp.Domain": "Домен или имя компьютера, от которого производится SMTP-запрос.",
+    "Description:Tiknas.Mailing.Smtp.EnableSsl": "Использовать SSL для подключения к SMTP-серверу.",
+    "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Использовать учетные данные для SMTP по умолчанию.",
+    "TextTemplate:StandardEmailTemplates.Layout": "Шаблон макета электронной почты по умолчанию",
+    "TextTemplate:StandardEmailTemplates.Message": "Простой шаблон сообщения для писем"
+  }
+}

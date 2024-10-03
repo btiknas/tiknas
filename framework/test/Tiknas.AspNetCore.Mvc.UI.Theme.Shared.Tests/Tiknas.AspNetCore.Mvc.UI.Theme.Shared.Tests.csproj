@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tiknas.AspNetCore.Mvc.UI.Theme.Shared\Tiknas.AspNetCore.Mvc.UI.Theme.Shared.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.AspNetCore.TestBase\Tiknas.AspNetCore.TestBase.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.Autofac\Tiknas.Autofac.csproj" />
+    <ProjectReference Include="..\..\src\Tiknas.Core\Tiknas.Core.csproj" />
+    <ProjectReference Include="..\Tiknas.AspNetCore.Tests\Tiknas.AspNetCore.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

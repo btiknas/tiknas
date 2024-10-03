@@ -1,0 +1,19 @@
+{
+  "culture": "sv",
+  "texts": {
+    "DisplayName:Tiknas.Ldap.Ldaps": "LDAP över SSL",
+    "Description:Tiknas.Ldap.Ldaps": "LDAP över SSL",
+    "DisplayName:Tiknas.Ldap.ServerHost": "Servervärd",
+    "Description:Tiknas.Ldap.ServerHost": "Servervärd",
+    "DisplayName:Tiknas.Ldap.ServerPort": "Serverport",
+    "Description:Tiknas.Ldap.ServerPort": "Serverport",
+    "DisplayName:Tiknas.Ldap.BaseDc": "Komponent för basdomän",
+    "Description:Tiknas.Ldap.BaseDc": "Komponent för basdomän",
+    "DisplayName:Tiknas.Ldap.Domain": "Domän",
+    "Description:Tiknas.Ldap.Domain": "Domän",
+    "DisplayName:Tiknas.Ldap.UserName": "Användarnamn",
+    "Description:Tiknas.Ldap.UserName": "Användarnamn",
+    "DisplayName:Tiknas.Ldap.Password": "Lösenord",
+    "Description:Tiknas.Ldap.Password": "Lösenord"
+  }
+}

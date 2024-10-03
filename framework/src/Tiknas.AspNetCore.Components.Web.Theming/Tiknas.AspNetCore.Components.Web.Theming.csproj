@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tiknas.BlazoriseUI\Tiknas.BlazoriseUI.csproj" />
+    <ProjectReference Include="..\Tiknas.UI.Navigation\Tiknas.UI.Navigation.csproj" />
+  </ItemGroup>
+
+</Project>

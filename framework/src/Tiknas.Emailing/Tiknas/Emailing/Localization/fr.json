@@ -1,0 +1,25 @@
+{
+ "culture": "fr",
+ "texts": {
+  "DisplayName:Tiknas.Mailing.DefaultFromAddress": "Adresse par défaut",
+  "DisplayName:Tiknas.Mailing.DefaultFromDisplayName": "Valeur par défaut du nom d'affichage",
+  "DisplayName:Tiknas.Mailing.Smtp.Host": "Hôte",
+  "DisplayName:Tiknas.Mailing.Smtp.Port": "Port",
+  "DisplayName:Tiknas.Mailing.Smtp.UserName": "Nom d'utilisateur",
+  "DisplayName:Tiknas.Mailing.Smtp.Password": "Mot de passe",
+  "DisplayName:Tiknas.Mailing.Smtp.Domain": "Domaine",
+  "DisplayName:Tiknas.Mailing.Smtp.EnableSsl": "Activer SSL",
+  "DisplayName:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Utiliser les informations d'identification par défaut",
+  "Description:Tiknas.Mailing.DefaultFromAddress": "L'adresse d'expédition par défaut",
+  "Description:Tiknas.Mailing.DefaultFromDisplayName": "La valeur par défaut du nom d'affichage",
+  "Description:Tiknas.Mailing.Smtp.Host": "Le nom ou l'adresse IP de l'hôte utilisé pour les transactions SMTP.",
+  "Description:Tiknas.Mailing.Smtp.Port": "Le port utilisé pour les transactions SMTP.",
+  "Description:Tiknas.Mailing.Smtp.UserName": "Nom d'utilisateur associé aux informations d'identification.",
+  "Description:Tiknas.Mailing.Smtp.Password": "Le mot de passe du nom d'utilisateur associé aux informations d'identification.",
+  "Description:Tiknas.Mailing.Smtp.Domain": "Le nom de domaine ou d'ordinateur qui vérifie les informations d'identification.",
+  "Description:Tiknas.Mailing.Smtp.EnableSsl": "Si SmtpClient utilise SSL (Secure Sockets Layer) pour crypter la connexion.",
+  "Description:Tiknas.Mailing.Smtp.UseDefaultCredentials": "Si les DefaultCredentials sont envoyés avec les demandes.",
+  "TextTemplate:StandardEmailTemplates.Layout": "Modèle de mise en page d'e-mail par défaut",
+  "TextTemplate:StandardEmailTemplates.Message": "Modèle de message simple pour les e-mails"
+ }
+}

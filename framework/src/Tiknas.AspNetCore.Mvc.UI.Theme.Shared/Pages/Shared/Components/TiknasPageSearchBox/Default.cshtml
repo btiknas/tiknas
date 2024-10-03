@@ -1,0 +1,15 @@
+﻿@using Localization.Resources.TiknasUi
+@using Microsoft.Extensions.Localization
+
+@inject IStringLocalizer<TiknasUiResource> L
+
+<form method="post" class="page-search-form">
+    <div class="input-group">
+        <input class="form-control page-search-filter-text" placeholder="@L["Search"].Value" />
+        <tiknas-button button-type="Primary" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </tiknas-button>
+    </div>
+</form>
+
+

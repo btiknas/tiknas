@@ -1,0 +1,7 @@
+{
+  "culture": "ru",
+  "texts": {
+    "DisplayName:Tiknas.Timing.Timezone": "Часовой пояс",
+    "Description:Tiknas.Timing.Timezone": "Часовой пояс приложения"
+  }
+}

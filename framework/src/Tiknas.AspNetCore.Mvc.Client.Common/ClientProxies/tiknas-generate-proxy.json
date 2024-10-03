@@ -1,0 +1,260 @@
+{
+  "modules": {
+    "tiknas": {
+      "rootPath": "tiknas",
+      "remoteServiceName": "tiknas",
+      "controllers": {
+        "Pages.Tiknas.MultiTenancy.TiknasTenantController": {
+          "controllerName": "TiknasTenant",
+          "controllerGroupName": "TiknasTenant",
+          "isRemoteService": true,
+          "apiVersion": null,
+          "type": "Pages.Tiknas.MultiTenancy.TiknasTenantController",
+          "interfaces": [
+            {
+              "type": "Tiknas.AspNetCore.Mvc.MultiTenancy.ITiknasTenantAppService"
+            }
+          ],
+          "actions": {
+            "FindTenantByNameAsyncByName": {
+              "uniqueName": "FindTenantByNameAsyncByName",
+              "name": "FindTenantByNameAsync",
+              "httpMethod": "GET",
+              "url": "api/tiknas/multi-tenancy/tenants/by-name/{name}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "name",
+                  "typeAsString": "System.String, System.Private.CoreLib",
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "name",
+                  "name": "name",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Tiknas.AspNetCore.Mvc.MultiTenancy.FindTenantResultDto",
+                "typeSimple": "Tiknas.AspNetCore.Mvc.MultiTenancy.FindTenantResultDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Tiknas.AspNetCore.Mvc.MultiTenancy.ITiknasTenantAppService"
+            },
+            "FindTenantByIdAsyncById": {
+              "uniqueName": "FindTenantByIdAsyncById",
+              "name": "FindTenantByIdAsync",
+              "httpMethod": "GET",
+              "url": "api/tiknas/multi-tenancy/tenants/by-id/{id}",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "id",
+                  "typeAsString": "System.Guid, System.Private.CoreLib",
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "id",
+                  "name": "id",
+                  "jsonName": null,
+                  "type": "System.Guid",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": [],
+                  "bindingSourceId": "Path",
+                  "descriptorName": ""
+                }
+              ],
+              "returnValue": {
+                "type": "Tiknas.AspNetCore.Mvc.MultiTenancy.FindTenantResultDto",
+                "typeSimple": "Tiknas.AspNetCore.Mvc.MultiTenancy.FindTenantResultDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Tiknas.AspNetCore.Mvc.MultiTenancy.ITiknasTenantAppService"
+            }
+          }
+        },
+        "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.TiknasApplicationConfigurationController": {
+          "controllerName": "TiknasApplicationConfiguration",
+          "controllerGroupName": "TiknasApplicationConfiguration",
+          "isRemoteService": true,
+          "apiVersion": null,
+          "type": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.TiknasApplicationConfigurationController",
+          "interfaces": [
+            {
+              "type": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ITiknasApplicationConfigurationAppService"
+            }
+          ],
+          "actions": {
+            "GetAsyncByOptions": {
+              "uniqueName": "GetAsyncByOptions",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/tiknas/application-configuration",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "options",
+                  "typeAsString": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions, Tiknas.AspNetCore.Mvc.Contracts",
+                  "type": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions",
+                  "typeSimple": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "options",
+                  "name": "IncludeLocalizationResources",
+                  "jsonName": null,
+                  "type": "System.Boolean",
+                  "typeSimple": "boolean",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "options"
+                }
+              ],
+              "returnValue": {
+                "type": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto",
+                "typeSimple": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ITiknasApplicationConfigurationAppService"
+            }
+          }
+        },
+        "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.TiknasApplicationLocalizationController": {
+          "controllerName": "TiknasApplicationLocalization",
+          "controllerGroupName": "TiknasApplicationLocalization",
+          "isRemoteService": true,
+          "apiVersion": null,
+          "type": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.TiknasApplicationLocalizationController",
+          "interfaces": [
+            {
+              "type": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ITiknasApplicationLocalizationAppService"
+            }
+          ],
+          "actions": {
+            "GetAsyncByInput": {
+              "uniqueName": "GetAsyncByInput",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/tiknas/application-localization",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "input",
+                  "typeAsString": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto, Tiknas.AspNetCore.Mvc.Contracts",
+                  "type": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto",
+                  "typeSimple": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "input",
+                  "name": "CultureName",
+                  "jsonName": null,
+                  "type": "System.String",
+                  "typeSimple": "string",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                },
+                {
+                  "nameOnMethod": "input",
+                  "name": "OnlyDynamics",
+                  "jsonName": null,
+                  "type": "System.Boolean",
+                  "typeSimple": "boolean",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "input"
+                }
+              ],
+              "returnValue": {
+                "type": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto",
+                "typeSimple": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Tiknas.AspNetCore.Mvc.ApplicationConfigurations.ITiknasApplicationLocalizationAppService"
+            }
+          }
+        },
+        "Tiknas.AspNetCore.Mvc.ApiExploring.TiknasApiDefinitionController": {
+          "controllerName": "TiknasApiDefinition",
+          "controllerGroupName": "TiknasApiDefinition",
+          "isRemoteService": true,
+          "apiVersion": null,
+          "type": "Tiknas.AspNetCore.Mvc.ApiExploring.TiknasApiDefinitionController",
+          "interfaces": [],
+          "actions": {
+            "GetByModel": {
+              "uniqueName": "GetByModel",
+              "name": "Get",
+              "httpMethod": "GET",
+              "url": "api/tiknas/api-definition",
+              "supportedVersions": [],
+              "parametersOnMethod": [
+                {
+                  "name": "model",
+                  "typeAsString": "Tiknas.Http.Modeling.ApplicationApiDescriptionModelRequestDto, Tiknas.Http",
+                  "type": "Tiknas.Http.Modeling.ApplicationApiDescriptionModelRequestDto",
+                  "typeSimple": "Tiknas.Http.Modeling.ApplicationApiDescriptionModelRequestDto",
+                  "isOptional": false,
+                  "defaultValue": null
+                }
+              ],
+              "parameters": [
+                {
+                  "nameOnMethod": "model",
+                  "name": "IncludeTypes",
+                  "jsonName": null,
+                  "type": "System.Boolean",
+                  "typeSimple": "boolean",
+                  "isOptional": false,
+                  "defaultValue": null,
+                  "constraintTypes": null,
+                  "bindingSourceId": "ModelBinding",
+                  "descriptorName": "model"
+                }
+              ],
+              "returnValue": {
+                "type": "Tiknas.Http.Modeling.ApplicationApiDescriptionModel",
+                "typeSimple": "Tiknas.Http.Modeling.ApplicationApiDescriptionModel"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "Tiknas.AspNetCore.Mvc.ApiExploring.TiknasApiDefinitionController"
+            }
+          }
+        }
+      }
+    }
+  },
+  "types": {}
+}

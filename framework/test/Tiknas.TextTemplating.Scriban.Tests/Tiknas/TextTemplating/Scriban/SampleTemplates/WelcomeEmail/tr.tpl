@@ -1,0 +1,1 @@
+Merhaba {{model.name}}, tiknas.io'ya hoşgeldiniz!

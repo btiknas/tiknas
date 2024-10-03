@@ -1,0 +1,7 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "DisplayName:Tiknas.Timing.Timezone": "时区",
+    "Description:Tiknas.Timing.Timezone": "应用时区"
+  }
+}

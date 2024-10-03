@@ -1,0 +1,7 @@
+{
+  "culture": "fi",
+  "texts": {
+    "DisplayName:Tiknas.Localization.DefaultLanguage": "Oletuskieli",
+    "Description:Tiknas.Localization.DefaultLanguage": "Sovelluksen oletuskieli."
+  }
+}

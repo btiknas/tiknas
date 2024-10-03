@@ -1,0 +1,190 @@
+@using Tiknas.AspNetCore.Mvc.UI.Theme.Shared.Demo.Views.Components.Themes.Shared.Demos.DropdownsDemo
+@model DropDownDemoDemoModel
+
+<tiknas-component-demo-section title="Single button" view-path="@DropdownsDemoViewComponent.ViewPath">
+    <tiknas-dropdown>
+        <tiknas-dropdown-button text="Dropdown button" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+    <tiknas-dropdown>
+        <tiknas-dropdown-button button-type="Secondary" link="true" text="Dropdown button" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+    <tiknas-dropdown>
+        <tiknas-dropdown-button button-type="Danger" text="Dropdown button" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+            <tiknas-dropdown-divider />
+            <tiknas-dropdown-item href="#">Separated link</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Split button" view-path="@DropdownsDemoViewComponent.ViewPath">
+    <tiknas-dropdown>
+        <tiknas-dropdown-button button-type="Danger" dropdown-style="Split" text="Dropdown button" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+            <tiknas-dropdown-divider />
+            <tiknas-dropdown-item href="#">Separated link</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+    <tiknas-dropdown>
+        <tiknas-dropdown-button size="Large" button-type="Secondary" text="Large button" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+            <tiknas-dropdown-divider />
+            <tiknas-dropdown-item href="#">Separated link</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+    <tiknas-dropdown>
+        <tiknas-dropdown-button size="Large" button-type="Secondary" dropdown-style="Split" text="Large split button" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+            <tiknas-dropdown-divider />
+            <tiknas-dropdown-item href="#">Separated link</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+    <tiknas-dropdown>
+        <tiknas-dropdown-button size="Small" button-type="Secondary" text="Small button" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+            <tiknas-dropdown-divider />
+            <tiknas-dropdown-item href="#">Separated link</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+    <tiknas-dropdown>
+        <tiknas-dropdown-button size="Small" button-type="Secondary" dropdown-style="Split" text="Small split button" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+            <tiknas-dropdown-divider />
+            <tiknas-dropdown-item href="#">Separated link</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+</tiknas-component-demo-section>
+
+
+<tiknas-component-demo-section title="Directions" view-path="@DropdownsDemoViewComponent.ViewPath">
+    <tiknas-dropdown direction="Up">
+        <tiknas-dropdown-button button-type="Secondary" text="Dropup" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+    <tiknas-dropdown direction="Right">
+        <tiknas-dropdown-button button-type="Secondary" text="dropright" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+    <tiknas-dropdown direction="Right">
+        <tiknas-dropdown-button button-type="Secondary" dropdown-style="Split" text="Split right" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Another action</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Menu Items" view-path="@DropdownsDemoViewComponent.ViewPath">
+    <tiknas-dropdown>
+        <tiknas-dropdown-button button-type="Secondary" text="Dropdown" />
+        <tiknas-dropdown-menu>
+            <tiknas-dropdown-header>Dropdown Header</tiknas-dropdown-header>
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item active="true" href="#">Active action</tiknas-dropdown-item>
+            <tiknas-dropdown-item disabled="true" href="#">Disabled action</tiknas-dropdown-item>
+            <tiknas-dropdown-divider />
+            <tiknas-dropdown-item-text>Dropdown Item Text</tiknas-dropdown-item-text>
+            <tiknas-dropdown-item href="#">Something else here</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Menu alignment" view-path="@DropdownsDemoViewComponent.ViewPath">
+    <tiknas-dropdown>
+        <tiknas-dropdown-button button-type="Secondary" text="Right-aligned" />
+        <tiknas-dropdown-menu align="End">
+            <tiknas-dropdown-item href="#">Action</tiknas-dropdown-item>
+            <tiknas-dropdown-item active="true" href="#">Active action</tiknas-dropdown-item>
+            <tiknas-dropdown-item disabled="true" href="#">Disabled action</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+</tiknas-component-demo-section>
+
+<tiknas-component-demo-section title="Custom Content" view-path="@DropdownsDemoViewComponent.ViewPath">
+    <tiknas-dropdown>
+        <tiknas-dropdown-button button-type="Secondary" text="Dropdown With Only Text" />
+        <tiknas-dropdown-menu class="p-4" style="max-width: 200px;">
+            <p>
+                Some example text that's free-flowing within the dropdown menu.
+            </p>
+            <p class="mb-0">
+                And this is more example text.
+            </p>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+</tiknas-component-demo-section>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>The form model is:</h3>
+        <hr />
+        <textarea style="width:100%;height: 320px" disabled>
+    public class LoginDto
+    {
+        [Required]
+        [EmailAddress]
+        public string EmailAddress { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        public bool RememberMe { get; set; }
+    }
+        </textarea>
+    </div>
+</div>
+
+<tiknas-component-demo-section title="With Form" view-path="@DropdownsDemoViewComponent.ViewPath">
+    <tiknas-dropdown>
+        <tiknas-dropdown-button button-type="Secondary" text="Dropdown With Form" />
+        <tiknas-dropdown-menu>
+            <form class="px-4 py-3">
+                <tiknas-input asp-for="EmailAddress"></tiknas-input>
+                <tiknas-input asp-for="Password"></tiknas-input>
+                <tiknas-input asp-for="RememberMe"></tiknas-input>
+                <tiknas-button button-type="Primary" text="Sign In" type="submit" />
+            </form>
+            <tiknas-dropdown-divider></tiknas-dropdown-divider>
+            <tiknas-dropdown-item href="#">New around here? Sign up</tiknas-dropdown-item>
+            <tiknas-dropdown-item href="#">Forgot password?</tiknas-dropdown-item>
+        </tiknas-dropdown-menu>
+    </tiknas-dropdown>
+</tiknas-component-demo-section>

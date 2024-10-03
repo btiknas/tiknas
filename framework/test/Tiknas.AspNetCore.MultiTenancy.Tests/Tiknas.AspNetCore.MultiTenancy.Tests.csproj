@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <AssemblyName>Tiknas.AspNetCore.MultiTenancy.Tests</AssemblyName>
+    <PackageId>Tiknas.AspNetCore.MultiTenancy.Tests</PackageId>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tiknas.AspNetCore.MultiTenancy\Tiknas.AspNetCore.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Tiknas.AspNetCore.Tests\Tiknas.AspNetCore.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>
