@@ -175,7 +175,7 @@ public static class TiknasApplicationBuilderExtensions
     }
 
     /// <summary>
-    /// This static file provider is used to serve the files from the <param name="folder">folder</param>.
+    /// This static file provider is used to serve the files from the <param name="app"></param> in the <param name="folder">folder</param>.
     /// </summary>
     public static IApplicationBuilder UseVirtualStaticFiles(this IApplicationBuilder app, string folder)
     {

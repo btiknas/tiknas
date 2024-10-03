@@ -67,7 +67,7 @@ public class TiknasAspNetCoreMultiTenancyOptions
                 }
             }
 
-            context.Response.Headers.Add("Tiknas-Tenant-Resolve-Error", HtmlEncoder.Default.Encode(exception.Message));
+            context.Response.Headers.Append("Tiknas-Tenant-Resolve-Error", HtmlEncoder.Default.Encode(exception.Message));
             if (isCookieAuthentication && context.Request.Method.Equals("Get", StringComparison.OrdinalIgnoreCase) && !context.Request.IsAjax())
             {
                 context.Response.Redirect(context.Request.GetEncodedUrl());

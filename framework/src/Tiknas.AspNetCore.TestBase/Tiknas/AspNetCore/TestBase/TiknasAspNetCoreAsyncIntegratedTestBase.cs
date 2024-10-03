@@ -48,6 +48,7 @@ public class TiknasAspNetCoreAsyncIntegratedTestBase<TModule>
     public virtual async Task InitializeAsync()
     {
         var builder = WebApplication.CreateBuilder();
+
         builder.Host.ConfigureServices(services =>
             {
                 services.AddSingleton<IHostLifetime, TestNoopHostLifetime>();

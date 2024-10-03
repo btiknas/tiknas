@@ -23,12 +23,9 @@ public class ProjectReferenceReplaceStep : ProjectBuildPipelineStep
                 return;
             }
 
-            var localTiknasRepoPath = context.BuildArgs.TiknasGitHubLocalRepositoryPath;
-
             new ProjectReferenceReplacer.LocalProjectPathReferenceReplacer(
                 context,
                 context.Module?.Namespace ?? "MyCompanyName.MyProjectName",
-                localTiknasRepoPath,
                 localTiknasRepoPath
             ).Run();
         }
@@ -189,12 +186,10 @@ public class ProjectReferenceReplaceStep : ProjectBuildPipelineStep
         public class LocalProjectPathReferenceReplacer : ProjectReferenceReplacer
         {
             private readonly string _gitHubTiknasLocalRepositoryPath;
-            private readonly string _gitHubTiknasLocalRepositoryPath;
 
-            public LocalProjectPathReferenceReplacer(ProjectBuildContext context, string projectName, string gitHubTiknasLocalRepositoryPath, string gitHubTiknasLocalRepositoryPath)
+            public LocalProjectPathReferenceReplacer(ProjectBuildContext context, string projectName, string gitHubTiknasLocalRepositoryPath)
                 : base(context, projectName)
             {
-                _gitHubTiknasLocalRepositoryPath = gitHubTiknasLocalRepositoryPath;
                 _gitHubTiknasLocalRepositoryPath = gitHubTiknasLocalRepositoryPath;
             }
 

@@ -3,7 +3,7 @@ using Tiknas.Emailing.Localization;
 using Tiknas.Localization;
 using Tiknas.Modularity;
 using Tiknas.Settings;
-using Tiknas.TextTemplating;
+using Tiknas.TextTemplating.Razor;
 using Tiknas.VirtualFileSystem;
 
 namespace Tiknas.Emailing;
@@ -13,7 +13,7 @@ namespace Tiknas.Emailing;
     typeof(TiknasVirtualFileSystemModule),
     typeof(TiknasBackgroundJobsAbstractionsModule),
     typeof(TiknasLocalizationModule),
-    typeof(TiknasTextTemplatingModule)
+    typeof(TiknasTextTemplatingRazorModule)
     )]
 public class TiknasEmailingModule : TiknasModule
 {

@@ -48,16 +48,10 @@ public class GetSourceCommand : IConsoleCommand, ITransientDependency
             Logger.LogInformation("GitHub Tiknas Local Repository Path: " + gitHubTiknasLocalRepositoryPath);
         }
 
-        var gitHubTiknasLocalRepositoryPath = commandLineArgs.Options.GetOrNull(Options.GitHubTiknasLocalRepositoryPath.Long);
-        if (gitHubTiknasLocalRepositoryPath != null)
-        {
-            Logger.LogInformation("GitHub Tiknas Local Repository Path: " + gitHubTiknasLocalRepositoryPath);
-        }
-
         commandLineArgs.Options.Add(CliConsts.Command, commandLineArgs.Command);
 
         await _sourceCodeDownloadService.DownloadModuleAsync(
-            commandLineArgs.Target, outputFolder, version, gitHubTiknasLocalRepositoryPath, gitHubTiknasLocalRepositoryPath, commandLineArgs.Options);
+            commandLineArgs.Target, outputFolder, version, gitHubTiknasLocalRepositoryPath, commandLineArgs.Options);
     }
 
     private static string GetOutPutFolder(CommandLineArgs commandLineArgs)
@@ -116,11 +110,6 @@ public class GetSourceCommand : IConsoleCommand, ITransientDependency
         {
             public const string Short = "o";
             public const string Long = "output-folder";
-        }
-
-        public static class GitHubTiknasLocalRepositoryPath
-        {
-            public const string Long = "tiknas-path";
         }
 
         public static class GitHubTiknasLocalRepositoryPath

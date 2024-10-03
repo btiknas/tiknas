@@ -78,13 +78,13 @@ public class Authorization_Tests : AuthorizationTestBase
         await Assert.ThrowsAsync<TiknasAuthorizationException>(async () =>
         {
             await _myAuthorizedServiceWithRole.ProtectedByAnotherRole().ConfigureAwait(false);
-        }).ConfigureAwait(false);
+        }).ConfigureAwait(true);
     }
 
     [Fact]
     public async Task Should_Allow_To_Call_Method_If_Has_No_Role_ProtectedByRole_Async()
     {
-        int result = await _myAuthorizedServiceWithRole.ProtectedByRole().ConfigureAwait(false);
+        int result = await _myAuthorizedServiceWithRole.ProtectedByRole().ConfigureAwait(true);
         result.ShouldBe(42);
     }
 
@@ -95,6 +95,6 @@ public class Authorization_Tests : AuthorizationTestBase
         await Assert.ThrowsAsync<TiknasAuthorizationException>(async () =>
         {
             await _myAuthorizedServiceWithRole.ProtectedByScheme().ConfigureAwait(false);
-        }).ConfigureAwait(false);
+        }).ConfigureAwait(true);
     }
 }

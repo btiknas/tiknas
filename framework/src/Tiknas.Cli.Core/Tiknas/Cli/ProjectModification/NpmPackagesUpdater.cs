@@ -96,7 +96,7 @@ public class NpmPackagesUpdater : ITransientDependency
             if (!IsAngularProject(fileDirectory))
             {
                 Thread.Sleep(1000);
-                RunInstallLibsAsync(fileDirectory);
+                await RunInstallLibsAsync(fileDirectory);
             }
         }
     }
@@ -117,7 +117,6 @@ public class NpmPackagesUpdater : ITransientDependency
     {
         var fileName = Path.Combine(directoryName, ".npmrc");
         var tiknasRegistry = "@tiknas:registry=https://www.myget.org/F/tiknas-nightly/npm";
-        var tiknasRegistry = "@tiknas:registry=https://www.myget.org/F/tiknas-commercial-npm-nightly/npm";
         var tiknassoftRegistry = "@tiknassoft:registry=https://www.myget.org/F/tiknas-commercial-npm-nightly/npm";
 
         if (await NpmrcFileExistAsync(directoryName))

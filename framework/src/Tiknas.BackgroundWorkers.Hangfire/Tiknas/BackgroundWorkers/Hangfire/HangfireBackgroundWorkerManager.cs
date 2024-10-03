@@ -66,7 +66,7 @@ public class HangfireBackgroundWorkerManager : BackgroundWorkerManager, ISinglet
                     RecurringJob.AddOrUpdate(   
                         () => workerAdapter.DoWorkAsync(cancellationToken),
                         GetCron(period.Value),
-                        workerAdapter.TimeZone ,
+                        workerAdapter.TimeZone,
                         workerAdapter.Queue);
                 }
                 else

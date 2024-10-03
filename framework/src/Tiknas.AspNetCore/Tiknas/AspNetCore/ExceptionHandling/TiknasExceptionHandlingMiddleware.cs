@@ -82,8 +82,8 @@ public class TiknasExceptionHandlingMiddleware : TiknasMiddlewareBase, ITransien
             httpContext.Response.Clear();
             httpContext.Response.StatusCode = (int)statusCodeFinder.GetStatusCode(httpContext, exception);
             httpContext.Response.OnStarting(_clearCacheHeadersDelegate, httpContext.Response);
-            httpContext.Response.Headers.Add(TiknasHttpConsts.TiknasErrorFormat, "true");
-            httpContext.Response.Headers.Add("Content-Type", "application/json");
+            httpContext.Response.Headers.Append(TiknasHttpConsts.TiknasErrorFormat, "true");
+            httpContext.Response.Headers.Append("Content-Type", "application/json");
 
             await httpContext.Response.WriteAsync(
                 jsonSerializer.Serialize(

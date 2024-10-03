@@ -393,7 +393,7 @@ public class SolutionModuleAdder : ITransientDependency
                 continue;
             }
 
-            RemoveProjectFromSolutionAsync(moduleSolutionFile, projectToRemove);
+            await RemoveProjectFromSolutionAsync(moduleSolutionFile, projectToRemove);
         }
     }
 
@@ -571,7 +571,6 @@ public class SolutionModuleAdder : ITransientDependency
                 module.Name,
                 targetModuleFolder,
                 version,
-                null,
                 null,
                 null
             );

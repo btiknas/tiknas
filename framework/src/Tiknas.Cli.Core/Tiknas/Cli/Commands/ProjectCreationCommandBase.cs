@@ -149,12 +149,6 @@ public abstract class ProjectCreationCommandBase
             Logger.LogInformation("GitHub Tiknas Local Repository Path: " + gitHubTiknasLocalRepositoryPath);
         }
 
-        var gitHubTiknasLocalRepositoryPath = commandLineArgs.Options.GetOrNull(Options.GitHubTiknasLocalRepositoryPath.Long);
-        if (gitHubTiknasLocalRepositoryPath != null)
-        {
-            Logger.LogInformation("GitHub Tiknas Local Repository Path: " + gitHubTiknasLocalRepositoryPath);
-        }
-
         var templateSource = commandLineArgs.Options.GetOrNull(Options.TemplateSource.Short, Options.TemplateSource.Long);
         if (templateSource != null)
         {
@@ -244,7 +238,6 @@ public abstract class ProjectCreationCommandBase
             uiFramework,
             mobileApp,
             publicWebSite,
-            gitHubTiknasLocalRepositoryPath,
             gitHubTiknasLocalRepositoryPath,
             templateSource,
             commandLineArgs.Options,
@@ -837,11 +830,6 @@ public abstract class ProjectCreationCommandBase
         {
             public const string Short = "o";
             public const string Long = "output-folder";
-        }
-
-        public static class GitHubTiknasLocalRepositoryPath
-        {
-            public const string Long = "tiknas-path";
         }
 
         public static class GitHubTiknasLocalRepositoryPath

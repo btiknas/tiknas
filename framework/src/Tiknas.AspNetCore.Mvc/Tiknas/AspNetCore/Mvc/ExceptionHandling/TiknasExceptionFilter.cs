@@ -77,7 +77,7 @@ public class TiknasExceptionFilter : IAsyncExceptionFilter, ITiknasFilter, ITran
         {
             if (!context.HttpContext.Response.HasStarted)
             {
-                context.HttpContext.Response.Headers.Add(TiknasHttpConsts.TiknasErrorFormat, "true");
+                context.HttpContext.Response.Headers.Append(TiknasHttpConsts.TiknasErrorFormat, "true");
                 context.HttpContext.Response.StatusCode = (int)context
                     .GetRequiredService<IHttpExceptionStatusCodeFinder>()
                     .GetStatusCode(context.HttpContext, context.Exception);

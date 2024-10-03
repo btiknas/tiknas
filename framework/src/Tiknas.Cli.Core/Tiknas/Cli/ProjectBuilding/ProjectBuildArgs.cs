@@ -31,9 +31,6 @@ public class ProjectBuildArgs
     public string TiknasGitHubLocalRepositoryPath { get; set; }
 
     [CanBeNull]
-    public string TiknasGitHubLocalRepositoryPath { get; set; }
-
-    [CanBeNull]
     public string TemplateSource { get; set; }
 
     [CanBeNull]
@@ -64,7 +61,6 @@ public class ProjectBuildArgs
         MobileApp? mobileApp = null,
         bool publicWebSite = false,
         [CanBeNull] string tiknasGitHubLocalRepositoryPath = null,
-        [CanBeNull] string tiknasGitHubLocalRepositoryPath = null,
         [CanBeNull] string templateSource = null,
         Dictionary<string, string> extraProperties = null,
         [CanBeNull] string connectionString = null,
@@ -83,7 +79,6 @@ public class ProjectBuildArgs
         UiFramework = uiFramework;
         MobileApp = mobileApp;
         PublicWebSite = publicWebSite;
-        TiknasGitHubLocalRepositoryPath = tiknasGitHubLocalRepositoryPath;
         TiknasGitHubLocalRepositoryPath = tiknasGitHubLocalRepositoryPath;
         TemplateSource = templateSource;
         ExtraProperties = extraProperties ?? new Dictionary<string, string>();

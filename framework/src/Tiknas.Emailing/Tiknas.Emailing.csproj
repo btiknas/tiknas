@@ -30,6 +30,7 @@
     <ProjectReference Include="..\Tiknas.BackgroundJobs.Abstractions\Tiknas.BackgroundJobs.Abstractions.csproj" />
     <ProjectReference Include="..\Tiknas.Localization\Tiknas.Localization.csproj" />
     <ProjectReference Include="..\Tiknas.Settings\Tiknas.Settings.csproj" />
+    <ProjectReference Include="..\Tiknas.TextTemplating.Razor\Tiknas.TextTemplating.Razor.csproj" />
     <ProjectReference Include="..\Tiknas.TextTemplating\Tiknas.TextTemplating.csproj" />
     <ProjectReference Include="..\Tiknas.VirtualFileSystem\Tiknas.VirtualFileSystem.csproj" />
   </ItemGroup>
