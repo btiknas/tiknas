@@ -20,23 +20,23 @@ public interface ITiknasCommonDbContextRegistrationOptionsBuilder
 
     /// <summary>
     /// Registers default repositories for all the entities in this DbContext.
-    /// Default repositories will use given <see cref="TDefaultRepositoryDbContext"/>.
+    /// Default repositories will use the provided DbContext type.
     /// </summary>
     /// <typeparam name="TDefaultRepositoryDbContext">DbContext type that will be used by default repositories</typeparam>
     /// <param name="includeAllEntities">
     /// Registers repositories only for aggregate root entities by default.
-    /// Set <see cref="includeAllEntities"/> to true to include all entities.
+    /// Set <c>includeAllEntities</c> to true to include all entities.
     /// </param>
     ITiknasCommonDbContextRegistrationOptionsBuilder AddDefaultRepositories<TDefaultRepositoryDbContext>(bool includeAllEntities = false);
 
     /// <summary>
     /// Registers default repositories for all the entities in this DbContext.
-    /// Default repositories will use given <see cref="defaultRepositoryDbContextType"/>.
+    /// Default repositories will use the provided DbContext type.
     /// </summary>
     /// <param name="defaultRepositoryDbContextType">DbContext type that will be used by default repositories</param>
     /// <param name="includeAllEntities">
     /// Registers repositories only for aggregate root entities by default.
-    /// Set <see cref="includeAllEntities"/> to true to include all entities.
+    /// Set <c>includeAllEntities</c> to true to include all entities.
     /// </param>
     ITiknasCommonDbContextRegistrationOptionsBuilder AddDefaultRepositories(Type defaultRepositoryDbContextType, bool includeAllEntities = false);
 
