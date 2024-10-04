@@ -21,20 +21,20 @@ public class AspNetCoreMultiTenancy_MultiTenancyMiddlewareErrorPageBuilder_Tests
     [Fact]
     public async Task MultiTenancyMiddlewareErrorPageBuilder()
     {
-        var result = await GetResponseAsStringAsync($"http://tiknas.io?{_options.TenantKey}=<script>alert(hi)</script>", HttpStatusCode.NotFound);
+        var result = await GetResponseAsStringAsync($"http://tiknas.de?{_options.TenantKey}=<script>alert(hi)</script>", HttpStatusCode.NotFound);
         result.ShouldNotContain("<script>alert(hi)</script>");
     }
 
     [Fact]
     public async Task MultiTenancyMiddlewareErrorPageBuilder_Ajax_Test()
     {
-        using (var response = await GetResponseAsync($"http://tiknas.io?{_options.TenantKey}=tiknasio", HttpStatusCode.NotFound, xmlHttpRequest: true))
+        using (var response = await GetResponseAsync($"http://tiknas.de?{_options.TenantKey}=tiknasde", HttpStatusCode.NotFound, xmlHttpRequest: true))
         {
             var result = await response.Content.ReadAsStringAsync();
             var error = JsonSerializer.Deserialize<RemoteServiceErrorResponse>(result, new JsonSerializerOptions {PropertyNamingPolicy = JsonNamingPolicy.CamelCase});
             error.Error.ShouldNotBeNull();
             error.Error.Message.ShouldBe("Tenant not found!");
-            error.Error.Details.ShouldBe("There is no tenant with the tenant id or name: tiknasio");
+            error.Error.Details.ShouldBe("There is no tenant with the tenant id or name: tiknasde");
         }
     }
 }
