@@ -28,11 +28,11 @@ Create a new solution:
 
 ### UI Framework Options
 
-<img width="500" src="docs/images/ui-options.png">
+<img width="500" src="docs/en/images/ui-options.png">
 
 ### Database Provider Options
 
-<img width="500" src="docs/images/db-options.png">
+<img width="500" src="docs/en/images/db-options.png">
 
 ## What Tiknas Provides
 
@@ -40,7 +40,7 @@ Tiknas provides a **full-stack developer experience**, allowing you to build rob
 
 ### Architecture
 
-<img src="docs/images/ddd-microservice-simple.png">
+<img src="docs/en/images/ddd-microservice-simple.png">
 
 Tiknas Framework offers a **modular**, **layered** software architecture based on **[Domain Driven Design](https://tiknas.io/docs/architecture/domain-driven-design)** principles. It also provides the necessary infrastructure to [implement this architecture](https://tiknas.io/books/implementing-domain-driven-design).
 
@@ -93,25 +93,27 @@ Check out the [sample projects](https://tiknas.io/docs/samples) built with Tikna
 
 Tiknas Framework is community-driven. See [the contribution guide](https://tiknas.io/docs/contribution) if you want to get involved.
 
+<!---
 ## Official Links
 
-* [Home Website](https://tiknas.io)
-  * [Get Started](https://tiknas.io/get-started)
-  * [Features](https://tiknas.io/framework)
-* [Documentation](https://tiknas.io/docs)
-* [Samples](https://tiknas.io/docs/samples)
-* [Blog](https://tiknas.io/blog)
-* [Community](https://tiknas.io/community)
+* [Home Website](https://tiknas.de)
+  * [Get Started](https://tiknas.de/get-started)
+  * [Features](https://tiknas.de/framework)
+* [Documentation](https://tiknas.de/docs)
+* [Samples](https://tiknas.de/docs/samples)
+* [Blog](https://tiknas.de/blog)
+* [Community](https://tiknas.de/community)
+-->
 
 ## Support Tiknas
 
 If you like Tiknas Framework, please support us by starring the GitHub repository :star:.
 
+<!---
 ## Discord Server
 
 Join our Discord server to discuss ideas, report issues, showcase your work, and stay updated: [Tiknas Discord](https://discord.gg/tiknas).
-
+--->
 ---
 
-> Use `git rebase upstream/dev` to merge the latest changes from the Tiknas dev branch. Unfortunately, there is no `upstream/master` branch at the moment.
-
+> We use `git rebase upstream/dev` to merge the latest changes from the ABP Framework to our Tiknas Framework. Unfortunately, there is no `upstream/master` branch at the moment.
