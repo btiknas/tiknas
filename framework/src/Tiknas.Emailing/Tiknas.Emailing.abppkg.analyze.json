@@ -157,7 +157,7 @@
       "summary": null
     },
     {
-      "defaultValue": "noreply@tiknas.io",
+      "defaultValue": "noreply@tiknas.de",
       "displayName": "Varsayılan gönderici adresi",
       "description": "Varsayılan gönderici adresi",
       "isVisibleToClient": false,

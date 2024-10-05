@@ -1,1 +1,1 @@
-Merhaba {{model.name}}, tiknas.io'ya hoşgeldiniz!
+Merhaba {{model.name}}, tiknas.de'ya hoşgeldiniz!

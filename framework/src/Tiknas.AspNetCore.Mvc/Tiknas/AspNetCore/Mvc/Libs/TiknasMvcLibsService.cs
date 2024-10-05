@@ -46,7 +46,7 @@ public class TiknasMvcLibsService : ITiknasMvcLibsService, ITransientDependency
                         "       <h1> &#9888;&#65039; The Libs folder under the <code style='background-color: #e7e7e7;'>wwwroot/libs</code> directory is empty!</h1>" +
                         "       <p>The Libs folder contains mandatory NPM Packages for running the project.</p>" +
                         "       <p>Make sure you run the <code style='background-color: #e7e7e7;'>tiknas install-libs</code> CLI tool command.</p>" +
-                        "       <p>For more information, check out the <a href='https://tiknas.io/docs/latest/CLI#install-libs'>TIKNAS CLI documentation</a></p>" +
+                        "       <p>For more information, check out the <a href='https://tiknas.de/docs/latest/CLI#install-libs'>TIKNAS CLI documentation</a></p>" +
                         "   </body>" +
                         "</html>",
                         Encoding.UTF8

@@ -9,17 +9,17 @@ public class RazorVirtualFileTemplateContributor_Tests : VirtualFileTemplateCont
     {
         WelcomeEmailEnglishContent = "@inherits Tiknas.TextTemplating.Razor.RazorTemplatePageBase<Tiknas.TextTemplating.Razor.RazorTemplateRendererProvider_Tests.WelcomeEmailModel>" +
                                      Environment.NewLine +
-                                     "Welcome @Model.Name to the tiknas.io!";
+                                     "Welcome @Model.Name to the tiknas.de!";
 
         WelcomeEmailTurkishContent = "@inherits Tiknas.TextTemplating.Razor.RazorTemplatePageBase<Tiknas.TextTemplating.Razor.RazorTemplateRendererProvider_Tests.WelcomeEmailModel>" +
                                      Environment.NewLine +
-                                     "Merhaba @Model.Name, tiknas.io'ya hoşgeldiniz!";
+                                     "Merhaba @Model.Name, tiknas.de'ya hoşgeldiniz!";
 
         ForgotPasswordEmailEnglishContent = "@inherits Tiknas.TextTemplating.Razor.RazorTemplatePageBase<Tiknas.TextTemplating.Razor.RazorTemplateRendererProvider_Tests.ForgotPasswordEmailModel>" +
                                             Environment.NewLine +
                                             "@{" +
                                             Environment.NewLine +
-                                            "    var url = @\"https://tiknas.io/Account/ResetPassword\";" +
+                                            "    var url = @\"https://tiknas.de/Account/ResetPassword\";" +
                                             Environment.NewLine +
                                             "}" +
                                             Environment.NewLine +

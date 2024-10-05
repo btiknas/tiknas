@@ -12,6 +12,6 @@ public class ModuleTemplate : ModuleTemplateBase
     public ModuleTemplate()
         : base(TemplateName)
     {
-        DocumentUrl = "https://tiknas.io/docs/latest/solution-templates/application-module";
+        DocumentUrl = "https://tiknas.de/docs/latest/solution-templates/application-module";
     }
 }

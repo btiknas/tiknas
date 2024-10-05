@@ -32,7 +32,7 @@ public class ValueObject_Tests
 
         address1.ValueEquals(address2).ShouldBeFalse();
 
-        var emailAddress1 = new EmailAddress("test@tiknas.io");
+        var emailAddress1 = new EmailAddress("test@tiknas.de");
         var emailAddress2 = new EmailAddress(null);
 
         emailAddress1.ValueEquals(emailAddress2).ShouldBeFalse();

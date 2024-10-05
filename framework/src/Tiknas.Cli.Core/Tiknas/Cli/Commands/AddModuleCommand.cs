@@ -139,7 +139,7 @@ public class AddModuleCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine(@"  tiknas add-module ProductManagement --new -sp ..\Acme.BookStore.Web\Acme.BookStore.Web.csproj   Crates a new module named `ProductManagement` and adds it to your solution.");
         sb.AppendLine(@"  tiknas add-module ProductManagement --new --add-to-solution-file -sp ..\Acme.BookStore.Web\Acme.BookStore.Web.csproj   Crates a new module named `ProductManagement`, adds it to your solution & solution file.");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

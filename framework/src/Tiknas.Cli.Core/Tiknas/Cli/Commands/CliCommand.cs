@@ -152,7 +152,7 @@ public class CliCommand : IConsoleCommand, ITransientDependency
 
     public static string GetShortDescription()
     {
-        return "Update or remove TIKNAS CLI. See https://tiknas.io/docs/latest/cli";
+        return "Update or remove TIKNAS CLI. See https://tiknas.de/docs/latest/cli";
     }
 
     public static class Options

@@ -13,7 +13,7 @@ public class RazorTemplateContentFileProvider_Tests : TemplateContentFileProvide
         var definition = await TemplateDefinitionManager.GetAsync(TestTemplates.WelcomeEmail);
         var files = await TemplateContentFileProvider.GetFilesAsync(definition);
         files.Count.ShouldBe(2);
-        files.ShouldContain(x => x.FileName == "en.cshtml"  && x.FileContent.Contains("Welcome @Model.Name to the tiknas.io!"));
-        files.ShouldContain(x => x.FileName == "tr.cshtml"  && x.FileContent.Contains("Merhaba @Model.Name, tiknas.io'ya hoşgeldiniz!"));
+        files.ShouldContain(x => x.FileName == "en.cshtml"  && x.FileContent.Contains("Welcome @Model.Name to the tiknas.de!"));
+        files.ShouldContain(x => x.FileName == "tr.cshtml"  && x.FileContent.Contains("Merhaba @Model.Name, tiknas.de'ya hoşgeldiniz!"));
     }
 }

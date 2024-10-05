@@ -23,7 +23,7 @@ public class ScribanTemplateRendererProvider_Tests : TiknasTextTemplatingTestBas
                 name = "John"
             },
             cultureName: "en"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
 
         (await _templateRenderer.RenderAsync(
             TestTemplates.WelcomeEmail,
@@ -31,7 +31,7 @@ public class ScribanTemplateRendererProvider_Tests : TiknasTextTemplatingTestBas
                 name = "John"
             },
             cultureName: "tr"
-        )).ShouldBe("Merhaba John, tiknas.io'ya hoşgeldiniz!");
+        )).ShouldBe("Merhaba John, tiknas.de'ya hoşgeldiniz!");
 
         //"en-US" fallbacks to "en" since "en-US" doesn't exists and "en" is the fallback culture
         (await _templateRenderer.RenderAsync(
@@ -40,7 +40,7 @@ public class ScribanTemplateRendererProvider_Tests : TiknasTextTemplatingTestBas
                 name = "John"
             },
             cultureName: "en-US"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
 
         //"fr" fallbacks to "en" since "fr" doesn't exists and "en" is the default culture
         (await _templateRenderer.RenderAsync(
@@ -49,7 +49,7 @@ public class ScribanTemplateRendererProvider_Tests : TiknasTextTemplatingTestBas
                 Name = "John" //Intentionally written as PascalCase since Scriban supports it
                 },
             cultureName: "fr"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
     }
 
     [Fact]
@@ -59,7 +59,7 @@ public class ScribanTemplateRendererProvider_Tests : TiknasTextTemplatingTestBas
             TestTemplates.WelcomeEmail,
             model: new WelcomeEmailModel("John"),
             cultureName: "en"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
     }
 
     [Fact]
@@ -69,7 +69,7 @@ public class ScribanTemplateRendererProvider_Tests : TiknasTextTemplatingTestBas
             TestTemplates.WelcomeEmail,
             model: new Dictionary<string, object>() { { "name", "John" } },
             cultureName: "en"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
     }
 
     [Fact]

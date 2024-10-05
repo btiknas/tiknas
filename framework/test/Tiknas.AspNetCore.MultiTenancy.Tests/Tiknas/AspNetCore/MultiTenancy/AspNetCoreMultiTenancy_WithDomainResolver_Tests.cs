@@ -37,7 +37,7 @@ public class AspNetCoreMultiTenancy_WithDomainResolver_Tests : AspNetCoreMultiTe
 
         services.Configure<TiknasTenantResolveOptions>(options =>
         {
-            options.AddDomainTenantResolver("{0}.tiknas.io:8080");
+            options.AddDomainTenantResolver("{0}.tiknas.de:8080");
         });
 
         base.ConfigureServices(services);
@@ -46,14 +46,14 @@ public class AspNetCoreMultiTenancy_WithDomainResolver_Tests : AspNetCoreMultiTe
     [Fact]
     public async Task Should_Use_Host_If_Tenant_Is_Not_Specified()
     {
-        var result = await GetResponseAsObjectAsync<Dictionary<string, string>>("http://tiknas.io:8080");
+        var result = await GetResponseAsObjectAsync<Dictionary<string, string>>("http://tiknas.de:8080");
         result["TenantId"].ShouldBe("");
     }
 
     [Fact]
     public async Task Should_Use_Domain_If_Specified()
     {
-        var result = await GetResponseAsObjectAsync<Dictionary<string, string>>("http://acme.tiknas.io:8080");
+        var result = await GetResponseAsObjectAsync<Dictionary<string, string>>("http://acme.tiknas.de:8080");
         result["TenantId"].ShouldBe(_testTenantId.ToString());
     }
 
@@ -62,7 +62,7 @@ public class AspNetCoreMultiTenancy_WithDomainResolver_Tests : AspNetCoreMultiTe
     {
         Client.DefaultRequestHeaders.Add(_options.TenantKey, Guid.NewGuid().ToString());
 
-        var result = await GetResponseAsObjectAsync<Dictionary<string, string>>("http://acme.tiknas.io:8080");
+        var result = await GetResponseAsObjectAsync<Dictionary<string, string>>("http://acme.tiknas.de:8080");
         result["TenantId"].ShouldBe(_testTenantId.ToString());
     }
 }

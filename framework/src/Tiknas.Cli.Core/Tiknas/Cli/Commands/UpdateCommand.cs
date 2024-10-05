@@ -127,7 +127,7 @@ public class UpdateCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("  tiknas update -p");
         sb.AppendLine("  tiknas update -sp \"D:\\projects\\\" -sn Acme.BookStore");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

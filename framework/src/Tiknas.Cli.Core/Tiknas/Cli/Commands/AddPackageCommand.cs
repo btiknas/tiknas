@@ -105,7 +105,7 @@ public class AddPackageCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("  tiknas add-package Tiknas.FluentValidation -p Acme.BookStore.Application    Adds the NuGet package to the given project.");
         sb.AppendLine("  tiknas add-package @tiknas/ng.theme.basic                                        Adds the NPM package to the given corresponding project.");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

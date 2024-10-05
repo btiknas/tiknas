@@ -30,7 +30,7 @@ public class UpdateNuGetConfigStep : ProjectBuildPipelineStep
         }
 
         const string placeHolder = "<!-- {TIKNAS_COMMERCIAL_NUGET_SOURCE} -->";
-        var nugetSourceTag = $"<add key=\"TIKNAS Commercial NuGet Source\" value=\"https://nuget.tiknas.io/{apiKey}/v3/index.json\" />";
+        var nugetSourceTag = $"<add key=\"TIKNAS Commercial NuGet Source\" value=\"https://nuget.tiknas.de/{apiKey}/v3/index.json\" />";
 
         file.ReplaceText(placeHolder, nugetSourceTag);
     }

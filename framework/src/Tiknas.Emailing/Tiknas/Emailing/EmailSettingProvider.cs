@@ -55,7 +55,7 @@ internal class EmailSettingProvider : SettingDefinitionProvider
 
             new SettingDefinition(
                 EmailSettingNames.DefaultFromAddress,
-                "noreply@tiknas.io",
+                "noreply@tiknas.de",
                 L("DisplayName:Tiknas.Mailing.DefaultFromAddress"),
                 L("Description:Tiknas.Mailing.DefaultFromAddress")),
 

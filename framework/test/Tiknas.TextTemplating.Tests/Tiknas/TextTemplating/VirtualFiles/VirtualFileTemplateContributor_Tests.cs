@@ -39,11 +39,22 @@ public abstract class VirtualFileTemplateContributor_Tests<TStartupModule> : Tik
     [Fact]
     public async Task Should_Get_Non_Localized_Template_Content()
     {
-        (await VirtualFileTemplateContentContributor.GetOrNullAsync(
-                new TemplateContentContributorContext(
-                    await TemplateDefinitionManager.GetAsync(TestTemplates.ForgotPasswordEmail),
-                    ServiceProvider,
-                    null)))
-            .ShouldBe(ForgotPasswordEmailEnglishContent);
+        var actualContent = await VirtualFileTemplateContentContributor.GetOrNullAsync(
+            new TemplateContentContributorContext(
+                await TemplateDefinitionManager.GetAsync(TestTemplates.ForgotPasswordEmail),
+                ServiceProvider,
+                null));
+
+        // Normalisiere beide Inhalte, um alle Zeilenumbrüche zu entfernen
+        var normalizedActualContent = NormalizeNewLines(actualContent);
+        var normalizedExpectedContent = NormalizeNewLines(ForgotPasswordEmailEnglishContent);
+
+        normalizedActualContent.ShouldBe(normalizedExpectedContent);
+    }
+
+    private string NormalizeNewLines(string input)
+    {
+        // Entferne alle Zeilenumbrüche, sodass der Vergleich konsistent ist
+        return input.Replace("\r\n", "\n").Replace("\r", "\n");
     }
 }

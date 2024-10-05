@@ -233,7 +233,7 @@ public class NewCommand : ProjectCreationCommandBase, IConsoleCommand, ITransien
         sb.AppendLine("  tiknas new Acme.BookStore --theme basic");
         sb.AppendLine("  tiknas new Acme.BookStore --connection-string \"Server=myServerName\\myInstanceName;Database=myDatabase;User Id=myUsername;Password=myPassword\"");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

@@ -23,7 +23,7 @@ public class RazorTemplateRendererProvider_Tests : TiknasTextTemplatingTestBase<
                 Name = "John"
             },
             cultureName: "en"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
 
         (await _templateRenderer.RenderAsync(
             TestTemplates.WelcomeEmail,
@@ -32,7 +32,7 @@ public class RazorTemplateRendererProvider_Tests : TiknasTextTemplatingTestBase<
                 Name = "John"
             },
             cultureName: "tr"
-        )).ShouldBe("Merhaba John, tiknas.io'ya hoşgeldiniz!");
+        )).ShouldBe("Merhaba John, tiknas.de'ya hoşgeldiniz!");
 
         //"en-US" fallbacks to "en" since "en-US" doesn't exists and "en" is the fallback culture
         (await _templateRenderer.RenderAsync(
@@ -42,7 +42,7 @@ public class RazorTemplateRendererProvider_Tests : TiknasTextTemplatingTestBase<
                 Name = "John"
             },
             cultureName: "en-US"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
 
         //"fr" fallbacks to "en" since "fr" doesn't exists and "en" is the default culture
         (await _templateRenderer.RenderAsync(
@@ -52,7 +52,7 @@ public class RazorTemplateRendererProvider_Tests : TiknasTextTemplatingTestBase<
                 Name = "John"
             },
             cultureName: "fr"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
     }
 
     [Fact]
@@ -62,7 +62,7 @@ public class RazorTemplateRendererProvider_Tests : TiknasTextTemplatingTestBase<
             TestTemplates.WelcomeEmail,
             model: new WelcomeEmailModel("John"),
             cultureName: "en"
-        )).ShouldBe("Welcome John to the tiknas.io!");
+        )).ShouldBe("Welcome John to the tiknas.de!");
     }
 
     [Fact]
@@ -72,13 +72,13 @@ public class RazorTemplateRendererProvider_Tests : TiknasTextTemplatingTestBase<
             TestTemplates.ForgotPasswordEmail,
             new ForgotPasswordEmailModel("John"),
             cultureName: "en"
-        )).ShouldBe("*BEGIN*Hello John, how are you?. Please click to the following link to get an email to reset your password!<a target=\"_blank\" href=\"https://tiknas.io/Account/ResetPassword\">Reset your password</a>*END*");
+        )).ShouldBe("*BEGIN*Hello John, how are you?. Please click to the following link to get an email to reset your password!<a target=\"_blank\" href=\"https://tiknas.de/Account/ResetPassword\">Reset your password</a>*END*");
 
         (await _templateRenderer.RenderAsync(
             TestTemplates.ForgotPasswordEmail,
             new ForgotPasswordEmailModel("John"),
             cultureName: "tr"
-        )).ShouldBe("*BEGIN*Merhaba John, nasılsın?. Please click to the following link to get an email to reset your password!<a target=\"_blank\" href=\"https://tiknas.io/Account/ResetPassword\">Reset your password</a>*END*");
+        )).ShouldBe("*BEGIN*Merhaba John, nasılsın?. Please click to the following link to get an email to reset your password!<a target=\"_blank\" href=\"https://tiknas.de/Account/ResetPassword\">Reset your password</a>*END*");
     }
 
     [Fact]

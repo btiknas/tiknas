@@ -215,7 +215,7 @@ public class StringExtensions_Tests : IDisposable
         "Home.About".RemovePreFix("Home.").ShouldBe("About");
 
         //Ignore case
-        "Https://tiknas.io".RemovePreFix(StringComparison.OrdinalIgnoreCase, "https://").ShouldBe("tiknas.io");
+        "Https://tiknas.de".RemovePreFix(StringComparison.OrdinalIgnoreCase, "https://").ShouldBe("tiknas.de");
     }
 
     [Fact]

@@ -341,14 +341,14 @@ public abstract class ProjectCreationCommandBase
         databaseProvider = databaseProvider == DatabaseProvider.NotSpecified ? DatabaseProvider.EntityFrameworkCore : databaseProvider;
 
         var tieredYesNo = tiered ? "yes" : "no";
-        var url = $"https://tiknas.io/project-created-success?ui={uiFramework:g}&db={databaseProvider:g}&tiered={tieredYesNo}&commercial={(commercial ? "yes" : "no")}";
+        var url = $"https://tiknas.de/project-created-success?ui={uiFramework:g}&db={databaseProvider:g}&tiered={tieredYesNo}&commercial={(commercial ? "yes" : "no")}";
 
         CmdHelper.Open(url);
     }
 
     protected void OpenMicroserviceDocumentPage()
     {
-        var url = "https://tiknas.io/docs/latest/solution-templates/microservice";
+        var url = "https://tiknas.de/docs/latest/solution-templates/microservice";
 
         CmdHelper.Open(url);
     }

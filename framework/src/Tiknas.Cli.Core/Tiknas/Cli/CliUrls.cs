@@ -11,9 +11,9 @@ public static class CliUrls
     public const string LatestVersionCheckFullPath =
         "https://raw.githubusercontent.com/tiknasframework/tiknas/dev/latest-versions.json";
 
-    public const string WwwTiknasIoProduction = "https://tiknas.io/";
-    public const string AccountTiknasIoProduction = "https://account.tiknas.io/";
-    public const string NuGetRootPathProduction = "https://nuget.tiknas.io/";
+    public const string WwwTiknasIoProduction = "https://tiknas.de/";
+    public const string AccountTiknasIoProduction = "https://account.tiknas.de/";
+    public const string NuGetRootPathProduction = "https://nuget.tiknas.de/";
 
     public const string WwwTiknasIoDevelopment = "https://localhost:44328/";
     public const string AccountTiknasIoDevelopment = "https://localhost:44333/";

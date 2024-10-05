@@ -13,7 +13,7 @@ public class ScribanTemplateContentFileProvider_Tests : TemplateContentFileProvi
         var definition = await TemplateDefinitionManager.GetAsync(TestTemplates.WelcomeEmail);
         var files = await TemplateContentFileProvider.GetFilesAsync(definition);
         files.Count.ShouldBe(2);
-        files.ShouldContain(x => x.FileName == "en.tpl"  && x.FileContent.Contains("Welcome {{model.name}} to the tiknas.io!"));
-        files.ShouldContain(x => x.FileName == "tr.tpl"  && x.FileContent.Contains("Merhaba {{model.name}}, tiknas.io'ya hoşgeldiniz!"));
+        files.ShouldContain(x => x.FileName == "en.tpl"  && x.FileContent.Contains("Welcome {{model.name}} to the tiknas.de!"));
+        files.ShouldContain(x => x.FileName == "tr.tpl"  && x.FileContent.Contains("Merhaba {{model.name}}, tiknas.de'ya hoşgeldiniz!"));
     }
 }

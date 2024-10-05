@@ -94,7 +94,7 @@ public class GetSourceCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("  tiknas get-source Tiknas.Blogging");
         sb.AppendLine("  tiknas get-source Tiknas.Blogging -o d:\\my-project");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

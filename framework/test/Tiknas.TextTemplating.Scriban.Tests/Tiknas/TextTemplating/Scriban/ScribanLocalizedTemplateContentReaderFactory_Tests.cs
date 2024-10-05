@@ -11,10 +11,10 @@ public class ScribanLocalizedTemplateContentReaderFactory_Tests : LocalizedTempl
         LocalizedTemplateContentReaderFactory = new LocalizedTemplateContentReaderFactory(
             new PhysicalFileVirtualFileProvider(
                 new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),
-                    "Tiknas", "Tiknas", "TextTemplating", "Scriban"))),
+                    "Tiknas", "TextTemplating", "Scriban"))),
             GetRequiredService<ITiknasHostEnvironment>());
 
-        WelcomeEmailEnglishContent = "Welcome {{model.name}} to the tiknas.io!";
-        WelcomeEmailTurkishContent = "Merhaba {{model.name}}, tiknas.io'ya hoşgeldiniz!";
+        WelcomeEmailEnglishContent = "Welcome {{model.name}} to the tiknas.de!";
+        WelcomeEmailTurkishContent = "Merhaba {{model.name}}, tiknas.de'ya hoşgeldiniz!";
     }
 }

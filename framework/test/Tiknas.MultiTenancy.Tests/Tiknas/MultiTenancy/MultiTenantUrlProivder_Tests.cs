@@ -33,10 +33,10 @@ public class MultiTenantUrlProivder_Tests : MultiTenancyTestBase
     [Fact]
     public async Task GetUrlAsync()
     {
-        var tenantNameHolderUrl = "https://{{tenantName}}.tiknas.io";
-        var tenantIdHolderUrl = "https://{{tenantId}}.tiknas.io";
-        var tenantHolderUrl = "https://{0}.tiknas.io";
-        var hostUrl = "https://tiknas.io";
+        var tenantNameHolderUrl = "https://{{tenantName}}.tiknas.de";
+        var tenantIdHolderUrl = "https://{{tenantId}}.tiknas.de";
+        var tenantHolderUrl = "https://{0}.tiknas.de";
+        var hostUrl = "https://tiknas.de";
         
         _currentTenant.Id.ShouldBeNull();
         (await _multiTenantUrlProvider.GetUrlAsync(tenantNameHolderUrl)).ShouldBe(hostUrl);
@@ -47,9 +47,9 @@ public class MultiTenantUrlProivder_Tests : MultiTenancyTestBase
         using (_currentTenant.Change(_tenantAId))
         {
             _currentTenant.Id.ShouldBe(_tenantAId);
-            (await _multiTenantUrlProvider.GetUrlAsync(tenantNameHolderUrl)).ShouldBe("https://TenantA.tiknas.io");
-            (await _multiTenantUrlProvider.GetUrlAsync(tenantIdHolderUrl)).ShouldBe("https://"+_tenantAId+".tiknas.io");
-            (await _multiTenantUrlProvider.GetUrlAsync(tenantHolderUrl)).ShouldBe("https://TenantA.tiknas.io");
+            (await _multiTenantUrlProvider.GetUrlAsync(tenantNameHolderUrl)).ShouldBe("https://TenantA.tiknas.de");
+            (await _multiTenantUrlProvider.GetUrlAsync(tenantIdHolderUrl)).ShouldBe("https://"+_tenantAId+".tiknas.de");
+            (await _multiTenantUrlProvider.GetUrlAsync(tenantHolderUrl)).ShouldBe("https://TenantA.tiknas.de");
             (await _multiTenantUrlProvider.GetUrlAsync(hostUrl)).ShouldBe(hostUrl);
         }
     }

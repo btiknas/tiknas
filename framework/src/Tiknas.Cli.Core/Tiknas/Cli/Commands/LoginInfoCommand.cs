@@ -57,7 +57,7 @@ public class LoginInfoCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("Usage:");
         sb.AppendLine("  tiknas login-info");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

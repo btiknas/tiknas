@@ -47,7 +47,7 @@ public class ClearDownloadCacheCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("Usage:");
         sb.AppendLine("  tiknas clear-download-cache");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

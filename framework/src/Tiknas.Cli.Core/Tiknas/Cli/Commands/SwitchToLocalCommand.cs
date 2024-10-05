@@ -103,7 +103,7 @@ public class SwitchToLocal : IConsoleCommand, ITransientDependency
         sb.AppendLine("  tiknas switch-to-local --paths D:\\Github\\tiknas");
         sb.AppendLine("  tiknas switch-to-local --paths D:\\Github\\tiknas --solution D:\\test\\MyProject");
         sb.AppendLine("  tiknas switch-to-local --paths \"D:\\Github\\tiknas|D:\\Github\\tiknas\"");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

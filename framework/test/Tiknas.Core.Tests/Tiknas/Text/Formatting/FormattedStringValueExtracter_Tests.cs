@@ -21,14 +21,14 @@ public class FormattedStringValueExtracter_Tests
             );
 
         Test_Matched_Internal(
-            "tiknas.io",
+            "tiknas.de",
             "{domain}",
-            new NameValue("domain", "tiknas.io")
+            new NameValue("domain", "tiknas.de")
         );
 
         Test_Matched_Internal(
-            "http://acme.tiknas.io/gaming/Index.html",
-            "http://{TENANCY_NAME}.tiknas.io/{AREA}/Index.html",
+            "http://acme.tiknas.de/gaming/Index.html",
+            "http://{TENANCY_NAME}.tiknas.de/{AREA}/Index.html",
             new NameValue("TENANCY_NAME", "acme"),
             new NameValue("AREA", "gaming")
         );

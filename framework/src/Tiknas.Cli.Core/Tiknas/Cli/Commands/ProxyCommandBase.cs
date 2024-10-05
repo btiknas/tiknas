@@ -114,7 +114,7 @@ public abstract class ProxyCommandBase<T> : IConsoleCommand, ITransientDependenc
         sb.AppendLine("     -p|--prompt                                       Asks the options from the command line prompt (for the missing options)");
         sb.AppendLine("     --target <target-name>                            (default: 'defaultProject') Angular project name to place generated code in.");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

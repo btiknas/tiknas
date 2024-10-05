@@ -332,7 +332,7 @@ public class SuiteCommand : IConsoleCommand, ITransientDependency
     {
         Logger.LogInformation("You can also run the following command to install TIKNAS Suite.");
         Logger.LogInformation(
-            "dotnet tool install -g Tiknas.Suite --add-source https://nuget.tiknas.io/<your-private-key>/v3/index.json");
+            "dotnet tool install -g Tiknas.Suite --add-source https://nuget.tiknas.de/<your-private-key>/v3/index.json");
     }
 
     private async Task UpdateSuiteAsync(string version = null, bool preview = false)
@@ -410,7 +410,7 @@ public class SuiteCommand : IConsoleCommand, ITransientDependency
     {
         Logger.LogError("You can also run the following command to update TIKNAS Suite.");
         Logger.LogError(
-            "dotnet tool update -g Tiknas.Suite --add-source https://nuget.tiknas.io/<your-private-key>/v3/index.json");
+            "dotnet tool update -g Tiknas.Suite --add-source https://nuget.tiknas.de/<your-private-key>/v3/index.json");
     }
 
     private void RemoveSuite()
@@ -578,7 +578,7 @@ public class SuiteCommand : IConsoleCommand, ITransientDependency
 
     public static string GetShortDescription()
     {
-        return "Install, update, remove or start TIKNAS Suite. See https://tiknas.io/suite.";
+        return "Install, update, remove or start TIKNAS Suite. See https://tiknas.de/suite.";
     }
 
     public static class Options

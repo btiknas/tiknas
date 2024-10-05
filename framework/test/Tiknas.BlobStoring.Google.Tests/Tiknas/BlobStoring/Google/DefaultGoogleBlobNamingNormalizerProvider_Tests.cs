@@ -87,8 +87,8 @@ public class DefaultGoogleBlobNamingNormalizerProvider_Tests: TiknasBlobStoringG
     [Fact]
     public void NormalizeContainerName_Max_Length_Dash()
     {
-        var filename = "-this-is-my-container-name-tiknastiknastiknastiknastiknastiknastiknastiknas-a-b-p-a--b-p-";
+        var filename = "-this-is-my-container-name-tiknastiknastiknastiknas-a-b-p-a--b-p-";
         filename = _blobNamingNormalizer.NormalizeContainerName(filename);
-        filename.ShouldBe("this-is-my-container-name-tiknastiknastiknastiknastiknastiknastiknastiknas-a-b-p-a--b");
+        filename.ShouldBe("this-is-my-container-name-tiknastiknastiknastiknas-a-b-p-a--b");
     }
 }

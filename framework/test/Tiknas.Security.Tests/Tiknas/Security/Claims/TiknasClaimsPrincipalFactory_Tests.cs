@@ -29,8 +29,8 @@ public class TiknasClaimsPrincipalFactory_Tests : TiknasIntegratedTest<TiknasSec
     public async Task CreateAsync()
     {
         var claimsPrincipal = await _tiknasClaimsPrincipalFactory.CreateAsync();
-        claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Email && x.Value == "admin2@tiknas.io");
-        claimsPrincipal.Claims.ShouldNotContain(x => x.Type == ClaimTypes.Email && x.Value == "admin@tiknas.io");
+        claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Email && x.Value == "admin2@tiknas.de");
+        claimsPrincipal.Claims.ShouldNotContain(x => x.Type == ClaimTypes.Email && x.Value == "admin@tiknas.de");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Version && x.Value == "2.0");
     }
 
@@ -44,8 +44,8 @@ public class TiknasClaimsPrincipalFactory_Tests : TiknasIntegratedTest<TiknasSec
         await _tiknasClaimsPrincipalFactory.CreateAsync(claimsPrincipal);
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Name && x.Value == "123");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Role && x.Value == "admin");
-        claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Email && x.Value == "admin2@tiknas.io");
-        claimsPrincipal.Claims.ShouldNotContain(x => x.Type == ClaimTypes.Email && x.Value == "admin@tiknas.io");
+        claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Email && x.Value == "admin2@tiknas.de");
+        claimsPrincipal.Claims.ShouldNotContain(x => x.Type == ClaimTypes.Email && x.Value == "admin@tiknas.de");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Version && x.Value == "2.0");
     }
 
@@ -56,8 +56,8 @@ public class TiknasClaimsPrincipalFactory_Tests : TiknasIntegratedTest<TiknasSec
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Name && x.Value == "admin");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Role && x.Value == "admin");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Role && x.Value == "manager");
-        claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Email && x.Value == "admin2@tiknas.io");
-        claimsPrincipal.Claims.ShouldNotContain(x => x.Type == ClaimTypes.Email && x.Value == "admin@tiknas.io");
+        claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Email && x.Value == "admin2@tiknas.de");
+        claimsPrincipal.Claims.ShouldNotContain(x => x.Type == ClaimTypes.Email && x.Value == "admin@tiknas.de");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Version && x.Value == "2.0");
     }
 
@@ -74,8 +74,8 @@ public class TiknasClaimsPrincipalFactory_Tests : TiknasIntegratedTest<TiknasSec
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Name && x.Value == "admin");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Role && x.Value == "admin");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Role && x.Value == "manager");
-        claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Email && x.Value == "admin2@tiknas.io");
-        claimsPrincipal.Claims.ShouldNotContain(x => x.Type == ClaimTypes.Email && x.Value == "admin@tiknas.io");
+        claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Email && x.Value == "admin2@tiknas.de");
+        claimsPrincipal.Claims.ShouldNotContain(x => x.Type == ClaimTypes.Email && x.Value == "admin@tiknas.de");
         claimsPrincipal.Claims.ShouldContain(x => x.Type == ClaimTypes.Version && x.Value == "2.0");
     }
 
@@ -86,7 +86,7 @@ public class TiknasClaimsPrincipalFactory_Tests : TiknasIntegratedTest<TiknasSec
             var claimsIdentity = context.ClaimsPrincipal.Identities.FirstOrDefault(x => x.AuthenticationType == TestAuthenticationType)
                                  ?? new ClaimsIdentity(TestAuthenticationType);
 
-            claimsIdentity.AddOrReplace(new Claim(ClaimTypes.Email, "admin@tiknas.io"));
+            claimsIdentity.AddOrReplace(new Claim(ClaimTypes.Email, "admin@tiknas.de"));
 
             context.ClaimsPrincipal.AddIdentityIfNotContains(claimsIdentity);
 
@@ -101,7 +101,7 @@ public class TiknasClaimsPrincipalFactory_Tests : TiknasIntegratedTest<TiknasSec
             var claimsIdentity = context.ClaimsPrincipal.Identities.FirstOrDefault(x => x.AuthenticationType == TestAuthenticationType)
                                  ?? new ClaimsIdentity(TestAuthenticationType);
 
-            claimsIdentity.AddOrReplace(new Claim(ClaimTypes.Email, "admin2@tiknas.io"));
+            claimsIdentity.AddOrReplace(new Claim(ClaimTypes.Email, "admin2@tiknas.de"));
 
             context.ClaimsPrincipal.AddIdentityIfNotContains(claimsIdentity);
 
@@ -131,7 +131,7 @@ public class TiknasClaimsPrincipalFactory_Tests : TiknasIntegratedTest<TiknasSec
             var claimsIdentity = context.ClaimsPrincipal.Identities.FirstOrDefault(x => x.AuthenticationType == TestAuthenticationType)
                                  ?? new ClaimsIdentity(TestAuthenticationType);
 
-            claimsIdentity.AddOrReplace(new Claim(ClaimTypes.Email, "admin@tiknas.io"));
+            claimsIdentity.AddOrReplace(new Claim(ClaimTypes.Email, "admin@tiknas.de"));
 
             context.ClaimsPrincipal.AddIdentityIfNotContains(claimsIdentity);
 
@@ -146,7 +146,7 @@ public class TiknasClaimsPrincipalFactory_Tests : TiknasIntegratedTest<TiknasSec
             var claimsIdentity = context.ClaimsPrincipal.Identities.FirstOrDefault(x => x.AuthenticationType == TestAuthenticationType)
                                  ?? new ClaimsIdentity(TestAuthenticationType);
 
-            claimsIdentity.AddOrReplace(new Claim(ClaimTypes.Email, "admin2@tiknas.io"));
+            claimsIdentity.AddOrReplace(new Claim(ClaimTypes.Email, "admin2@tiknas.de"));
 
             context.ClaimsPrincipal.AddIdentityIfNotContains(claimsIdentity);
 

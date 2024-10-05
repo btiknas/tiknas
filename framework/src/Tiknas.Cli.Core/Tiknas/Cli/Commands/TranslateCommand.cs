@@ -550,7 +550,7 @@ public class TranslateCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("  tiknas translate -c zh-Hans --online --deepl-auth-key <auth-key>");
         sb.AppendLine("  tiknas translate -c zh-Hans -r tr --online --deepl-auth-key <auth-key>");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

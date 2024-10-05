@@ -24,10 +24,10 @@ public class RemoteServiceConfigurationProvider_Tests : TiknasRemoteServicesTest
     {
         services.Configure<TiknasRemoteServiceOptions>(options =>
         {
-            options.RemoteServices[RemoteServiceConfigurationDictionary.DefaultName] = new RemoteServiceConfiguration("https://tiknas.io");
-            options.RemoteServices["Identity"] = new RemoteServiceConfiguration("https://{{tenantName}}.tiknas.io");
-            options.RemoteServices["Permission"] = new RemoteServiceConfiguration("https://{{tenantId}}.tiknas.io");
-            options.RemoteServices["Setting"] = new RemoteServiceConfiguration("https://{0}.tiknas.io");
+            options.RemoteServices[RemoteServiceConfigurationDictionary.DefaultName] = new RemoteServiceConfiguration("https://tiknas.de");
+            options.RemoteServices["Identity"] = new RemoteServiceConfiguration("https://{{tenantName}}.tiknas.de");
+            options.RemoteServices["Permission"] = new RemoteServiceConfiguration("https://{{tenantId}}.tiknas.de");
+            options.RemoteServices["Setting"] = new RemoteServiceConfiguration("https://{0}.tiknas.de");
         });
         
         services.Configure<TiknasDefaultTenantStoreOptions>(options =>
@@ -45,30 +45,30 @@ public class RemoteServiceConfigurationProvider_Tests : TiknasRemoteServicesTest
         _currentTenant.Id.ShouldBeNull();
         
         var defaultConfiguration = await _remoteServiceConfigurationProvider.GetConfigurationOrDefaultAsync(RemoteServiceConfigurationDictionary.DefaultName);
-        defaultConfiguration.BaseUrl.ShouldBe("https://tiknas.io");
+        defaultConfiguration.BaseUrl.ShouldBe("https://tiknas.de");
 
         var identityConfiguration = await _remoteServiceConfigurationProvider.GetConfigurationOrDefaultAsync("Identity");
-        identityConfiguration.BaseUrl.ShouldBe("https://tiknas.io");
+        identityConfiguration.BaseUrl.ShouldBe("https://tiknas.de");
 
         var permissionConfiguration = await _remoteServiceConfigurationProvider.GetConfigurationOrDefaultAsync("Permission");
-        permissionConfiguration.BaseUrl.ShouldBe("https://tiknas.io");
+        permissionConfiguration.BaseUrl.ShouldBe("https://tiknas.de");
         
         var settingConfiguration = await _remoteServiceConfigurationProvider.GetConfigurationOrDefaultAsync("Setting");
-        settingConfiguration.BaseUrl.ShouldBe("https://tiknas.io");
+        settingConfiguration.BaseUrl.ShouldBe("https://tiknas.de");
 
         using (_currentTenant.Change(_tenantAId, "TenantA"))
         { 
             defaultConfiguration = await _remoteServiceConfigurationProvider.GetConfigurationOrDefaultAsync(RemoteServiceConfigurationDictionary.DefaultName);
-            defaultConfiguration.BaseUrl.ShouldBe("https://tiknas.io");
+            defaultConfiguration.BaseUrl.ShouldBe("https://tiknas.de");
 
             identityConfiguration = await _remoteServiceConfigurationProvider.GetConfigurationOrDefaultAsync("Identity");
-            identityConfiguration.BaseUrl.ShouldBe($"https://{_currentTenant.Name}.tiknas.io");
+            identityConfiguration.BaseUrl.ShouldBe($"https://{_currentTenant.Name}.tiknas.de");
 
             permissionConfiguration = await _remoteServiceConfigurationProvider.GetConfigurationOrDefaultAsync("Permission");
-            permissionConfiguration.BaseUrl.ShouldBe($"https://{_currentTenant.Id}.tiknas.io");
+            permissionConfiguration.BaseUrl.ShouldBe($"https://{_currentTenant.Id}.tiknas.de");
             
             settingConfiguration = await _remoteServiceConfigurationProvider.GetConfigurationOrDefaultAsync("Setting");
-            settingConfiguration.BaseUrl.ShouldBe($"https://{_currentTenant.Name}.tiknas.io");
+            settingConfiguration.BaseUrl.ShouldBe($"https://{_currentTenant.Name}.tiknas.de");
         }
     }
 }

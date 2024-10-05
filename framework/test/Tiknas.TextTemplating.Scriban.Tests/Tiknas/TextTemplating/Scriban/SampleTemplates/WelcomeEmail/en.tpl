@@ -1,1 +1,1 @@
-Welcome {{model.name}} to the tiknas.io!
+Welcome {{model.name}} to the tiknas.de!

@@ -33,18 +33,18 @@ public class AppUrlProvider_Tests : TiknasIntegratedTest<TiknasUiNavigationTestM
     {
         services.Configure<AppUrlOptions>(options =>
         {
-            options.Applications["MVC"].RootUrl = "https://{{tenantName}}.tiknas.io";
+            options.Applications["MVC"].RootUrl = "https://{{tenantName}}.tiknas.de";
             options.Applications["MVC"].Urls["PasswordReset"] = "account/reset-password";
             options.RedirectAllowedUrls.AddRange(new List<string>()
             {
                 "https://wwww.tiknassoft.com",
                 "https://wwww.aspnetzero.com",
-                "https://{{tenantName}}.tiknas.io",
-                "https://{{tenantId}}.tiknas.io",
-                "https://*.demo.mytiknas.io"
+                "https://{{tenantName}}.tiknas.de",
+                "https://{{tenantId}}.tiknas.de",
+                "https://*.demo.mytiknas.de"
             });
 
-            options.Applications["BLAZOR"].RootUrl = "https://{{tenantId}}.tiknas.io";
+            options.Applications["BLAZOR"].RootUrl = "https://{{tenantId}}.tiknas.de";
             options.Applications["BLAZOR"].Urls["PasswordReset"] = "account/reset-password";
         });
 
@@ -63,28 +63,28 @@ public class AppUrlProvider_Tests : TiknasIntegratedTest<TiknasUiNavigationTestM
         using (_currentTenant.Change(null))
         {
             var url = await _appUrlProvider.GetUrlAsync("MVC");
-            url.ShouldBe("https://tiknas.io");
+            url.ShouldBe("https://tiknas.de");
 
             url = await _appUrlProvider.GetUrlAsync("MVC", "PasswordReset");
-            url.ShouldBe("https://tiknas.io/account/reset-password");
+            url.ShouldBe("https://tiknas.de/account/reset-password");
         }
 
         using (_currentTenant.Change(Guid.NewGuid(), "community"))
         {
             var url = await _appUrlProvider.GetUrlAsync("MVC");
-            url.ShouldBe("https://community.tiknas.io");
+            url.ShouldBe("https://community.tiknas.de");
 
             url = await _appUrlProvider.GetUrlAsync("MVC", "PasswordReset");
-            url.ShouldBe("https://community.tiknas.io/account/reset-password");
+            url.ShouldBe("https://community.tiknas.de/account/reset-password");
         }
 
         using (_currentTenant.Change(_tenantAId))
         {
             var url = await _appUrlProvider.GetUrlAsync("BLAZOR");
-            url.ShouldBe($"https://{_tenantAId}.tiknas.io");
+            url.ShouldBe($"https://{_tenantAId}.tiknas.de");
 
             url = await _appUrlProvider.GetUrlAsync("BLAZOR", "PasswordReset");
-            url.ShouldBe($"https://{_tenantAId}.tiknas.io/account/reset-password");
+            url.ShouldBe($"https://{_tenantAId}.tiknas.de/account/reset-password");
         }
 
         await Assert.ThrowsAsync<TiknasException>(async () =>
@@ -103,28 +103,28 @@ public class AppUrlProvider_Tests : TiknasIntegratedTest<TiknasUiNavigationTestM
     public async Task IsRedirectAllowedUrlAsync()
     {
         (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.tiknassoft.com")).ShouldBeTrue();
-        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.demo.mytiknas.io")).ShouldBeTrue();
-        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://demo.mytiknas.io")).ShouldBeTrue();
-        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://api.demo.mytiknas.io")).ShouldBeTrue();
-        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://test.api.demo.mytiknas.io")).ShouldBeTrue();
-        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://tiknassoft.com/demo.mytiknas.io")).ShouldBeFalse();
-        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.mytiknas.io")).ShouldBeFalse();
+        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.demo.mytiknas.de")).ShouldBeTrue();
+        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://demo.mytiknas.de")).ShouldBeTrue();
+        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://api.demo.mytiknas.de")).ShouldBeTrue();
+        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://test.api.demo.mytiknas.de")).ShouldBeTrue();
+        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://tiknassoft.com/demo.mytiknas.de")).ShouldBeFalse();
+        (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://wwww.mytiknas.de")).ShouldBeFalse();
 
         using (_currentTenant.Change(null))
         {
-            (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://tiknas.io")).ShouldBeTrue();
+            (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://tiknas.de")).ShouldBeTrue();
         }
 
         using (_currentTenant.Change(_tenantAId, "community"))
         {
-            (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://community.tiknas.io")).ShouldBeTrue();
-            (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://community2.tiknas.io")).ShouldBeFalse();
+            (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://community.tiknas.de")).ShouldBeTrue();
+            (await _appUrlProvider.IsRedirectAllowedUrlAsync("https://community2.tiknas.de")).ShouldBeFalse();
         }
 
         using (_currentTenant.Change(_tenantAId))
         {
-            (await _appUrlProvider.IsRedirectAllowedUrlAsync($"https://{_tenantAId}.tiknas.io")).ShouldBeTrue();
-            (await _appUrlProvider.IsRedirectAllowedUrlAsync($"https://{Guid.NewGuid()}.tiknas.io")).ShouldBeFalse();
+            (await _appUrlProvider.IsRedirectAllowedUrlAsync($"https://{_tenantAId}.tiknas.de")).ShouldBeTrue();
+            (await _appUrlProvider.IsRedirectAllowedUrlAsync($"https://{Guid.NewGuid()}.tiknas.de")).ShouldBeFalse();
         }
     }
 }

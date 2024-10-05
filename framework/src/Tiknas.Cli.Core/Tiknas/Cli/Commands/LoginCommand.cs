@@ -183,7 +183,7 @@ public class LoginCommand : IConsoleCommand, ITransientDependency
         sb.AppendLine("  tiknas login john");
         sb.AppendLine("  tiknas login john -p 1234");
         sb.AppendLine("");
-        sb.AppendLine("See the documentation for more info: https://tiknas.io/docs/latest/cli");
+        sb.AppendLine("See the documentation for more info: https://tiknas.de/docs/latest/cli");
 
         return sb.ToString();
     }

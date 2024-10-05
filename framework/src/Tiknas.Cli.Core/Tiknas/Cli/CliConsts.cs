@@ -6,7 +6,7 @@ public static class CliConsts
 
     public const string BranchPrefix = "branch@";
 
-    public const string DocsLink = "https://tiknas.io/docs";
+    public const string DocsLink = "https://tiknas.de/docs";
 
     public const string HttpClientName = "TiknasHttpClient";
 
