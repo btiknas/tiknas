@@ -87,9 +87,9 @@ public class SuiteAppSettingsService : ITransientDependency
             ".dotnet",
             "tools",
             ".store",
-            "tiknas.tiknas.suite",
+            "tiknas.suite",
             version,
-            "tiknas.tiknas.suite",
+            "tiknas.suite",
             version,
             "tools",
             "net9.0",
@@ -110,7 +110,7 @@ public class SuiteAppSettingsService : ITransientDependency
         var dotnetToolList = CmdHelper.RunCmdAndGetOutput("dotnet tool list -g", out int exitCode);
 
         var suiteLine = dotnetToolList.Split(Environment.NewLine)
-            .FirstOrDefault(l => l.ToLower().StartsWith("tiknas.tiknas.suite "));
+            .FirstOrDefault(l => l.ToLower().StartsWith("tiknas.suite "));
 
         if (string.IsNullOrEmpty(suiteLine))
         {

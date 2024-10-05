@@ -8,7 +8,7 @@ static internal class CommercialPackages
 {
     private readonly static HashSet<string> Packages = new()
     {
-        "tiknas.tiknas.suite"
+        "tiknas.suite"
         //other PRO packages can be added to this list...
     };
 
